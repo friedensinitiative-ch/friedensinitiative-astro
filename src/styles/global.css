@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Serif headings everywhere, gentle weight */
+  h1, h2, h3 {
+    font-family: theme('fontFamily.serif');
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  /* Body line-height for readability */
+  body {
+    line-height: 1.7;
+  }
+}
+
+@layer components {
+  /* Gold-bordered card used on the Donate page and elsewhere */
+  .card-gold {
+    @apply border-2 border-brand-gold-400 rounded-lg bg-white p-6 shadow-sm;
+  }
+
+  /* Subtle parchment card */
+  .card-soft {
+    @apply rounded-lg bg-white/70 border border-brand-gold-100 p-6;
+  }
+}

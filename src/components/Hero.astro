@@ -1,0 +1,28 @@
+---
+// src/components/Hero.astro
+import { useTranslations, renderHighlight, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+<section class="bg-gradient-to-b from-brand-parchment to-white">
+  <div class="max-w-content mx-auto px-4 py-20 md:py-28 text-center">
+    <p class="text-sm uppercase tracking-widest text-brand-gold-500 mb-4">
+      {t('hero.subtitle')}
+    </p>
+    <h1
+      class="text-4xl md:text-6xl mb-6"
+      set:html={renderHighlight(t('hero.title'))}
+    />
+    <p class="text-xl text-brand-ink-soft max-w-prose mx-auto">
+      {t('hero.description')}
+    </p>
+    <div class="mt-12 text-xs uppercase tracking-widest text-brand-ink-muted">
+      ↓ {t('hero.scrollDown')}
+    </div>
+  </div>
+</section>

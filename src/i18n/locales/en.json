@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "maharishi": "Maharishi",
+    "donate": "Donate",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Global Peace Initiative Switzerland",
+    "title": "Peace through {{highlight}}Vedic science{{/highlight}}",
+    "description": "We support Vedic Pandits in India who meditate and recite daily for world peace.",
+    "scrollDown": "Learn more"
+  },
+  "training": {
+    "title": "{{highlight}}Vedic Pandits{{/highlight}} working for peace",
+    "intro": "These specialised meditators live in large groups in India and conduct daily programmes with scientifically measurable effects on collective wellbeing.",
+    "cta": "More about the programme"
+  },
+  "donate": {
+    "hero": {
+      "title": "Support the Vedic Pandits",
+      "subtitle": "Every donation has direct impact"
+    },
+    "intro": {
+      "p1": "Thank you for your interest in supporting our peace initiative.",
+      "p2": "Your donation enables Pandits in India to continue their daily contribution to world peace.",
+      "p3": "Every contribution counts — from one-time gifts to monthly sponsorship."
+    },
+    "impact": {
+      "why": {
+        "title": "Why donate",
+        "text": "Direct support for Pandit programmes"
+      },
+      "how": {
+        "title": "How it's used",
+        "text": "Living costs, education, infrastructure"
+      },
+      "global": {
+        "title": "Global impact",
+        "text": "Measurable effect on collective wellbeing"
+      }
+    },
+    "options": {
+      "oneTime": "One-time",
+      "monthly": "Monthly"
+    },
+    "bank": {
+      "title": "Donate by bank transfer — no fees",
+      "recipient": "Recipient",
+      "recipientValue": "Globale Friedensinitiative Schweiz, 4000 Basel",
+      "iban": "IBAN",
+      "ibanValue": "CH82 0900 0000 8547 9574 7",
+      "bic": "BIC/SWIFT",
+      "bicValue": "POFICHBEXXX",
+      "note": "100% reaches us, no commission"
+    },
+    "twint": {
+      "title": "Donate with TWINT",
+      "step1": "Scan QR code",
+      "step2": "Confirm amount",
+      "fallback": "No TWINT app? Donate online via RaiseNow"
+    },
+    "creditcard": {
+      "title": "Donate by credit card (DonorBox)"
+    },
+    "footer": {
+      "volunteer": "The board volunteers their time",
+      "contact": "spenden@friedensinitiative.ch",
+      "tax": "Donations are tax-deductible (confirmation on request)."
+    }
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "copyright": "© Global Peace Initiative Switzerland"
+  }
+}

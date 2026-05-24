@@ -1,0 +1,61 @@
+---
+// src/layouts/BaseLayout.astro
+// -----------------------------------------------------------------------------
+// Top-level HTML skeleton. Every page extends this.
+// Builds hreflang alternates from the route key so each locale points to its
+// own translated slug.
+// -----------------------------------------------------------------------------
+import type { Locale } from '@i18n/index';
+import { locales, defaultLocale } from '@i18n/index';
+import { buildPath, type RouteKey } from '@i18n/routes';
+import '../styles/global.css';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description?: string;
+  /** Logical route key for hreflang and canonical resolution */
+  route?: RouteKey;
+}
+
+const { locale, title, description, route = 'home' } = Astro.props;
+
+// hreflang alternates: same route, every locale
+const alternates = locales.map((l) => ({
+  locale: l,
+  href: new URL(buildPath(route, l), Astro.site).toString(),
+}));
+
+const htmlLang = locale === 'de' ? 'de-CH' : locale;
+---
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+
+    {alternates.map(({ locale: l, href }) => (
+      <link rel="alternate" hreflang={l === 'de' ? 'de-CH' : l} href={href} />
+    ))}
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(buildPath(route, defaultLocale), Astro.site).toString()}
+    />
+    <link rel="canonical" href={new URL(buildPath(route, locale), Astro.site).toString()} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-brand-parchment text-brand-ink antialiased font-sans">
+    <slot />
+  </body>
+</html>

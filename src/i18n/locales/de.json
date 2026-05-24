@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Start",
+    "about": "Über uns",
+    "maharishi": "Maharishi",
+    "donate": "Spenden",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Globale Friedensinitiative Schweiz",
+    "title": "Frieden durch {{highlight}}vedische Wissenschaft{{/highlight}}",
+    "description": "Wir unterstützen Vedic Pandits in Indien, die täglich für den Weltfrieden meditieren und rezitieren.",
+    "scrollDown": "Mehr erfahren"
+  },
+  "training": {
+    "title": "{{highlight}}Vedic Pandits{{/highlight}} im Einsatz für den Frieden",
+    "intro": "Diese spezialisierten Meditierenden leben in grossen Gruppen in Indien und führen täglich Programme durch, die wissenschaftlich messbare Effekte auf das gesellschaftliche Wohlbefinden haben.",
+    "cta": "Mehr über das Programm"
+  },
+  "donate": {
+    "hero": {
+      "title": "Unterstützen Sie die Vedic Pandits",
+      "subtitle": "Jede Spende wirkt direkt"
+    },
+    "intro": {
+      "p1": "Vielen Dank für Ihr Interesse, unsere Friedensinitiative zu unterstützen.",
+      "p2": "Mit Ihrer Spende ermöglichen Sie es, dass Pandits in Indien ihren täglichen Beitrag zum Weltfrieden leisten können.",
+      "p3": "Jeder Beitrag zählt — von der einmaligen Spende bis zur monatlichen Patenschaft."
+    },
+    "impact": {
+      "why": {
+        "title": "Warum spenden",
+        "text": "Direkte Unterstützung der Pandit-Programme"
+      },
+      "how": {
+        "title": "Wie verwendet",
+        "text": "Lebensunterhalt, Ausbildung, Infrastruktur"
+      },
+      "global": {
+        "title": "Globale Wirkung",
+        "text": "Messbarer Effekt auf gesellschaftliches Wohlbefinden"
+      }
+    },
+    "options": {
+      "oneTime": "Einmalig",
+      "monthly": "Monatlich"
+    },
+    "bank": {
+      "title": "Spenden per Banküberweisung — spesenfrei",
+      "recipient": "Empfänger",
+      "recipientValue": "Globale Friedensinitiative Schweiz, 4000 Basel",
+      "iban": "IBAN",
+      "ibanValue": "CH82 0900 0000 8547 9574 7",
+      "bic": "BIC/SWIFT",
+      "bicValue": "POFICHBEXXX",
+      "note": "100% kommt an, keine Kommission"
+    },
+    "twint": {
+      "title": "Spenden mit TWINT",
+      "step1": "QR scannen",
+      "step2": "Betrag bestätigen",
+      "fallback": "Keine TWINT-App? Spenden Sie online über RaiseNow"
+    },
+    "creditcard": {
+      "title": "Spenden mit Kreditkarte (DonorBox)"
+    },
+    "footer": {
+      "volunteer": "Der Vorstand engagiert sich unentgeltlich",
+      "contact": "spenden@friedensinitiative.ch",
+      "tax": "Spenden sind steuerlich abzugsfähig (Bestätigung auf Anfrage)."
+    }
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© Globale Friedensinitiative Schweiz"
+  }
+}

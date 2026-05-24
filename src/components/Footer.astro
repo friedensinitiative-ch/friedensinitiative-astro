@@ -1,0 +1,22 @@
+---
+// src/components/Footer.astro
+import { useTranslations, type Locale } from '@i18n/index';
+import { buildPath } from '@i18n/routes';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const year = new Date().getFullYear();
+---
+<footer class="border-t border-brand-gold-200/50 mt-16 py-8 text-center text-sm text-brand-ink-muted">
+  <div class="max-w-content mx-auto px-4 space-y-3">
+    <div class="flex justify-center gap-6">
+      <a href={buildPath('imprint', locale)} class="hover:text-brand-gold-500">{t('footer.imprint')}</a>
+      <a href={buildPath('privacy', locale)} class="hover:text-brand-gold-500">{t('footer.privacy')}</a>
+    </div>
+    <div>{t('footer.copyright')} · {year}</div>
+  </div>
+</footer>

@@ -1,0 +1,45 @@
+---
+// src/components/donate/DonateTwint.astro
+// TWINT QR code section. Replace /uploads/twint-qr.png with the actual
+// TWINT merchant QR generated in the TWINT business portal.
+import { useTranslations, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+<section class="card-soft my-8">
+  <h2 class="text-2xl mb-6 flex items-center gap-3">
+    <span aria-hidden="true">📱</span>
+    {t('donate.twint.title')}
+  </h2>
+
+  <div class="grid md:grid-cols-[auto_1fr] gap-8 items-center">
+    <!-- TWINT QR placeholder -->
+    <div
+      class="w-40 h-40 border-2 border-dashed border-brand-gold-200 rounded flex items-center justify-center text-xs text-center text-brand-ink-muted bg-white"
+      role="img"
+      aria-label="TWINT QR placeholder"
+    >
+      TWINT QR<br/>(Platzhalter)
+    </div>
+
+    <ol class="space-y-3 text-base">
+      <li class="flex gap-3">
+        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-gold-100 text-brand-gold-700 flex items-center justify-center text-sm font-medium">1</span>
+        <span>{t('donate.twint.step1')}</span>
+      </li>
+      <li class="flex gap-3">
+        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-gold-100 text-brand-gold-700 flex items-center justify-center text-sm font-medium">2</span>
+        <span>{t('donate.twint.step2')}</span>
+      </li>
+    </ol>
+  </div>
+
+  <p class="mt-6 text-sm text-brand-ink-soft">
+    {t('donate.twint.fallback')}
+  </p>
+</section>

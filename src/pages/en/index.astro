@@ -1,0 +1,26 @@
+---
+// src/pages/en/index.astro – English homepage
+import PageLayout from '@layouts/PageLayout.astro';
+import Hero from '@components/Hero.astro';
+import { useTranslations } from '@i18n/index';
+
+const locale = 'en' as const;
+const t = useTranslations(locale);
+---
+<PageLayout
+  {locale}
+  title={`${t('hero.subtitle')} – ${t('nav.home')}`}
+  description={t('hero.description')}
+  route="home"
+>
+  <Hero {locale} />
+
+  <section class="max-w-content mx-auto px-4 py-16">
+    <h2 class="text-3xl mb-4" set:html={
+      t('training.title').replace(/\{\{highlight\}\}(.*?)\{\{\/highlight\}\}/g, '<span class="text-brand-gold-500">$1</span>')
+    } />
+    <p class="text-lg text-brand-ink-soft max-w-prose">
+      {t('training.intro')}
+    </p>
+  </section>
+</PageLayout>

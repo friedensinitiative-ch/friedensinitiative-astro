@@ -1,0 +1,431 @@
+# =============================================================================
+# Sveltia CMS Configuration
+# =============================================================================
+# Backend: GitHub OAuth directly. Requires an OAuth helper deployed somewhere
+# (Cloudflare Workers, Netlify Functions, etc.). The auth_endpoint below
+# points to it — replace with your actual deployment URL before going live.
+#
+# Strategy carried over from the previous Decap setup:
+#   - ONE collection per language. Each collection edits exactly one locale
+#     JSON file (de.json / en.json / fr.json). This avoids merge conflicts
+#     that occur when multiple files entries target the same source file.
+# =============================================================================
+
+backend:
+  name: github
+  repo: REPLACE-ORG/friedensinitiative-astro
+  branch: main
+  # OAuth helper — replace once deployed.
+  # Example for Cloudflare Workers: https://your-worker.workers.dev/auth
+  base_url: https://REPLACE-WITH-OAUTH-HELPER.example.com
+  auth_endpoint: auth
+
+# Optional editorial workflow (PRs instead of direct commits).
+# Comment out if you want all saves to publish immediately.
+publish_mode: editorial_workflow
+
+# Media uploads land in public/uploads and are served from /uploads
+media_folder: public/uploads
+public_folder: /uploads
+
+site_url: https://friedensinitiative-astro.netlify.app
+display_url: https://friedensinitiative-astro.netlify.app
+
+locale: 'de'
+
+# =============================================================================
+# COLLECTIONS
+# =============================================================================
+
+collections:
+
+  # ---------------------------------------------------------------------------
+  # GERMAN CONTENT
+  # ---------------------------------------------------------------------------
+  - name: content-de
+    label: '🇨🇭 Deutsche Inhalte'
+    label_singular: 'Deutsche Seite'
+    description: 'Alle deutschen Website-Texte. Abschnittsweise bearbeiten.'
+    editor:
+      preview: false
+    files:
+      - name: de-content
+        label: 'Deutsch – alle Abschnitte'
+        file: 'src/i18n/locales/de.json'
+        fields:
+          - label: 'Navigation'
+            name: nav
+            widget: object
+            fields:
+              - { label: 'Start',     name: home,      widget: string }
+              - { label: 'Über uns',  name: about,     widget: string }
+              - { label: 'Maharishi', name: maharishi, widget: string, required: false }
+              - { label: 'Spenden',   name: donate,    widget: string }
+              - { label: 'Kontakt',   name: contact,   widget: string }
+
+          - label: 'Hero-Bereich'
+            name: hero
+            widget: object
+            fields:
+              - { label: 'Untertitel',  name: subtitle,    widget: string }
+              - { label: 'Titel',       name: title,       widget: string, hint: 'Mit {{highlight}}...{{/highlight}} können Wörter gold hervorgehoben werden.' }
+              - { label: 'Beschreibung', name: description, widget: text }
+              - { label: 'Scroll-Down-Hinweis', name: scrollDown, widget: string, required: false }
+
+          - label: 'Training-Abschnitt'
+            name: training
+            widget: object
+            fields:
+              - { label: 'Titel',  name: title, widget: string, hint: 'Mit {{highlight}}...{{/highlight}} können Wörter gold hervorgehoben werden.' }
+              - { label: 'Einleitung', name: intro, widget: text }
+              - { label: 'Call-to-Action', name: cta, widget: string }
+
+          - label: 'Spenden-Seite'
+            name: donate
+            widget: object
+            fields:
+              - label: 'Hero'
+                name: hero
+                widget: object
+                fields:
+                  - { label: 'Titel',     name: title,    widget: string }
+                  - { label: 'Untertitel', name: subtitle, widget: string }
+              - label: 'Einleitung'
+                name: intro
+                widget: object
+                fields:
+                  - { label: 'Absatz 1', name: p1, widget: text }
+                  - { label: 'Absatz 2', name: p2, widget: text }
+                  - { label: 'Absatz 3', name: p3, widget: text }
+              - label: 'Impact Cards'
+                name: impact
+                widget: object
+                fields:
+                  - label: 'Warum spenden'
+                    name: why
+                    widget: object
+                    fields:
+                      - { label: Titel, name: title, widget: string }
+                      - { label: Text,  name: text,  widget: text }
+                  - label: 'Wie verwendet'
+                    name: how
+                    widget: object
+                    fields:
+                      - { label: Titel, name: title, widget: string }
+                      - { label: Text,  name: text,  widget: text }
+                  - label: 'Globale Wirkung'
+                    name: global
+                    widget: object
+                    fields:
+                      - { label: Titel, name: title, widget: string }
+                      - { label: Text,  name: text,  widget: text }
+              - label: 'Spendenoptionen'
+                name: options
+                widget: object
+                fields:
+                  - { label: 'Einmalig',  name: oneTime, widget: string }
+                  - { label: 'Monatlich', name: monthly, widget: string }
+              - label: 'Bankverbindung'
+                name: bank
+                widget: object
+                fields:
+                  - { label: Titel,         name: title,           widget: string }
+                  - { label: 'Empfänger Label',  name: recipient,      widget: string }
+                  - { label: 'Empfänger Wert',   name: recipientValue, widget: string }
+                  - { label: 'IBAN Label',  name: iban,           widget: string }
+                  - { label: 'IBAN Wert',   name: ibanValue,      widget: string }
+                  - { label: 'BIC Label',   name: bic,            widget: string }
+                  - { label: 'BIC Wert',    name: bicValue,       widget: string }
+                  - { label: Hinweis,       name: note,           widget: text }
+              - label: 'TWINT'
+                name: twint
+                widget: object
+                fields:
+                  - { label: Titel,      name: title,    widget: string }
+                  - { label: 'Schritt 1', name: step1,    widget: string }
+                  - { label: 'Schritt 2', name: step2,    widget: string }
+                  - { label: Fallback,   name: fallback, widget: text }
+              - label: 'Kreditkarte'
+                name: creditcard
+                widget: object
+                fields:
+                  - { label: Titel, name: title, widget: string }
+              - label: 'Footer-Texte (Spenden)'
+                name: footer
+                widget: object
+                fields:
+                  - { label: 'Vorstand-Hinweis',  name: volunteer, widget: text }
+                  - { label: 'Kontakt-E-Mail',    name: contact,   widget: string }
+                  - { label: 'Steuerhinweis',     name: tax,       widget: text }
+
+          - label: 'Site-Footer'
+            name: footer
+            widget: object
+            fields:
+              - { label: Impressum,  name: imprint,   widget: string }
+              - { label: Datenschutz, name: privacy,  widget: string }
+              - { label: Copyright,  name: copyright, widget: string }
+
+  # ---------------------------------------------------------------------------
+  # ENGLISH CONTENT — mirror of German collection, same field structure
+  # ---------------------------------------------------------------------------
+  - name: content-en
+    label: '🇬🇧 English Content'
+    label_singular: 'English page'
+    description: 'All English website text.'
+    editor:
+      preview: false
+    files:
+      - name: en-content
+        label: 'English – All sections'
+        file: 'src/i18n/locales/en.json'
+        fields:
+          - label: 'Navigation'
+            name: nav
+            widget: object
+            fields:
+              - { label: Home,      name: home,      widget: string }
+              - { label: About,     name: about,     widget: string }
+              - { label: Maharishi, name: maharishi, widget: string, required: false }
+              - { label: Donate,    name: donate,    widget: string }
+              - { label: Contact,   name: contact,   widget: string }
+          - label: 'Hero section'
+            name: hero
+            widget: object
+            fields:
+              - { label: Subtitle,    name: subtitle,    widget: string }
+              - { label: Title,       name: title,       widget: string, hint: 'Use {{highlight}}...{{/highlight}} to gold-highlight words.' }
+              - { label: Description, name: description, widget: text }
+              - { label: 'Scroll-down label', name: scrollDown, widget: string, required: false }
+          - label: 'Training section'
+            name: training
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Intro, name: intro, widget: text }
+              - { label: CTA,   name: cta,   widget: string }
+          - label: 'Donate page'
+            name: donate
+            widget: object
+            fields:
+              - label: Hero
+                name: hero
+                widget: object
+                fields:
+                  - { label: Title,    name: title,    widget: string }
+                  - { label: Subtitle, name: subtitle, widget: string }
+              - label: Intro
+                name: intro
+                widget: object
+                fields:
+                  - { label: 'Paragraph 1', name: p1, widget: text }
+                  - { label: 'Paragraph 2', name: p2, widget: text }
+                  - { label: 'Paragraph 3', name: p3, widget: text }
+              - label: 'Impact cards'
+                name: impact
+                widget: object
+                fields:
+                  - label: 'Why donate'
+                    name: why
+                    widget: object
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Text,  name: text,  widget: text }
+                  - label: 'How used'
+                    name: how
+                    widget: object
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Text,  name: text,  widget: text }
+                  - label: 'Global impact'
+                    name: global
+                    widget: object
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Text,  name: text,  widget: text }
+              - label: Options
+                name: options
+                widget: object
+                fields:
+                  - { label: 'One-time', name: oneTime, widget: string }
+                  - { label: Monthly,    name: monthly, widget: string }
+              - label: 'Bank transfer'
+                name: bank
+                widget: object
+                fields:
+                  - { label: Title,           name: title,          widget: string }
+                  - { label: 'Recipient label', name: recipient,    widget: string }
+                  - { label: 'Recipient value', name: recipientValue, widget: string }
+                  - { label: 'IBAN label',    name: iban,           widget: string }
+                  - { label: 'IBAN value',    name: ibanValue,      widget: string }
+                  - { label: 'BIC label',     name: bic,            widget: string }
+                  - { label: 'BIC value',     name: bicValue,       widget: string }
+                  - { label: Note,            name: note,           widget: text }
+              - label: TWINT
+                name: twint
+                widget: object
+                fields:
+                  - { label: Title,     name: title,    widget: string }
+                  - { label: 'Step 1',  name: step1,    widget: string }
+                  - { label: 'Step 2',  name: step2,    widget: string }
+                  - { label: Fallback,  name: fallback, widget: text }
+              - label: 'Credit card'
+                name: creditcard
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+              - label: 'Donate footer texts'
+                name: footer
+                widget: object
+                fields:
+                  - { label: 'Volunteer note', name: volunteer, widget: text }
+                  - { label: 'Contact email',  name: contact,   widget: string }
+                  - { label: 'Tax note',       name: tax,       widget: text }
+          - label: 'Site footer'
+            name: footer
+            widget: object
+            fields:
+              - { label: Imprint,   name: imprint,   widget: string }
+              - { label: Privacy,   name: privacy,   widget: string }
+              - { label: Copyright, name: copyright, widget: string }
+
+  # ---------------------------------------------------------------------------
+  # FRENCH CONTENT — same shape
+  # ---------------------------------------------------------------------------
+  - name: content-fr
+    label: '🇫🇷 Contenu français'
+    label_singular: 'Page française'
+    description: 'Tous les textes français du site.'
+    editor:
+      preview: false
+    files:
+      - name: fr-content
+        label: 'Français – toutes les sections'
+        file: 'src/i18n/locales/fr.json'
+        fields:
+          - label: Navigation
+            name: nav
+            widget: object
+            fields:
+              - { label: Accueil,           name: home,      widget: string }
+              - { label: 'À propos',        name: about,     widget: string }
+              - { label: Maharishi,         name: maharishi, widget: string, required: false }
+              - { label: 'Faire un don',    name: donate,    widget: string }
+              - { label: Contact,           name: contact,   widget: string }
+          - label: 'Section Hero'
+            name: hero
+            widget: object
+            fields:
+              - { label: 'Sous-titre',   name: subtitle,    widget: string }
+              - { label: Titre,          name: title,       widget: string, hint: 'Utilisez {{highlight}}...{{/highlight}} pour surligner en or.' }
+              - { label: Description,    name: description, widget: text }
+              - { label: 'Indication scroll', name: scrollDown, widget: string, required: false }
+          - label: 'Section formation'
+            name: training
+            widget: object
+            fields:
+              - { label: Titre,        name: title, widget: string }
+              - { label: Introduction, name: intro, widget: text }
+              - { label: 'Appel à action', name: cta, widget: string }
+          - label: 'Page de don'
+            name: donate
+            widget: object
+            fields:
+              - label: Hero
+                name: hero
+                widget: object
+                fields:
+                  - { label: Titre,        name: title,    widget: string }
+                  - { label: 'Sous-titre', name: subtitle, widget: string }
+              - label: Introduction
+                name: intro
+                widget: object
+                fields:
+                  - { label: 'Paragraphe 1', name: p1, widget: text }
+                  - { label: 'Paragraphe 2', name: p2, widget: text }
+                  - { label: 'Paragraphe 3', name: p3, widget: text }
+              - label: 'Cartes d''impact'
+                name: impact
+                widget: object
+                fields:
+                  - label: 'Pourquoi donner'
+                    name: why
+                    widget: object
+                    fields:
+                      - { label: Titre, name: title, widget: string }
+                      - { label: Texte, name: text,  widget: text }
+                  - label: Utilisation
+                    name: how
+                    widget: object
+                    fields:
+                      - { label: Titre, name: title, widget: string }
+                      - { label: Texte, name: text,  widget: text }
+                  - label: 'Impact global'
+                    name: global
+                    widget: object
+                    fields:
+                      - { label: Titre, name: title, widget: string }
+                      - { label: Texte, name: text,  widget: text }
+              - label: Options
+                name: options
+                widget: object
+                fields:
+                  - { label: 'Don unique',  name: oneTime, widget: string }
+                  - { label: 'Don mensuel', name: monthly, widget: string }
+              - label: 'Virement bancaire'
+                name: bank
+                widget: object
+                fields:
+                  - { label: Titre,                name: title,          widget: string }
+                  - { label: 'Label destinataire', name: recipient,      widget: string }
+                  - { label: 'Valeur destinataire', name: recipientValue, widget: string }
+                  - { label: 'Label IBAN',         name: iban,           widget: string }
+                  - { label: 'Valeur IBAN',        name: ibanValue,      widget: string }
+                  - { label: 'Label BIC',          name: bic,            widget: string }
+                  - { label: 'Valeur BIC',         name: bicValue,       widget: string }
+                  - { label: Note,                 name: note,           widget: text }
+              - label: TWINT
+                name: twint
+                widget: object
+                fields:
+                  - { label: Titre,        name: title,    widget: string }
+                  - { label: 'Étape 1',    name: step1,    widget: string }
+                  - { label: 'Étape 2',    name: step2,    widget: string }
+                  - { label: 'Alternative', name: fallback, widget: text }
+              - label: 'Carte de crédit'
+                name: creditcard
+                widget: object
+                fields:
+                  - { label: Titre, name: title, widget: string }
+              - label: 'Textes de pied'
+                name: footer
+                widget: object
+                fields:
+                  - { label: 'Note bénévolat', name: volunteer, widget: text }
+                  - { label: 'E-mail contact', name: contact,   widget: string }
+                  - { label: 'Note fiscale',   name: tax,       widget: text }
+          - label: 'Pied de page du site'
+            name: footer
+            widget: object
+            fields:
+              - { label: 'Mentions légales', name: imprint,   widget: string }
+              - { label: 'Confidentialité',  name: privacy,   widget: string }
+              - { label: Copyright,          name: copyright, widget: string }
+
+  # ---------------------------------------------------------------------------
+  # DONATE PAGE PROSE — long-form Markdown per locale
+  # ---------------------------------------------------------------------------
+  # Editors use WYSIWYG to edit the introductory/explanatory paragraphs on
+  # the donation page. Structural fields (IBAN, BIC, button labels) stay in
+  # the locale JSON collections above.
+  - name: donate-prose
+    label: '📝 Spenden-Texte / Donate texts'
+    description: 'Längere Fliesstexte auf der Spendenseite, pro Sprache'
+    folder: 'src/content/donate'
+    extension: md
+    format: frontmatter
+    create: false
+    slug: '{{locale}}'
+    fields:
+      - { label: 'Sprache / Locale', name: locale, widget: select, options: ['de', 'en', 'fr'] }
+      - { label: 'Inhalt / Body', name: body, widget: markdown }

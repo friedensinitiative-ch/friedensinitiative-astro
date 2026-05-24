@@ -1,0 +1,184 @@
+---
+// src/components/Nav.astro
+// -----------------------------------------------------------------------------
+// Top navigation with localized slugs, language switcher, and mobile dropdown.
+//
+// Layout:
+//   Mobile  (< md): [Logo]              [Spenden] [≡]
+//                   └─ Hamburger menu contains:
+//                       • Nav links (Home, About, Maharishi, Contact)
+//                       • Divider
+//                       • Language switcher (DE / EN / FR)
+//   Desktop (≥ md): [Logo] [Links]   [DE EN FR] [Spenden]
+// -----------------------------------------------------------------------------
+import { useTranslations, locales, type Locale } from '@i18n/index';
+import { buildPath, getRouteKey, type RouteKey } from '@i18n/routes';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const currentRoute: RouteKey = getRouteKey(Astro.url);
+
+const navItems: { key: RouteKey; label: string }[] = [
+  { key: 'home',      label: t('nav.home') },
+  { key: 'about',     label: t('nav.about') },
+  { key: 'maharishi', label: t('nav.maharishi') },
+  { key: 'contact',   label: t('nav.contact') },
+];
+
+const localeLabels: Record<Locale, string> = { de: 'DE', en: 'EN', fr: 'FR' };
+---
+<header class="border-b border-brand-gold-200/50 bg-brand-parchment/95 backdrop-blur sticky top-0 z-50">
+  <div class="max-w-content mx-auto px-4 py-4 flex items-center justify-between gap-3">
+
+    <!-- Logo / Site title -->
+    <a href={buildPath('home', locale)} class="font-serif text-lg md:text-xl text-brand-ink hover:text-brand-gold-500 transition flex-shrink-0">
+      Friedensinitiative
+    </a>
+
+    <!-- Desktop navigation (hidden on mobile) -->
+    <nav class="hidden md:flex items-center gap-6 flex-1 justify-center">
+      {navItems.map((item) => (
+        <a
+          href={buildPath(item.key, locale)}
+          class={`text-sm transition ${item.key === currentRoute ? 'text-brand-gold-500' : 'text-brand-ink-soft hover:text-brand-gold-500'}`}
+          aria-current={item.key === currentRoute ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Right side -->
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <!-- Language switcher: desktop only (mobile gets it in the menu) -->
+      <div class="hidden md:flex items-center gap-1 text-xs">
+        {locales.map((l) => (
+          <a
+            href={buildPath(currentRoute, l)}
+            class={`px-1.5 py-1 rounded ${l === locale ? 'bg-brand-gold-100 text-brand-gold-700' : 'text-brand-ink-muted hover:text-brand-gold-500'}`}
+            aria-current={l === locale ? 'true' : undefined}
+          >
+            {localeLabels[l]}
+          </a>
+        ))}
+      </div>
+
+      <!-- Donate CTA: always visible -->
+      <a
+        href={buildPath('donate', locale)}
+        class={`md:ml-2 px-3 py-1.5 rounded text-sm font-medium transition ${
+          currentRoute === 'donate'
+            ? 'bg-brand-gold-500 text-white'
+            : 'bg-brand-gold-400 text-white hover:bg-brand-gold-500'
+        }`}
+      >
+        {t('nav.donate')}
+      </a>
+
+      <!-- Hamburger button: mobile only -->
+      <button
+        id="nav-toggle"
+        type="button"
+        class="md:hidden ml-1 p-2 rounded text-brand-ink hover:bg-brand-gold-50 transition"
+        aria-label="Menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown panel: nav links + language switcher -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden border-t border-brand-gold-200/50 bg-brand-parchment"
+  >
+    <div class="max-w-content mx-auto px-4 py-3">
+      <!-- Nav links -->
+      <nav class="flex flex-col">
+        {navItems.map((item) => (
+          <a
+            href={buildPath(item.key, locale)}
+            class={`py-3 text-base border-b border-brand-gold-100/60 transition ${
+              item.key === currentRoute
+                ? 'text-brand-gold-500 font-medium'
+                : 'text-brand-ink-soft hover:text-brand-gold-500'
+            }`}
+            aria-current={item.key === currentRoute ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      <!-- Language switcher row, separated by spacing -->
+      <div class="pt-4 mt-2 flex items-center justify-center gap-2">
+        <span class="text-xs uppercase tracking-widest text-brand-ink-muted mr-2">Sprache</span>
+        {locales.map((l) => (
+          <a
+            href={buildPath(currentRoute, l)}
+            class={`px-3 py-1.5 rounded text-sm ${l === locale ? 'bg-brand-gold-100 text-brand-gold-700 font-medium' : 'text-brand-ink-soft hover:text-brand-gold-500 border border-brand-gold-100'}`}
+            aria-current={l === locale ? 'true' : undefined}
+          >
+            {localeLabels[l]}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const toggleBtn = document.getElementById('nav-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  toggleBtn?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    if (isOpen) {
+      menu?.classList.add('hidden');
+      iconOpen?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      menu?.classList.remove('hidden');
+      iconOpen?.classList.add('hidden');
+      iconClose?.classList.remove('hidden');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // Auto-close when clicking any link in the menu
+  menu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      iconOpen?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+      toggleBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Close when resizing to desktop width
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768 && !menu?.classList.contains('hidden')) {
+      menu?.classList.add('hidden');
+      iconOpen?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+      toggleBtn?.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>

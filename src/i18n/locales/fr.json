@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "maharishi": "Maharishi",
+    "donate": "Faire un don",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Initiative Mondiale pour la Paix Suisse",
+    "title": "La paix par la {{highlight}}science védique{{/highlight}}",
+    "description": "Nous soutenons les Pandits védiques en Inde qui méditent et récitent chaque jour pour la paix mondiale.",
+    "scrollDown": "En savoir plus"
+  },
+  "training": {
+    "title": "Les {{highlight}}Pandits védiques{{/highlight}} au service de la paix",
+    "intro": "Ces méditants spécialisés vivent en grands groupes en Inde et conduisent des programmes quotidiens aux effets scientifiquement mesurables sur le bien-être collectif.",
+    "cta": "En savoir plus sur le programme"
+  },
+  "donate": {
+    "hero": {
+      "title": "Soutenez les Pandits védiques",
+      "subtitle": "Chaque don a un impact direct"
+    },
+    "intro": {
+      "p1": "Merci de votre intérêt à soutenir notre initiative pour la paix.",
+      "p2": "Votre don permet aux Pandits en Inde de poursuivre leur contribution quotidienne à la paix mondiale.",
+      "p3": "Chaque contribution compte — du don ponctuel au parrainage mensuel."
+    },
+    "impact": {
+      "why": {
+        "title": "Pourquoi donner",
+        "text": "Soutien direct aux programmes des Pandits"
+      },
+      "how": {
+        "title": "Utilisation",
+        "text": "Vie quotidienne, formation, infrastructure"
+      },
+      "global": {
+        "title": "Impact global",
+        "text": "Effet mesurable sur le bien-être collectif"
+      }
+    },
+    "options": {
+      "oneTime": "Don unique",
+      "monthly": "Don mensuel"
+    },
+    "bank": {
+      "title": "Don par virement bancaire — sans frais",
+      "recipient": "Destinataire",
+      "recipientValue": "Globale Friedensinitiative Schweiz, 4000 Basel",
+      "iban": "IBAN",
+      "ibanValue": "CH82 0900 0000 8547 9574 7",
+      "bic": "BIC/SWIFT",
+      "bicValue": "POFICHBEXXX",
+      "note": "100% nous parvient, sans commission"
+    },
+    "twint": {
+      "title": "Don par TWINT",
+      "step1": "Scanner le QR code",
+      "step2": "Confirmer le montant",
+      "fallback": "Pas d'app TWINT? Donnez en ligne via RaiseNow"
+    },
+    "creditcard": {
+      "title": "Don par carte de crédit (DonorBox)"
+    },
+    "footer": {
+      "volunteer": "Le comité s'engage bénévolement",
+      "contact": "spenden@friedensinitiative.ch",
+      "tax": "Les dons sont déductibles fiscalement (attestation sur demande)."
+    }
+  },
+  "footer": {
+    "imprint": "Mentions légales",
+    "privacy": "Confidentialité",
+    "copyright": "© Initiative Mondiale pour la Paix Suisse"
+  }
+}

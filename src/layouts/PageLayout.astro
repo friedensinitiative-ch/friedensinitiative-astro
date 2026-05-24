@@ -1,0 +1,24 @@
+---
+// src/layouts/PageLayout.astro
+import BaseLayout from './BaseLayout.astro';
+import Nav from '@components/Nav.astro';
+import Footer from '@components/Footer.astro';
+import type { Locale } from '@i18n/index';
+import type { RouteKey } from '@i18n/routes';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description?: string;
+  route?: RouteKey;
+}
+
+const { locale, title, description, route } = Astro.props;
+---
+<BaseLayout {locale} {title} {description} {route}>
+  <Nav {locale} />
+  <main class="min-h-[60vh]">
+    <slot />
+  </main>
+  <Footer {locale} />
+</BaseLayout>
