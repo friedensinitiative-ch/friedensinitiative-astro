@@ -81,59 +81,48 @@
       "uid": "Swiss Business Identification Number (UID): CHE-142.469.811",
       "docsTitle": "Documents",
       "docsStatutes": "Download statutes (PDF)"
-    }
+    },
+    "years": {
+      "earlyLife": "1918",
+      "teaching": "1955",
+      "vedicScience": "1960s+"
+    },
+    "quote": "The goal of the Transcendental Meditation technique is the state of enlightenment. This means we experience that inner calmness, that quiet state of least excitation, even when we are dynamically busy.",
+    "quoteAttribution": "— Maharishi Mahesh Yogi"
   },
   "donate": {
     "hero": {
       "title": "Support the Vedic Pandits",
       "subtitle": "Your contribution helps create peace for the world"
     },
-    "intro": {
-      "p1": "The Maharishi Vedic Pandits program relies on the generous support of donors like you.",
-      "p2": "Your contribution helps train and support these peace professionals who dedicate their lives to creating harmony and coherence in world consciousness.",
-      "p3": "Every contribution counts — from a one-time gift to monthly sponsorship."
-    },
-    "impact": {
-      "why": {
-        "title": "Why donate",
-        "text": "Direct support for Pandit programmes – you contribute directly to world peace."
-      },
-      "how": {
-        "title": "How it's used",
-        "text": "Donations go directly to training, housing, food and care of the Pandits."
-      },
-      "global": {
-        "title": "Global impact",
-        "text": "A scientifically measurable influence of peace and positivity on collective consciousness."
-      }
-    },
-    "options": {
-      "oneTime": "One-time",
-      "monthly": "Monthly"
-    },
+    "intro": "Thank you for your interest in supporting our Peace Initiative. Every contribution counts — from a one-time gift to monthly sponsorship.",
     "bank": {
       "title": "Donate by bank transfer — no fees",
-      "recipient": "Recipient",
+      "intro": "To avoid bank fees, donate directly via bank transfer to the following PostFinance account:",
+      "heading": "Fee-free donation by transfer — your donation goes entirely to the project:",
       "recipientValue": "Globale Friedensinitiative Schweiz, 4000 Basel",
-      "iban": "IBAN",
+      "ibanLabel": "IBAN",
       "ibanValue": "CH82 0900 0000 8547 9574 7",
-      "bic": "BIC/SWIFT",
+      "bicLabel": "BIC/SWIFT",
       "bicValue": "POFICHBEXXX",
-      "note": "100% reaches us, no commission"
+      "qrCaption": "Scan with your banking app"
     },
     "twint": {
       "title": "Donate with TWINT",
-      "step1": "Scan QR code",
-      "step2": "Confirm amount",
-      "fallback": "No TWINT app? Donate online via RaiseNow."
+      "intro": "Payment is processed via RaiseNow; after scanning the QR code, you will be redirected to the RaiseNow website.",
+      "badge": "Donate with TWINT now!",
+      "step1": "Scan the QR code with the TWINT app",
+      "step2": "Confirm the amount and donation",
+      "fallbackLink": "No TWINT app? Donate online via RaiseNow"
     },
     "creditcard": {
-      "title": "Donate by credit card (DonorBox)"
+      "title": "Donate by credit card (DonorBox)",
+      "intro": "Payment is processed via Donorbox."
     },
     "footer": {
       "volunteer": "The board of the Peace Initiative volunteers its time.",
       "contact": "spenden@friedensinitiative.ch",
-      "tax": "Donations to the Global Peace Initiative Switzerland are tax-deductible to the fullest extent allowed by law. A donation receipt is available on request."
+      "tax": "Donations to the Global Peace Initiative Switzerland are tax-deductible to the extent permitted by law. A donation receipt is available on request."
     }
   },
   "contact": {
@@ -171,7 +160,8 @@
       "title": "Office Hours",
       "line1": "Monday – Friday: 9:00 AM – 5:00 PM",
       "line2": "Saturday – Sunday: Closed"
-    }
+    },
+    "sendMessageTitle": "Send Message"
   },
   "footer": {
     "imprint": "Imprint",

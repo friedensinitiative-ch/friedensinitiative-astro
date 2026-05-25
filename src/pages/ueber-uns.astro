@@ -6,7 +6,14 @@ import { useTranslations } from '@i18n/index';
 const locale = 'de' as const;
 const t = useTranslations(locale);
 
-const sections = ['earlyLife', 'teaching', 'vedicScience', 'peaceInitiative'] as const;
+// Sections of Maharishi's life, with associated year markers.
+// peaceInitiative has no year — it's a present-day continuation.
+const sections = [
+  { key: 'earlyLife',       yearKey: 'earlyLife' },
+  { key: 'teaching',        yearKey: 'teaching' },
+  { key: 'vedicScience',    yearKey: 'vedicScience' },
+  { key: 'peaceInitiative', yearKey: null },
+] as const;
 ---
 <PageLayout
   {locale}
@@ -24,7 +31,7 @@ const sections = ['earlyLife', 'teaching', 'vedicScience', 'peaceInitiative'] as
   <div class="max-w-content mx-auto px-4 py-12">
 
     <!-- Maharishi portrait + intro -->
-    <div class="grid md:grid-cols-[2fr_3fr] gap-8 md:gap-12 items-start mb-12">
+    <div class="grid md:grid-cols-[2fr_3fr] gap-8 md:gap-12 items-start mb-16">
       <ResponsiveImage
         slug="maharishi"
         alt="Maharishi Mahesh Yogi"
@@ -35,18 +42,38 @@ const sections = ['earlyLife', 'teaching', 'vedicScience', 'peaceInitiative'] as
       <p class="text-lg text-brand-ink-soft">{t('about.intro')}</p>
     </div>
 
-    <div class="space-y-10">
-      {sections.map((key) => (
-        <section class="max-w-prose">
-          <h2 class="text-2xl md:text-3xl mb-3 text-brand-gold-700">
-            {t(`about.sections.${key}.title`)}
-          </h2>
-          <p class="text-lg text-brand-ink-soft">
-            {t(`about.sections.${key}.text`)}
-          </p>
+    <!-- Timeline sections: year marker on the left, content on the right -->
+    <div class="space-y-12 md:space-y-16 max-w-4xl">
+      {sections.map(({ key, yearKey }) => (
+        <section class="grid grid-cols-[5rem_1fr] md:grid-cols-[8rem_1fr] gap-4 md:gap-8 items-start">
+          <div class="flex flex-col items-start md:items-end pt-1">
+            {yearKey && (
+              <span class="text-2xl md:text-3xl font-serif text-brand-gold-500">
+                {t(`about.years.${yearKey}`)}
+              </span>
+            )}
+          </div>
+          <div class="max-w-prose">
+            <h2 class="text-2xl md:text-3xl mb-3 text-brand-gold-700">
+              {t(`about.sections.${key}.title`)}
+            </h2>
+            <p class="text-lg text-brand-ink-soft">
+              {t(`about.sections.${key}.text`)}
+            </p>
+          </div>
         </section>
       ))}
     </div>
+
+    <!-- Maharishi quote -->
+    <blockquote class="my-16 mx-auto max-w-3xl text-center border-l-4 border-brand-gold-400 pl-6 md:pl-8 italic">
+      <p class="text-xl md:text-2xl text-brand-ink-soft leading-relaxed mb-4">
+        &ldquo;{t('about.quote')}&rdquo;
+      </p>
+      <footer class="text-base text-brand-gold-600 not-italic">
+        {t('about.quoteAttribution')}
+      </footer>
+    </blockquote>
 
     <!-- Swiss legal/organizational section -->
     <section class="mt-16 pt-12 border-t border-brand-gold-200/50">

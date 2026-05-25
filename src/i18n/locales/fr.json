@@ -81,54 +81,43 @@
       "uid": "Numéro d'identification des entreprises (IDE) : CHE-142.469.811",
       "docsTitle": "Documents",
       "docsStatutes": "Télécharger les statuts (PDF)"
-    }
+    },
+    "years": {
+      "earlyLife": "1918",
+      "teaching": "1955",
+      "vedicScience": "1960+"
+    },
+    "quote": "Le but de la méditation transcendantale est l'état d'illumination. Nous expérimentons ce calme intérieur, cet état tranquille de moindre excitation, même quand nous sommes dynamiquement occupés.",
+    "quoteAttribution": "— Maharishi Mahesh Yogi"
   },
   "donate": {
     "hero": {
       "title": "Soutenez les Pandits Védiques",
       "subtitle": "Votre contribution aide à créer la paix dans le monde"
     },
-    "intro": {
-      "p1": "Le programme des Pandits Védiques Maharishi dépend du soutien généreux de donateurs comme vous.",
-      "p2": "Votre contribution aide à former et soutenir ces professionnels de la paix qui consacrent leur vie à créer l'harmonie et la cohérence dans la conscience mondiale.",
-      "p3": "Chaque contribution compte — du don ponctuel au parrainage mensuel."
-    },
-    "impact": {
-      "why": {
-        "title": "Pourquoi donner",
-        "text": "Soutien direct aux programmes des Pandits – vous contribuez directement à la paix mondiale."
-      },
-      "how": {
-        "title": "Utilisation",
-        "text": "Les dons vont directement à la formation, au logement, à la nourriture et aux soins des Pandits."
-      },
-      "global": {
-        "title": "Impact global",
-        "text": "Une influence mesurable scientifiquement de paix et de positivité sur la conscience collective."
-      }
-    },
-    "options": {
-      "oneTime": "Don unique",
-      "monthly": "Don mensuel"
-    },
+    "intro": "Merci de votre intérêt à soutenir notre Initiative pour la Paix. Chaque contribution compte — du don ponctuel au parrainage mensuel.",
     "bank": {
       "title": "Don par virement bancaire — sans frais",
-      "recipient": "Destinataire",
+      "intro": "Pour éviter les frais bancaires, faites un don directement par virement bancaire sur le compte PostFinance suivant :",
+      "heading": "Don sans frais par virement — votre don revient intégralement au projet :",
       "recipientValue": "Globale Friedensinitiative Schweiz, 4000 Basel",
-      "iban": "IBAN",
+      "ibanLabel": "IBAN",
       "ibanValue": "CH82 0900 0000 8547 9574 7",
-      "bic": "BIC/SWIFT",
+      "bicLabel": "BIC/SWIFT",
       "bicValue": "POFICHBEXXX",
-      "note": "100% nous parvient, sans commission"
+      "qrCaption": "Scanner avec l'app bancaire"
     },
     "twint": {
       "title": "Don par TWINT",
-      "step1": "Scanner le QR code",
-      "step2": "Confirmer le montant",
-      "fallback": "Pas d'app TWINT ? Donnez en ligne via RaiseNow."
+      "intro": "Le paiement est traité via RaiseNow ; après avoir scanné le QR code, vous serez redirigé vers le site web de RaiseNow.",
+      "badge": "Faire un don par TWINT !",
+      "step1": "Scanner le QR code avec l'app TWINT",
+      "step2": "Confirmer le montant et le don",
+      "fallbackLink": "Pas d'app TWINT ? Don en ligne via RaiseNow"
     },
     "creditcard": {
-      "title": "Don par carte de crédit (DonorBox)"
+      "title": "Don par carte de crédit (DonorBox)",
+      "intro": "Le paiement est traité via Donorbox."
     },
     "footer": {
       "volunteer": "Le comité de l'Initiative pour la Paix s'engage bénévolement.",
@@ -171,7 +160,8 @@
       "title": "Heures d'ouverture",
       "line1": "Lundi – vendredi : 9h00 – 17h00",
       "line2": "Samedi – dimanche : fermé"
-    }
+    },
+    "sendMessageTitle": "Envoyer un message"
   },
   "footer": {
     "imprint": "Mentions légales",

@@ -1,10 +1,5 @@
 ---
-// src/components/donate/DonateDonorBox.astro
-// -----------------------------------------------------------------------------
-// DonorBox embed for credit-card donations. The Friedensinitiative runs three
-// separate DonorBox campaigns (one per locale) — we pick the right one based
-// on the active locale.
-// -----------------------------------------------------------------------------
+// Credit card via Donorbox — Mailchimp-style: heading + intro link + embed.
 import { useTranslations, type Locale } from '@i18n/index';
 
 interface Props {
@@ -14,7 +9,6 @@ interface Props {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 
-// Campaign IDs per locale (from the old site's siteConfig)
 const donorboxCampaigns: Record<Locale, string> = {
   en: 'peaceinitiative',
   de: 'friedensinitiative',
@@ -22,16 +16,23 @@ const donorboxCampaigns: Record<Locale, string> = {
 };
 
 const campaign = donorboxCampaigns[locale];
+const donorboxUrl = `https://donorbox.org/${campaign}`;
 ---
-<section class="my-8">
-  <div class="bg-brand-gold-50 border-t-4 border-brand-gold-400 rounded-t-lg px-6 py-4">
-    <h2 class="text-2xl flex items-center gap-3">
-      <span aria-hidden="true">💳</span>
-      {t('donate.creditcard.title')}
-    </h2>
-  </div>
+<section class="my-12">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-brand-gold-700 uppercase tracking-wide mb-6">
+    {t('donate.creditcard.title')}
+  </h2>
 
-  <div class="border border-brand-gold-100 rounded-b-lg p-6 bg-white">
+  <p class="text-base text-brand-ink-soft mb-8 max-w-3xl mx-auto">
+    {t('donate.creditcard.intro')}
+    {' '}
+    <a href={donorboxUrl} target="_blank" rel="noopener noreferrer"
+       class="text-brand-gold-600 hover:text-brand-gold-700 underline">
+      {donorboxUrl.replace('https://', '')} →
+    </a>
+  </p>
+
+  <div class="max-w-2xl mx-auto">
     <iframe
       src={`https://donorbox.org/embed/${campaign}?language=${locale}`}
       name="donorbox"

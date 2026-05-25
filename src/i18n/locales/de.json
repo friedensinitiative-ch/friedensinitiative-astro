@@ -81,54 +81,43 @@
       "uid": "Unternehmens-Identifikationsnummer (UID): CHE-142.469.811",
       "docsTitle": "Dokumente",
       "docsStatutes": "Statuten herunterladen (PDF)"
-    }
+    },
+    "years": {
+      "earlyLife": "1918",
+      "teaching": "1955",
+      "vedicScience": "1960er+"
+    },
+    "quote": "Das Ziel der Transzendentalen Meditation ist der Zustand der Erleuchtung. Wir erfahren diese innere Ruhe, diesen stillen Zustand geringster Anregung, selbst wenn wir dynamisch beschäftigt sind.",
+    "quoteAttribution": "— Maharishi Mahesh Yogi"
   },
   "donate": {
     "hero": {
       "title": "Unterstützen Sie die Vedic Pandits",
       "subtitle": "Ihr Beitrag hilft, Frieden für die Welt zu schaffen"
     },
-    "intro": {
-      "p1": "Das Maharishi Vedic Pandits-Programm ist auf die grosszügige Unterstützung von Spendern wie Ihnen angewiesen.",
-      "p2": "Ihr Beitrag hilft bei der Ausbildung und Unterstützung dieser Friedensprofis, die ihr Leben der Schaffung von Harmonie und Kohärenz im Weltbewusstsein widmen.",
-      "p3": "Jeder Beitrag zählt — von der einmaligen Spende bis zur monatlichen Patenschaft."
-    },
-    "impact": {
-      "why": {
-        "title": "Warum spenden",
-        "text": "Direkte Unterstützung der Pandit-Programme – Sie tragen unmittelbar zum Weltfrieden bei."
-      },
-      "how": {
-        "title": "Wie verwendet",
-        "text": "Spenden fliessen direkt in Ausbildung, Unterbringung, Verpflegung und Betreuung der Pandits."
-      },
-      "global": {
-        "title": "Globale Wirkung",
-        "text": "Wissenschaftlich messbarer Einfluss von Frieden und Positivität auf das Weltbewusstsein."
-      }
-    },
-    "options": {
-      "oneTime": "Einmalig",
-      "monthly": "Monatlich"
-    },
+    "intro": "Vielen Dank für Ihr Interesse, unsere Friedensinitiative zu unterstützen. Jeder Beitrag zählt — von der einmaligen Spende bis zur monatlichen Patenschaft.",
     "bank": {
       "title": "Spenden per Banküberweisung — spesenfrei",
-      "recipient": "Empfänger",
+      "intro": "Zur Vermeidung von Bankspesen am Besten direkt per Banküberweisung auf folgendes PostFinance-Konto:",
+      "heading": "Spesenfrei spenden per Überweisung — Ihre Spende kommt vollumfänglich dem Projekt zugute:",
       "recipientValue": "Globale Friedensinitiative Schweiz, 4000 Basel",
-      "iban": "IBAN",
+      "ibanLabel": "IBAN",
       "ibanValue": "CH82 0900 0000 8547 9574 7",
-      "bic": "BIC/SWIFT",
+      "bicLabel": "BIC/SWIFT",
       "bicValue": "POFICHBEXXX",
-      "note": "100% kommt an, keine Kommission"
+      "qrCaption": "Mit Banking-App scannen"
     },
     "twint": {
       "title": "Spenden mit TWINT",
-      "step1": "QR scannen",
-      "step2": "Betrag bestätigen",
-      "fallback": "Keine TWINT-App? Spenden Sie online über RaiseNow."
+      "intro": "Der Spendenvorgang erfolgt über RaiseNow; nach dem Scannen des QR-Codes werden Sie auf die Webseite von RaiseNow weitergeleitet.",
+      "badge": "Jetzt mit TWINT spenden!",
+      "step1": "QR-Code mit der TWINT-App scannen",
+      "step2": "Betrag und Spende bestätigen",
+      "fallbackLink": "Keine TWINT-App? Online über RaiseNow spenden"
     },
     "creditcard": {
-      "title": "Spenden mit Kreditkarte (DonorBox)"
+      "title": "Spenden mit Kreditkarte (DonorBox)",
+      "intro": "Der Spendenvorgang erfolgt über Donorbox."
     },
     "footer": {
       "volunteer": "Der Vorstand der Friedensinitiative engagiert sich unentgeltlich.",
@@ -171,7 +160,8 @@
       "title": "Bürozeiten",
       "line1": "Montag – Freitag: 9:00 – 17:00 Uhr",
       "line2": "Samstag – Sonntag: geschlossen"
-    }
+    },
+    "sendMessageTitle": "Nachricht senden"
   },
   "footer": {
     "imprint": "Impressum",
