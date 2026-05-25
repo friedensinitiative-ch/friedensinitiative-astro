@@ -1,9 +1,8 @@
 ---
 // src/layouts/BaseLayout.astro
 // -----------------------------------------------------------------------------
-// Top-level HTML skeleton. Every page extends this.
-// Builds hreflang alternates from the route key so each locale points to its
-// own translated slug.
+// Top-level HTML skeleton. Builds hreflang alternates from the route key.
+// Loads multi-format favicons / PWA icons.
 // -----------------------------------------------------------------------------
 import type { Locale } from '@i18n/index';
 import { locales, defaultLocale } from '@i18n/index';
@@ -14,13 +13,11 @@ interface Props {
   locale: Locale;
   title: string;
   description?: string;
-  /** Logical route key for hreflang and canonical resolution */
   route?: RouteKey;
 }
 
 const { locale, title, description, route = 'home' } = Astro.props;
 
-// hreflang alternates: same route, every locale
 const alternates = locales.map((l) => ({
   locale: l,
   href: new URL(buildPath(route, l), Astro.site).toString(),
@@ -34,6 +31,7 @@ const htmlLang = locale === 'de' ? 'de-CH' : locale;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#D4AF37" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
 
@@ -53,7 +51,12 @@ const htmlLang = locale === 'de' ? 'de-CH' : locale;
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Favicon set: classic ico for older browsers, PNG for modern, Apple touch icon for iOS -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   </head>
   <body class="bg-brand-parchment text-brand-ink antialiased font-sans">
     <slot />

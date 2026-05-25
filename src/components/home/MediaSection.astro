@@ -1,6 +1,6 @@
 ---
 // src/components/home/MediaSection.astro
-// Photo/media section. Uses public/images/yagya-ceremony.jpg if present.
+// YouTube video embed for the Vedic Pandits in action.
 import { useTranslations, type Locale } from '@i18n/index';
 
 interface Props {
@@ -9,22 +9,38 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = useTranslations(locale);
+const videoId = t('media.videoId');
 ---
 <section class="bg-brand-parchment">
   <div class="max-w-content mx-auto px-4 py-16 md:py-24">
     <h2 class="text-3xl md:text-4xl mb-4">{t('media.title')}</h2>
     <p class="text-lg text-brand-ink-soft max-w-prose mb-8">{t('media.description')}</p>
 
-    <figure class="rounded-lg overflow-hidden shadow-sm border border-brand-gold-100">
-      <img
-        src="/images/yagya-ceremony.jpg"
-        alt={t('media.videoTitle')}
+    <!-- YouTube embed in responsive 16:9 container -->
+    <div class="relative w-full max-w-3xl rounded-lg overflow-hidden shadow-sm border border-brand-gold-100 bg-black" style="aspect-ratio: 16 / 9;">
+      <iframe
+        class="absolute inset-0 w-full h-full"
+        src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+        title={t('media.videoTitle')}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
         loading="lazy"
-        class="w-full h-auto object-cover"
-      />
-      <figcaption class="bg-white px-4 py-3 text-sm text-brand-ink-muted">
-        {t('media.videoTitle')}
-      </figcaption>
-    </figure>
+      ></iframe>
+    </div>
+
+    <!-- Fallback image (also shown to bots / no-JS) -->
+    <noscript>
+      <figure class="rounded-lg overflow-hidden shadow-sm border border-brand-gold-100 mt-4">
+        <img
+          src="/images/yagya-ceremony.jpg"
+          alt={t('media.videoTitle')}
+          class="w-full h-auto"
+        />
+        <figcaption class="bg-white px-4 py-3 text-sm text-brand-ink-muted">
+          {t('media.videoTitle')}
+        </figcaption>
+      </figure>
+    </noscript>
   </div>
 </section>

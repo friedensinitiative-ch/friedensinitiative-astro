@@ -1,7 +1,6 @@
 ---
 // src/components/donate/DonateTwint.astro
-// TWINT QR code section. Replace /uploads/twint-qr.png with the actual
-// TWINT merchant QR generated in the TWINT business portal.
+// TWINT QR with merchant code from public/uploads/twint-qr.png
 import { useTranslations, type Locale } from '@i18n/index';
 
 interface Props {
@@ -18,14 +17,14 @@ const t = useTranslations(locale);
   </h2>
 
   <div class="grid md:grid-cols-[auto_1fr] gap-8 items-center">
-    <!-- TWINT QR placeholder -->
-    <div
-      class="w-40 h-40 border-2 border-dashed border-brand-gold-200 rounded flex items-center justify-center text-xs text-center text-brand-ink-muted bg-white"
-      role="img"
-      aria-label="TWINT QR placeholder"
-    >
-      TWINT QR<br/>(Platzhalter)
-    </div>
+    <img
+      src="/uploads/twint-qr.png"
+      alt="TWINT QR"
+      width="160"
+      height="160"
+      loading="lazy"
+      class="w-40 h-40 rounded bg-white border border-brand-gold-100"
+    />
 
     <ol class="space-y-3 text-base">
       <li class="flex gap-3">

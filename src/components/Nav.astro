@@ -1,18 +1,16 @@
 ---
 // src/components/Nav.astro
 // -----------------------------------------------------------------------------
-// Top navigation with localized slugs, language switcher, and mobile dropdown.
+// Top navigation with localized slugs, gold globe logo, language switcher,
+// and mobile dropdown.
 //
 // Layout:
-//   Mobile  (< md): [Logo]              [Spenden] [≡]
-//                   └─ Hamburger menu contains:
-//                       • Nav links (Home, About, Contact)
-//                       • Divider
-//                       • Language switcher (DE / EN / FR)
-//   Desktop (≥ md): [Logo] [Links]   [DE EN FR] [Spenden]
+//   Mobile  (< md): [🌍 Friedensinitiative]            [Spenden] [≡]
+//   Desktop (≥ md): [🌍 Friedensinitiative] [Links]   [DE EN FR] [Spenden]
 // -----------------------------------------------------------------------------
 import { useTranslations, locales, type Locale } from '@i18n/index';
 import { buildPath, getRouteKey, type RouteKey } from '@i18n/routes';
+import Logo from './Logo.astro';
 
 interface Props {
   locale: Locale;
@@ -31,12 +29,18 @@ const navItems: { key: RouteKey; label: string }[] = [
 const localeLabels: Record<Locale, string> = { de: 'DE', en: 'EN', fr: 'FR' };
 ---
 <header class="border-b border-brand-gold-200/50 bg-brand-parchment/95 backdrop-blur sticky top-0 z-50">
-  <div class="max-w-content mx-auto px-4 py-4 flex items-center justify-between gap-3">
+  <div class="max-w-content mx-auto px-4 py-3 flex items-center justify-between gap-3">
 
-    <a href={buildPath('home', locale)} class="font-serif text-lg md:text-xl text-brand-ink hover:text-brand-gold-500 transition flex-shrink-0">
-      Friedensinitiative
+    <!-- Logo + Wortmarke -->
+    <a
+      href={buildPath('home', locale)}
+      class="flex items-center gap-2 font-serif text-brand-ink hover:text-brand-gold-500 transition flex-shrink-0"
+    >
+      <Logo height={28} />
+      <span class="text-lg md:text-xl">Friedensinitiative</span>
     </a>
 
+    <!-- Desktop nav links -->
     <nav class="hidden md:flex items-center gap-6 flex-1 justify-center">
       {navItems.map((item) => (
         <a

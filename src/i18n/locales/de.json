@@ -33,7 +33,7 @@
     "paragraph2": "Mit 14 Jahren haben sie die Möglichkeit, einer von vielen regionalen Einrichtungen in ganz Indien beizutreten und Unterricht unter der Aufsicht erfahrener Acharyas (Lehrer) zu erhalten. Die Studenten folgen einem systematischen und detaillierten Ausbildungsprogramm, das von Maharishi entworfen wurde und Videobänder und computergestütztes Lernen umfasst.",
     "paragraph3": "Wenn sie mit etwa 20 Jahren abschliessen, sind sie erfahren in der Durchführung von Yagyas. Yagya ist eine zeitlose Technologie aus der vedischen Tradition. Yagyas werden von Pandits durchgeführt, um die Naturgesetze zu beleben, die das Universum auf spezifische Weise verwalten.",
     "paragraph4": "Zum Beispiel kommen jeden Tag im Brahmasthan von Indien Tausende Pandits zusammen, um Atirudrabhishek durchzuführen, die mächtige Yagya für den Weltfrieden. Die UNESCO hat die vedische Rezitation offiziell als «immaterielles Kulturerbe der Menschheit» bezeichnet.",
-    "stat1Number": "1000+",
+    "stat1Number": "1331",
     "stat1Label": "Pandits täglich",
     "stat2Number": "10",
     "stat2Label": "Jahre Ausbildung"
@@ -41,7 +41,8 @@
   "media": {
     "title": "Klänge und Bilder",
     "description": "Um einen Eindruck von den Maharishi Vedic Pandits in Aktion zu bekommen, hier eine Bilderschau von Pandits, die Yagyas durchführen.",
-    "videoTitle": "Maharishi Vedic Pandits in Aktion"
+    "videoTitle": "Maharishi Vedic Pandits in Aktion",
+    "videoId": "ZQOxpwHk0fQ"
   },
   "about": {
     "hero": {
@@ -66,6 +67,16 @@
         "title": "Die Globale Friedensinitiative Schweiz",
         "text": "Die Globale Friedensinitiative Schweiz unterstützt die Maharishi Vedic Pandits in Indien, die täglich für den Weltfrieden meditieren und Yagyas durchführen. Wir sind eine gemeinnützige Organisation; der Vorstand engagiert sich unentgeltlich."
       }
+    },
+    "swiss": {
+      "title": "Die Schweizer Initiative",
+      "subtitle": "Unsere Trägerorganisation",
+      "founding": "Die Globale Friedensinitiative Schweiz wurde am 12. Juli 2012 in Seelisberg gegründet und hat ihren Sitz in Basel.",
+      "legal": "Der Verein ist im Sinne von Art. 60 ff. ZGB konstituiert.",
+      "tax": "Die Steuerverwaltung des Kantons Basel-Stadt hat dem Verein am 15. Januar 2013 die Steuerbefreiung zugestanden – sowohl für die kantonalen Steuern als auch für die direkte Bundessteuer.",
+      "uid": "Unternehmens-Identifikationsnummer (UID): CHE-142.469.811",
+      "docsTitle": "Dokumente",
+      "docsStatutes": "Statuten herunterladen (PDF)"
     }
   },
   "donate": {
@@ -148,9 +159,15 @@
     "info": {
       "title": "Kontaktinformationen",
       "email": "info@friedensinitiative.ch",
-      "address": "Globale Friedensinitiative Schweiz, 4000 Basel"
+      "address": "Globale Friedensinitiative Schweiz, 4000 Basel",
+      "phone": "+41 44 260 44 72"
     },
-    "responseTime": "Wir antworten in der Regel innerhalb von 24–48 Stunden an Werktagen."
+    "responseTime": "Wir antworten in der Regel innerhalb von 24–48 Stunden an Werktagen.",
+    "officeHours": {
+      "title": "Bürozeiten",
+      "line1": "Montag – Freitag: 9:00 – 17:00 Uhr",
+      "line2": "Samstag – Sonntag: geschlossen"
+    }
   },
   "footer": {
     "imprint": "Impressum",

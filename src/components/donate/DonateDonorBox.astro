@@ -1,26 +1,27 @@
 ---
 // src/components/donate/DonateDonorBox.astro
 // -----------------------------------------------------------------------------
-// DonorBox embed for credit card donations.
-//
-// PLACEHOLDER: Replace `DONORBOX_FORM_ID` below with the actual form ID once
-// retrieved from Mailchimp/old repo. The DonorBox documentation describes
-// how to find it in the embed code under their dashboard.
-//
-// Typical embed snippet looks like:
-//   <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
-//   <iframe src="https://donorbox.org/embed/FORM_ID" ... ></iframe>
+// DonorBox embed for credit-card donations. The Friedensinitiative runs three
+// separate DonorBox campaigns (one per locale) — we pick the right one based
+// on the active locale.
 // -----------------------------------------------------------------------------
 import { useTranslations, type Locale } from '@i18n/index';
 
 interface Props {
   locale: Locale;
-  /** DonorBox form ID (e.g. 'frieden-spenden'). Pass empty for placeholder. */
-  formId?: string;
 }
 
-const { locale, formId = '' } = Astro.props;
+const { locale } = Astro.props;
 const t = useTranslations(locale);
+
+// Campaign IDs per locale (from the old site's siteConfig)
+const donorboxCampaigns: Record<Locale, string> = {
+  en: 'peaceinitiative',
+  de: 'friedensinitiative',
+  fr: 'initiative-mondiale-de-paix',
+};
+
+const campaign = donorboxCampaigns[locale];
 ---
 <section class="my-8">
   <div class="bg-brand-gold-50 border-t-4 border-brand-gold-400 rounded-t-lg px-6 py-4">
@@ -31,23 +32,16 @@ const t = useTranslations(locale);
   </div>
 
   <div class="border border-brand-gold-100 rounded-b-lg p-6 bg-white">
-    {formId ? (
-      <iframe
-        src={`https://donorbox.org/embed/${formId}`}
-        name="donorbox"
-        seamless={true}
-        scrolling="no"
-        height="900px"
-        width="100%"
-        style="max-width: 600px; min-width: 250px; max-height: none !important; margin: 0 auto; display: block;"
-        allow="payment"
-        title="DonorBox donation form"
-      ></iframe>
-    ) : (
-      <div class="text-center py-12 text-brand-ink-muted text-sm border-2 border-dashed border-brand-gold-200 rounded bg-brand-gold-50/30">
-        <p class="font-medium mb-1">DonorBox Widget</p>
-        <p>(Form-ID wird nach Bereitstellung eingetragen)</p>
-      </div>
-    )}
+    <iframe
+      src={`https://donorbox.org/embed/${campaign}?language=${locale}`}
+      name="donorbox"
+      seamless
+      scrolling="no"
+      height="900px"
+      width="100%"
+      style="max-width: 600px; min-width: 250px; max-height: none !important; margin: 0 auto; display: block;"
+      allow="payment"
+      title={`DonorBox – ${campaign}`}
+    ></iframe>
   </div>
 </section>

@@ -33,7 +33,7 @@
     "paragraph2": "At age 14, they have the opportunity to join one of many regional facilities across India and receive instruction under the supervision of accomplished acharyas (teachers). The students follow a systematic and detailed training program designed by Maharishi that includes videotapes and computer-aided study.",
     "paragraph3": "When they graduate at about age 20, they are accomplished in performing Yagyas. Yagya is a timeless technology from the Vedic tradition. Yagyas are performed by Pandits to enliven the laws of nature that administer the universe in specific ways and for specific needs.",
     "paragraph4": "For instance, each day at the Brahmasthan of India, thousands of Pandits come together to perform Atirudrabhishek, the powerful Yagya for world peace. UNESCO has officially described Vedic recitation as an 'intangible heritage of humanity'.",
-    "stat1Number": "1000+",
+    "stat1Number": "1331",
     "stat1Label": "Pandits Daily",
     "stat2Number": "10",
     "stat2Label": "Years Training"
@@ -41,7 +41,8 @@
   "media": {
     "title": "Sounds and Sights",
     "description": "To get an impression of Maharishi Vedic Pandits in action, here is a slideshow of Pandits performing Yagyas.",
-    "videoTitle": "Maharishi Vedic Pandits in Action"
+    "videoTitle": "Maharishi Vedic Pandits in Action",
+    "videoId": "ZQOxpwHk0fQ"
   },
   "about": {
     "hero": {
@@ -66,6 +67,16 @@
         "title": "The Global Peace Initiative Switzerland",
         "text": "The Global Peace Initiative Switzerland supports the Maharishi Vedic Pandits in India who meditate and perform Yagyas daily for world peace. We are a non-profit organisation; the board volunteers its time."
       }
+    },
+    "swiss": {
+      "title": "The Swiss Initiative",
+      "subtitle": "Our Hosting Organisation",
+      "founding": "Globale Friedensinitiative Schweiz was founded on 12 July 2012 in Seelisberg and has its registered office in Basel.",
+      "legal": "It is constituted as a non-profit association under Articles 60 ff. of the Swiss Civil Code.",
+      "tax": "On 15 January 2013, the Tax Administration of the Canton of Basel-Stadt granted the association tax-exempt status for both cantonal taxes and the direct federal tax.",
+      "uid": "Swiss Business Identification Number (UID): CHE-142.469.811",
+      "docsTitle": "Documents",
+      "docsStatutes": "Download statutes (PDF)"
     }
   },
   "donate": {
@@ -148,9 +159,15 @@
     "info": {
       "title": "Contact information",
       "email": "info@friedensinitiative.ch",
-      "address": "Global Peace Initiative Switzerland, 4000 Basel"
+      "address": "Global Peace Initiative Switzerland, 4000 Basel",
+      "phone": "+41 44 260 44 72"
     },
-    "responseTime": "We usually respond within 24–48 hours on weekdays."
+    "responseTime": "We usually respond within 24–48 hours on weekdays.",
+    "officeHours": {
+      "title": "Office Hours",
+      "line1": "Monday – Friday: 9:00 AM – 5:00 PM",
+      "line2": "Saturday – Sunday: Closed"
+    }
   },
   "footer": {
     "imprint": "Imprint",

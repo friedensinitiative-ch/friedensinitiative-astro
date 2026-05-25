@@ -1,5 +1,4 @@
 ---
-// src/pages/en/contact.astro – English contact page
 import PageLayout from '@layouts/PageLayout.astro';
 import ContactForm from '@components/ContactForm.astro';
 import { useTranslations } from '@i18n/index';
@@ -28,22 +27,38 @@ const t = useTranslations(locale);
         <p class="mt-6 text-sm text-brand-ink-muted">{t('contact.responseTime')}</p>
       </div>
 
-      <aside class="card-soft self-start">
-        <h2 class="text-xl mb-4">{t('contact.info.title')}</h2>
-        <dl class="space-y-3 text-sm">
-          <div>
-            <dt class="text-brand-ink-muted uppercase tracking-wide text-xs mb-1">Email</dt>
-            <dd>
-              <a href={`mailto:${t('contact.info.email')}`} class="text-brand-gold-600 hover:text-brand-gold-700 underline">
-                {t('contact.info.email')}
-              </a>
-            </dd>
-          </div>
-          <div>
-            <dt class="text-brand-ink-muted uppercase tracking-wide text-xs mb-1">Address</dt>
-            <dd>{t('contact.info.address')}</dd>
-          </div>
-        </dl>
+      <aside class="space-y-6 self-start">
+        <div class="card-soft">
+          <h2 class="text-xl mb-4">{t('contact.info.title')}</h2>
+          <dl class="space-y-3 text-sm">
+            <div>
+              <dt class="text-brand-ink-muted uppercase tracking-wide text-xs mb-1">Email</dt>
+              <dd>
+                <a href={`mailto:${t('contact.info.email')}`} class="text-brand-gold-600 hover:text-brand-gold-700 underline">
+                  {t('contact.info.email')}
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-brand-ink-muted uppercase tracking-wide text-xs mb-1">Phone</dt>
+              <dd>
+                <a href={`tel:${t('contact.info.phone').replace(/\s/g, '')}`} class="text-brand-gold-600 hover:text-brand-gold-700">
+                  {t('contact.info.phone')}
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-brand-ink-muted uppercase tracking-wide text-xs mb-1">Address</dt>
+              <dd>{t('contact.info.address')}</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="card-soft">
+          <h3 class="text-lg mb-3">{t('contact.officeHours.title')}</h3>
+          <p class="text-sm text-brand-ink-soft">{t('contact.officeHours.line1')}</p>
+          <p class="text-sm text-brand-ink-soft">{t('contact.officeHours.line2')}</p>
+        </div>
       </aside>
     </div>
   </div>

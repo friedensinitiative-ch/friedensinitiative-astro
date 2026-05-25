@@ -33,7 +33,7 @@
     "paragraph2": "À 14 ans, ils ont l'opportunité de rejoindre l'une des nombreuses installations régionales à travers l'Inde et de recevoir un enseignement sous la supervision d'acharyas accomplis (enseignants). Les étudiants suivent un programme de formation systématique et détaillé conçu par Maharishi.",
     "paragraph3": "Lorsqu'ils obtiennent leur diplôme vers l'âge de 20 ans, ils sont accomplis dans l'exécution des Yagyas. Le Yagya est une technologie intemporelle de la tradition védique. Les Yagyas sont effectués par les Pandits pour vivifier les lois de la nature qui administrent l'univers.",
     "paragraph4": "Par exemple, chaque jour au Brahmasthan de l'Inde, des milliers de Pandits se réunissent pour effectuer l'Atirudrabhishek, le puissant Yagya pour la paix mondiale. L'UNESCO a officiellement décrit la récitation védique comme un « patrimoine immatériel de l'humanité ».",
-    "stat1Number": "1000+",
+    "stat1Number": "1331",
     "stat1Label": "Pandits quotidiens",
     "stat2Number": "10",
     "stat2Label": "Années de formation"
@@ -41,7 +41,8 @@
   "media": {
     "title": "Sons et Visions",
     "description": "Pour avoir une impression des Pandits Védiques Maharishi en action, voici un diaporama de Pandits effectuant des Yagyas.",
-    "videoTitle": "Pandits Védiques Maharishi en action"
+    "videoTitle": "Pandits Védiques Maharishi en action",
+    "videoId": "ZQOxpwHk0fQ"
   },
   "about": {
     "hero": {
@@ -66,6 +67,16 @@
         "title": "L'Initiative Mondiale pour la Paix Suisse",
         "text": "L'Initiative Mondiale pour la Paix Suisse soutient les Pandits Védiques Maharishi en Inde qui méditent et effectuent des Yagyas quotidiennement pour la paix mondiale. Nous sommes une organisation à but non lucratif ; le comité s'engage bénévolement."
       }
+    },
+    "swiss": {
+      "title": "L'Initiative suisse",
+      "subtitle": "Notre organisation porteuse",
+      "founding": "Initiative mondiale de Paix – Suisse a été fondée le 12 juillet 2012 à Seelisberg et a son siège à Bâle.",
+      "legal": "L'association est constituée au sens des art. 60 ss du Code civil suisse.",
+      "tax": "Le 15 janvier 2013, l'administration fiscale du canton de Bâle-Ville a accordé à l'association l'exonération fiscale, tant pour les impôts cantonaux que pour l'impôt fédéral direct.",
+      "uid": "Numéro d'identification des entreprises (IDE) : CHE-142.469.811",
+      "docsTitle": "Documents",
+      "docsStatutes": "Télécharger les statuts (PDF)"
     }
   },
   "donate": {
@@ -148,9 +159,15 @@
     "info": {
       "title": "Informations de contact",
       "email": "info@friedensinitiative.ch",
-      "address": "Initiative Mondiale pour la Paix Suisse, 4000 Basel"
+      "address": "Initiative Mondiale pour la Paix Suisse, 4000 Basel",
+      "phone": "+41 44 260 44 72"
     },
-    "responseTime": "Nous répondons généralement dans les 24–48 heures les jours ouvrables."
+    "responseTime": "Nous répondons généralement dans les 24–48 heures les jours ouvrables.",
+    "officeHours": {
+      "title": "Heures d'ouverture",
+      "line1": "Lundi – vendredi : 9h00 – 17h00",
+      "line2": "Samedi – dimanche : fermé"
+    }
   },
   "footer": {
     "imprint": "Mentions légales",

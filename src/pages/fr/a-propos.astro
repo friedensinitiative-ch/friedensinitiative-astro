@@ -1,5 +1,5 @@
 ---
-// src/pages/fr/a-propos.astro – Page à propos française
+// Auto-generated about page for locale: fr
 import PageLayout from '@layouts/PageLayout.astro';
 import { useTranslations } from '@i18n/index';
 
@@ -36,5 +36,25 @@ const sections = ['earlyLife', 'teaching', 'vedicScience', 'peaceInitiative'] as
         </section>
       ))}
     </div>
+
+    <!-- Swiss legal/organizational section -->
+    <section class="mt-16 pt-12 border-t border-brand-gold-200/50">
+      <h2 class="text-2xl md:text-3xl mb-2">{t('about.swiss.title')}</h2>
+      <p class="text-brand-gold-500 mb-6">{t('about.swiss.subtitle')}</p>
+
+      <div class="space-y-4 max-w-prose text-base text-brand-ink-soft">
+        <p>{t('about.swiss.founding')}</p>
+        <p>{t('about.swiss.legal')}</p>
+        <p>{t('about.swiss.tax')}</p>
+        <p class="font-mono text-sm text-brand-ink-muted">{t('about.swiss.uid')}</p>
+      </div>
+
+      <div class="mt-8 max-w-prose">
+        <h3 class="text-lg font-medium mb-3 text-brand-gold-700">{t('about.swiss.docsTitle')}</h3>
+        <a href="/uploads/statuten.pdf" class="text-brand-gold-600 hover:text-brand-gold-700 underline text-sm">
+          ↓ {t('about.swiss.docsStatutes')}
+        </a>
+      </div>
+    </section>
   </div>
 </PageLayout>

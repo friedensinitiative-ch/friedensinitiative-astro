@@ -1,10 +1,7 @@
 ---
 // src/components/donate/DonateBank.astro
-// -----------------------------------------------------------------------------
 // Bank transfer section — highlighted with gold border as preferred method.
-// Contains the Swiss QR code placeholder. Replace /uploads/bank-qr.png with
-// the actual generated Swiss QR-bill image.
-// -----------------------------------------------------------------------------
+// Includes Swiss QR-bill image from public/uploads/swiss-qr.png.
 import { useTranslations, type Locale } from '@i18n/index';
 
 interface Props {
@@ -37,14 +34,14 @@ const t = useTranslations(locale);
     </dl>
 
     <div class="flex flex-col items-center">
-      <!-- Swiss QR-bill placeholder. Replace with actual QR image. -->
-      <div
-        class="w-40 h-40 border-2 border-dashed border-brand-gold-300 rounded flex items-center justify-center text-xs text-center text-brand-ink-muted bg-brand-gold-50"
-        role="img"
-        aria-label="Swiss QR Bill placeholder"
-      >
-        Swiss QR-Bill<br/>(Platzhalter)
-      </div>
+      <img
+        src="/uploads/swiss-qr.png"
+        alt="Swiss QR-Bill"
+        width="160"
+        height="160"
+        loading="lazy"
+        class="w-40 h-40 border border-brand-gold-100 rounded bg-white"
+      />
       <p class="text-xs text-brand-ink-muted mt-2 text-center max-w-[10rem]">
         Mit Banking-App scannen
       </p>
