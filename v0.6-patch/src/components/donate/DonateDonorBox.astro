@@ -1,0 +1,47 @@
+---
+// src/components/donate/DonateDonorBox.astro
+// -----------------------------------------------------------------------------
+// DonorBox embed for credit-card donations. The Friedensinitiative runs three
+// separate DonorBox campaigns (one per locale) — we pick the right one based
+// on the active locale.
+// -----------------------------------------------------------------------------
+import { useTranslations, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+// Campaign IDs per locale (from the old site's siteConfig)
+const donorboxCampaigns: Record<Locale, string> = {
+  en: 'peaceinitiative',
+  de: 'friedensinitiative',
+  fr: 'initiative-mondiale-de-paix',
+};
+
+const campaign = donorboxCampaigns[locale];
+---
+<section class="my-8">
+  <div class="bg-brand-gold-50 border-t-4 border-brand-gold-400 rounded-t-lg px-6 py-4">
+    <h2 class="text-2xl flex items-center gap-3">
+      <span aria-hidden="true">💳</span>
+      {t('donate.creditcard.title')}
+    </h2>
+  </div>
+
+  <div class="border border-brand-gold-100 rounded-b-lg p-6 bg-white">
+    <iframe
+      src={`https://donorbox.org/embed/${campaign}?language=${locale}`}
+      name="donorbox"
+      seamless
+      scrolling="no"
+      height="900px"
+      width="100%"
+      style="max-width: 600px; min-width: 250px; max-height: none !important; margin: 0 auto; display: block;"
+      allow="payment"
+      title={`DonorBox – ${campaign}`}
+    ></iframe>
+  </div>
+</section>

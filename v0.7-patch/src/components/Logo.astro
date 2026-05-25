@@ -1,0 +1,26 @@
+---
+// src/components/Logo.astro
+// -----------------------------------------------------------------------------
+// Brand mark: gold world map (the original Friedensinitiative logo).
+// The image lives in public/images/logo.png — copied from the legacy site.
+// -----------------------------------------------------------------------------
+
+interface Props {
+  /** Visual height of the logo in pixels (the aspect ratio is preserved) */
+  height?: number;
+  /** Tailwind classes for the wrapping element */
+  class?: string;
+  /** Alt text — set per locale where Logo is used in headers */
+  alt?: string;
+}
+
+const { height = 32, class: className = '', alt = 'Globale Friedensinitiative Schweiz' } = Astro.props;
+---
+<img
+  src="/images/logo.png"
+  alt={alt}
+  height={height}
+  style={`height: ${height}px; width: auto;`}
+  class={`inline-block ${className}`}
+  decoding="async"
+/>

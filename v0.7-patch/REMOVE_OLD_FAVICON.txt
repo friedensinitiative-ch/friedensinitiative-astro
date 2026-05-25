@@ -1,0 +1,6 @@
+WICHTIG: Vor dem Anwenden dieses Patches die alte SVG-Datei löschen:
+
+PowerShell:
+  Remove-Item C:\Users\fkaeg\Projects\friedensinitiative-astro\public\favicon.svg -ErrorAction SilentlyContinue
+
+Wenn die Datei nicht da ist, ist auch ok. Sie kommt aus v0.6 und wird durch die richtigen Favicons ersetzt.

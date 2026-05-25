@@ -1,0 +1,64 @@
+---
+// src/layouts/BaseLayout.astro
+// -----------------------------------------------------------------------------
+// Top-level HTML skeleton. Builds hreflang alternates from the route key.
+// Loads multi-format favicons / PWA icons.
+// -----------------------------------------------------------------------------
+import type { Locale } from '@i18n/index';
+import { locales, defaultLocale } from '@i18n/index';
+import { buildPath, type RouteKey } from '@i18n/routes';
+import '../styles/global.css';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description?: string;
+  route?: RouteKey;
+}
+
+const { locale, title, description, route = 'home' } = Astro.props;
+
+const alternates = locales.map((l) => ({
+  locale: l,
+  href: new URL(buildPath(route, l), Astro.site).toString(),
+}));
+
+const htmlLang = locale === 'de' ? 'de-CH' : locale;
+---
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#D4AF37" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+
+    {alternates.map(({ locale: l, href }) => (
+      <link rel="alternate" hreflang={l === 'de' ? 'de-CH' : l} href={href} />
+    ))}
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(buildPath(route, defaultLocale), Astro.site).toString()}
+    />
+    <link rel="canonical" href={new URL(buildPath(route, locale), Astro.site).toString()} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon set: classic ico for older browsers, PNG for modern, Apple touch icon for iOS -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  </head>
+  <body class="bg-brand-parchment text-brand-ink antialiased font-sans">
+    <slot />
+  </body>
+</html>
