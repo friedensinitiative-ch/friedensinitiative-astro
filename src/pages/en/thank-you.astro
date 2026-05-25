@@ -1,0 +1,31 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import { useTranslations } from '@i18n/index';
+import { buildPath } from '@i18n/routes';
+
+const locale = 'en' as const;
+const t = useTranslations(locale);
+const homePath = buildPath('home', locale);
+---
+<PageLayout
+  {locale}
+  title={`${t('thanks.title')} – ${t('hero.subtitle')}`}
+  description={t('thanks.subtitle')}
+  route="thanks"
+
+>
+  <section class="bg-gradient-to-b from-brand-parchment to-white">
+    <div class="max-w-content mx-auto px-4 py-20 md:py-32 text-center">
+      <div class="text-6xl mb-6" aria-hidden="true">🙏</div>
+      <h1 class="text-4xl md:text-5xl mb-4">{t('thanks.title')}</h1>
+      <p class="text-xl text-brand-gold-500 mb-8 max-w-prose mx-auto">{t('thanks.subtitle')}</p>
+      <p class="text-base text-brand-ink-soft mb-10 max-w-prose mx-auto">{t('thanks.message')}</p>
+      <a
+        href={homePath}
+        class="inline-flex items-center gap-2 px-6 py-2.5 bg-brand-gold-400 text-white rounded font-medium hover:bg-brand-gold-500 transition"
+      >
+        ← {t('thanks.backLink')}
+      </a>
+    </div>
+  </section>
+</PageLayout>

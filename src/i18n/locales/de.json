@@ -179,5 +179,11 @@
     "prevLabel": "Vorheriges Bild",
     "nextLabel": "Nächstes Bild",
     "counter": "{current} von {total}"
+  },
+  "thanks": {
+    "title": "Vielen Dank",
+    "subtitle": "Ihre Nachricht ist angekommen",
+    "message": "Wir haben Ihre Nachricht erhalten und melden uns in der Regel innerhalb von 24-48 Stunden an Werktagen.",
+    "backLink": "Zurück zur Startseite"
   }
 }

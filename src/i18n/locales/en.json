@@ -179,5 +179,11 @@
     "prevLabel": "Previous image",
     "nextLabel": "Next image",
     "counter": "{current} of {total}"
+  },
+  "thanks": {
+    "title": "Thank You",
+    "subtitle": "Your message has been received",
+    "message": "We have received your message and will typically respond within 24-48 hours on business days.",
+    "backLink": "Back to homepage"
   }
 }
