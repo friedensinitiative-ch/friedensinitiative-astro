@@ -1,0 +1,48 @@
+---
+// Credit card via Donorbox — Mailchimp-style: heading + intro link + embed.
+import { useTranslations, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const donorboxCampaigns: Record<Locale, string> = {
+  en: 'peaceinitiative',
+  de: 'friedensinitiative',
+  fr: 'initiative-mondiale-de-paix',
+};
+
+const campaign = donorboxCampaigns[locale];
+const donorboxUrl = `https://donorbox.org/${campaign}`;
+---
+<section class="my-12">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-brand-gold-700 uppercase tracking-wide mb-6">
+    {t('donate.creditcard.title')}
+  </h2>
+
+  <p class="text-base text-brand-ink-soft mb-8 max-w-3xl mx-auto">
+    {t('donate.creditcard.intro')}
+    {' '}
+    <a href={donorboxUrl} target="_blank" rel="noopener noreferrer"
+       class="text-brand-gold-600 hover:text-brand-gold-700 underline">
+      {donorboxUrl.replace('https://', '')} →
+    </a>
+  </p>
+
+  <div class="max-w-2xl mx-auto">
+    <iframe
+      src={`https://donorbox.org/embed/${campaign}?language=${locale}`}
+      name="donorbox"
+      seamless
+      scrolling="no"
+      height="900px"
+      width="100%"
+      style="max-width: 600px; min-width: 250px; max-height: none !important; margin: 0 auto; display: block;"
+      allow="payment"
+      title={`DonorBox – ${campaign}`}
+    ></iframe>
+  </div>
+</section>
