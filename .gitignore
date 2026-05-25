@@ -24,3 +24,11 @@ pnpm-debug.log*
 !.vscode/extensions.json
 !.vscode/settings.json
 .idea/
+
+# Patch directories (workspace only, not source)
+v*-patch/
+
+# Root-level images (belong in public/images/, not here)
+/*.jpg
+/*.png
+
