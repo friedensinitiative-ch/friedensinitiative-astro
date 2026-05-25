@@ -13,11 +13,9 @@
 
 backend:
   name: github
-  repo: REPLACE-ORG/friedensinitiative-astro
+  repo: friedensinitiative-ch/friedensinitiative-astro
   branch: main
-  # OAuth helper — replace once deployed.
-  # Example for Cloudflare Workers: https://your-worker.workers.dev/auth
-  base_url: https://REPLACE-WITH-OAUTH-HELPER.example.com
+  base_url: https://sveltia-cms-auth.raja-felix-kaegi.workers.dev
   auth_endpoint: auth
 
 # Optional editorial workflow (PRs instead of direct commits).
