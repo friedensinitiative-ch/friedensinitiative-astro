@@ -1,0 +1,109 @@
+---
+// src/components/ContactForm.astro
+// -----------------------------------------------------------------------------
+// Native Netlify Forms integration: Netlify auto-detects the form via the
+// `data-netlify` attribute and the hidden `form-name` input. Submissions
+// appear in the Netlify dashboard under "Forms" and (optionally) trigger
+// email notifications.
+//
+// Setup checklist on Netlify side:
+//  1. Forms are detected automatically on first deploy — nothing to enable
+//  2. Configure email notifications: Site settings → Forms → Form notifications
+//
+// No serverside code needed in this Astro project.
+// -----------------------------------------------------------------------------
+import { useTranslations, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const subjectOptions: { value: string; key: string }[] = [
+  { value: 'general',    key: 'general' },
+  { value: 'donation',   key: 'donation' },
+  { value: 'volunteer',  key: 'volunteer' },
+  { value: 'media',      key: 'media' },
+  { value: 'other',      key: 'other' },
+];
+---
+<form
+  name={`contact-${locale}`}
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  class="space-y-5"
+>
+  <!-- Netlify form identifier (required for static-site form detection) -->
+  <input type="hidden" name="form-name" value={`contact-${locale}`} />
+
+  <!-- Honeypot field: hidden from humans, bots fill it and get rejected -->
+  <p class="hidden">
+    <label>Don't fill this out: <input name="bot-field" /></label>
+  </p>
+
+  <div>
+    <label class="block mb-1 text-sm font-medium text-brand-ink-soft" for="contact-name">
+      {t('contact.form.name')} *
+    </label>
+    <input
+      id="contact-name"
+      name="name"
+      type="text"
+      required
+      class="w-full px-3 py-2 border border-brand-gold-200 rounded focus:border-brand-gold-400 focus:outline-none focus:ring-1 focus:ring-brand-gold-400 bg-white"
+    />
+  </div>
+
+  <div>
+    <label class="block mb-1 text-sm font-medium text-brand-ink-soft" for="contact-email">
+      {t('contact.form.email')} *
+    </label>
+    <input
+      id="contact-email"
+      name="email"
+      type="email"
+      required
+      class="w-full px-3 py-2 border border-brand-gold-200 rounded focus:border-brand-gold-400 focus:outline-none focus:ring-1 focus:ring-brand-gold-400 bg-white"
+    />
+  </div>
+
+  <div>
+    <label class="block mb-1 text-sm font-medium text-brand-ink-soft" for="contact-subject">
+      {t('contact.form.subject')} *
+    </label>
+    <select
+      id="contact-subject"
+      name="subject"
+      required
+      class="w-full px-3 py-2 border border-brand-gold-200 rounded focus:border-brand-gold-400 focus:outline-none focus:ring-1 focus:ring-brand-gold-400 bg-white"
+    >
+      <option value="">{t('contact.subjectOptions.placeholder')}</option>
+      {subjectOptions.map((opt) => (
+        <option value={opt.value}>{t(`contact.subjectOptions.${opt.key}`)}</option>
+      ))}
+    </select>
+  </div>
+
+  <div>
+    <label class="block mb-1 text-sm font-medium text-brand-ink-soft" for="contact-message">
+      {t('contact.form.message')} *
+    </label>
+    <textarea
+      id="contact-message"
+      name="message"
+      rows="6"
+      required
+      class="w-full px-3 py-2 border border-brand-gold-200 rounded focus:border-brand-gold-400 focus:outline-none focus:ring-1 focus:ring-brand-gold-400 bg-white"
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="px-6 py-2.5 bg-brand-gold-400 text-white rounded font-medium hover:bg-brand-gold-500 transition"
+  >
+    {t('contact.form.send')}
+  </button>
+</form>

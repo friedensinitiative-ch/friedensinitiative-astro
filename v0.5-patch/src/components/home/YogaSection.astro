@@ -1,0 +1,42 @@
+---
+// src/components/home/YogaSection.astro
+// Yoga/TM/TM-Sidhi section with Sanskrit quote block.
+import { useTranslations, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+// Custom highlight for this section: two highlight slots, one in gold, one slightly different shade.
+const renderTwoHighlights = (text: string) =>
+  text
+    .replace(/\{\{highlight1\}\}(.*?)\{\{\/highlight1\}\}/g, '<span class="text-brand-gold-500">$1</span>')
+    .replace(/\{\{highlight2\}\}(.*?)\{\{\/highlight2\}\}/g, '<span class="text-brand-gold-500">$1</span>');
+---
+<section class="bg-brand-parchment">
+  <div class="max-w-content mx-auto px-4 py-16 md:py-24">
+    <h2
+      class="text-3xl md:text-4xl mb-8 max-w-prose"
+      set:html={renderTwoHighlights(t('yoga.title'))}
+    />
+    <div class="space-y-5 text-lg text-brand-ink-soft max-w-prose mb-10">
+      <p>{t('yoga.paragraph1')}</p>
+      <p>{t('yoga.paragraph2')}</p>
+    </div>
+
+    <!-- Sanskrit quote block -->
+    <blockquote class="my-12 border-l-4 border-brand-gold-400 pl-6 py-2 max-w-prose">
+      <p class="text-sm text-brand-ink-muted mb-3">{t('yoga.quoteIntro')}</p>
+      <p class="font-serif text-2xl md:text-3xl text-brand-gold-700 italic mb-3">
+        {t('yoga.sanskritQuote')}
+      </p>
+      <p class="text-base text-brand-ink-soft mb-2">{t('yoga.quoteTranslation')}</p>
+      <footer class="text-sm text-brand-ink-muted">{t('yoga.quoteSource')}</footer>
+    </blockquote>
+
+    <p class="text-lg text-brand-ink-soft max-w-prose">{t('yoga.closingText')}</p>
+  </div>
+</section>

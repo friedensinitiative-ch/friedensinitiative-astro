@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "donate": "Spenden",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Frieden schaffende Gruppe",
+    "title": "Maharishi {{highlight}}Vedic Pandits{{/highlight}}",
+    "description": "Frieden für die Welt durch die zeitlosen vedischen Traditionen Indiens",
+    "scrollDown": "Entdecken"
+  },
+  "training": {
+    "title": "Systematische Ausbildung der {{highlight}}Maharishi Vedic Pandits{{/highlight}}",
+    "paragraph1": "Von jungen Jahren an durchlaufen Studenten aus traditionellen vedischen Familien Indiens eine systematische Ausbildung, um Friedensprofis zu werden – Maharishi Vedic Pandits. Vom Alter von 10 bis 20 Jahren folgen sie einem speziellen Studienprogramm, das von Maharishi entworfen wurde.",
+    "paragraph2": "Es umfasst das Erlernen der Transzendentalen Meditation und des TM-Sidhi-Programms sowie des Yogic Flying, das Studium von Sanskrit und die Erlangung von Fähigkeiten in der Durchführung von Yagyas, den traditionellen vedischen Zeremonien, die Glück und Frieden bringen.",
+    "paragraph3": "Ihr tägliches Studium wird mit Credits für Bachelor-, Master- und Ph.D.-Programme angerechnet, die von der Maharishi Mahesh Yogi Vedic Vishwavidyalaya verliehen werden, einer staatlichen Universität, die 1995 von der Regierung von Madhya Pradesh gegründet wurde."
+  },
+  "yoga": {
+    "title": "Experten in Yoga – {{highlight1}}Transzendentale Meditation{{/highlight1}} und {{highlight2}}Yogic Flying{{/highlight2}}",
+    "paragraph1": "Mehrere Stunden täglich üben die Maharishi Vedic Pandits im Brahmasthan das Wesen des Yoga – das Transzendentale Meditation und TM-Sidhi-Programm. Das TM-Sidhi-Programm einschliesslich Yogic Flying wurde von Maharishi aus den Yoga-Sutren von Patanjali abgeleitet – dem zentralen Text der Yoga-Philosophie.",
+    "paragraph2": "Dieses Programm entwickelt die Fähigkeit, aus stilleren und kohärenteren Bewusstseinsebenen zu handeln. Je mehr die Pandits in die Fähigkeit wachsen, aus subtileren Bewusstseinsebenen zu handeln, desto effektiver werden sie bei ihrer täglichen vedischen Praxis für den Weltfrieden.",
+    "quoteIntro": "Der wichtigste vedische Text des Yoga – die Yoga-Sutren – beschreibt, wie Frieden durch die Erfahrung des Transzendierens geschaffen werden kann:",
+    "sanskritQuote": "Tat sannidhau vairatyagah",
+    "quoteTranslation": "«In der Nähe des Yoga (der Erfahrung des transzendentalen Bewusstseins, des vereinheitlichten Feldes) werden feindliche, konfliktträchtige Tendenzen beseitigt.»",
+    "quoteSource": "– Yoga-Sutra 2.35",
+    "closingText": "Wenn durch fortgeschrittene Meditation das transzendentale Bewusstsein von einer ausreichend grossen Gruppe belebt wird, erstreckt sich die «Nähe des Yoga» – die Region, die vom friedlichen Einfluss profitiert – auf die ganze Welt. Dies ist die Strategie der Globalen Friedensinitiative."
+  },
+  "yagya": {
+    "title": "Experten in {{highlight}}Yagya{{/highlight}} – umfassende Ausbildung in vedischen Zeremonien",
+    "paragraph1": "In zahlreichen kleinen Dörfern in Indien schuf Maharishi ein Netzwerk von Unterricht für Studenten, die Maharishi Vedic Pandits werden wollten. In jedem Dorf beginnen Lehrer, bekannt als Guru Jis, mit der Ausbildung von Pandit-Studenten im Alter von 10 Jahren.",
+    "paragraph2": "Mit 14 Jahren haben sie die Möglichkeit, einer von vielen regionalen Einrichtungen in ganz Indien beizutreten und Unterricht unter der Aufsicht erfahrener Acharyas (Lehrer) zu erhalten. Die Studenten folgen einem systematischen und detaillierten Ausbildungsprogramm, das von Maharishi entworfen wurde und Videobänder und computergestütztes Lernen umfasst.",
+    "paragraph3": "Wenn sie mit etwa 20 Jahren abschliessen, sind sie erfahren in der Durchführung von Yagyas. Yagya ist eine zeitlose Technologie aus der vedischen Tradition. Yagyas werden von Pandits durchgeführt, um die Naturgesetze zu beleben, die das Universum auf spezifische Weise verwalten.",
+    "paragraph4": "Zum Beispiel kommen jeden Tag im Brahmasthan von Indien Tausende Pandits zusammen, um Atirudrabhishek durchzuführen, die mächtige Yagya für den Weltfrieden. Die UNESCO hat die vedische Rezitation offiziell als «immaterielles Kulturerbe der Menschheit» bezeichnet.",
+    "stat1Number": "1000+",
+    "stat1Label": "Pandits täglich",
+    "stat2Number": "10",
+    "stat2Label": "Jahre Ausbildung"
+  },
+  "media": {
+    "title": "Klänge und Bilder",
+    "description": "Um einen Eindruck von den Maharishi Vedic Pandits in Aktion zu bekommen, hier eine Bilderschau von Pandits, die Yagyas durchführen.",
+    "videoTitle": "Maharishi Vedic Pandits in Aktion"
+  },
+  "about": {
+    "hero": {
+      "title": "Über die Friedensinitiative",
+      "subtitle": "Maharishi Mahesh Yogi und sein Vermächtnis für den Weltfrieden"
+    },
+    "intro": "Maharishi Mahesh Yogi (1918–2008) war der Begründer der Transzendentalen Meditationstechnik und des Global Country of World Peace. Er widmete sein Leben der Vermittlung der zeitlosen Weisheit der vedischen Tradition an die moderne Welt.",
+    "sections": {
+      "earlyLife": {
+        "title": "Frühes Leben und Ausbildung",
+        "text": "Als Mahesh Prasad Varma in Jabalpur, Indien geboren, studierte Maharishi Physik an der Allahabad University, bevor er seinen Meister Swami Brahmananda Saraswati traf. Dreizehn Jahre lang diente er als persönlicher Sekretär und Schüler seines Meisters und nahm die alte vedische Weisheit in sich auf."
+      },
+      "teaching": {
+        "title": "Lehrmission",
+        "text": "1955 begann Maharishi, Transzendentale Meditation in ganz Indien zu unterrichten. 1959 machte er seinen ersten Besuch im Westen und begann eine weltweite Mission, die schliesslich diese einfache, natürliche Technik Millionen von Menschen in über 100 Ländern bringen würde."
+      },
+      "vedicScience": {
+        "title": "Vedische Wissenschaft",
+        "text": "Maharishi belebte das vollständige Wissen der vedischen Tradition wieder, einschliesslich Ayurveda, Vedischer Architektur (Sthapatya Veda), Vedischer Musik (Gandharva Veda) und der Technologien von Yagya und Jyotish. Er gründete Universitäten und Institutionen weltweit, um diese alte Weisheit zu bewahren und zu lehren."
+      },
+      "peaceInitiative": {
+        "title": "Die Globale Friedensinitiative Schweiz",
+        "text": "Die Globale Friedensinitiative Schweiz unterstützt die Maharishi Vedic Pandits in Indien, die täglich für den Weltfrieden meditieren und Yagyas durchführen. Wir sind eine gemeinnützige Organisation; der Vorstand engagiert sich unentgeltlich."
+      }
+    }
+  },
+  "donate": {
+    "hero": {
+      "title": "Unterstützen Sie die Vedic Pandits",
+      "subtitle": "Ihr Beitrag hilft, Frieden für die Welt zu schaffen"
+    },
+    "intro": {
+      "p1": "Das Maharishi Vedic Pandits-Programm ist auf die grosszügige Unterstützung von Spendern wie Ihnen angewiesen.",
+      "p2": "Ihr Beitrag hilft bei der Ausbildung und Unterstützung dieser Friedensprofis, die ihr Leben der Schaffung von Harmonie und Kohärenz im Weltbewusstsein widmen.",
+      "p3": "Jeder Beitrag zählt — von der einmaligen Spende bis zur monatlichen Patenschaft."
+    },
+    "impact": {
+      "why": {
+        "title": "Warum spenden",
+        "text": "Direkte Unterstützung der Pandit-Programme – Sie tragen unmittelbar zum Weltfrieden bei."
+      },
+      "how": {
+        "title": "Wie verwendet",
+        "text": "Spenden fliessen direkt in Ausbildung, Unterbringung, Verpflegung und Betreuung der Pandits."
+      },
+      "global": {
+        "title": "Globale Wirkung",
+        "text": "Wissenschaftlich messbarer Einfluss von Frieden und Positivität auf das Weltbewusstsein."
+      }
+    },
+    "options": {
+      "oneTime": "Einmalig",
+      "monthly": "Monatlich"
+    },
+    "bank": {
+      "title": "Spenden per Banküberweisung — spesenfrei",
+      "recipient": "Empfänger",
+      "recipientValue": "Globale Friedensinitiative Schweiz, 4000 Basel",
+      "iban": "IBAN",
+      "ibanValue": "CH82 0900 0000 8547 9574 7",
+      "bic": "BIC/SWIFT",
+      "bicValue": "POFICHBEXXX",
+      "note": "100% kommt an, keine Kommission"
+    },
+    "twint": {
+      "title": "Spenden mit TWINT",
+      "step1": "QR scannen",
+      "step2": "Betrag bestätigen",
+      "fallback": "Keine TWINT-App? Spenden Sie online über RaiseNow."
+    },
+    "creditcard": {
+      "title": "Spenden mit Kreditkarte (DonorBox)"
+    },
+    "footer": {
+      "volunteer": "Der Vorstand der Friedensinitiative engagiert sich unentgeltlich.",
+      "contact": "spenden@friedensinitiative.ch",
+      "tax": "Spenden an die Globale Friedensinitiative Schweiz sind im gesetzlich zulässigen Rahmen steuerlich abzugsfähig. Eine Spendenbescheinigung erhalten Sie auf Anfrage."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontaktieren Sie uns",
+      "subtitle": "Wir freuen uns von Ihnen zu hören"
+    },
+    "intro": "Haben Sie Fragen zum Maharishi Vedic Pandits-Programm? Möchten Sie mehr darüber erfahren, wie Sie den Weltfrieden unterstützen können? Nehmen Sie Kontakt mit uns auf.",
+    "form": {
+      "name": "Ihr Name",
+      "email": "E-Mail-Adresse",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet…",
+      "success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.",
+      "error": "Entschuldigung, beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "subjectOptions": {
+      "placeholder": "Bitte Betreff wählen",
+      "general": "Allgemeine Anfrage",
+      "donation": "Fragen zu Spenden",
+      "volunteer": "Mitmachen / Freiwilligenarbeit",
+      "media": "Medienanfragen",
+      "other": "Sonstiges"
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "info@friedensinitiative.ch",
+      "address": "Globale Friedensinitiative Schweiz, 4000 Basel"
+    },
+    "responseTime": "Wir antworten in der Regel innerhalb von 24–48 Stunden an Werktagen."
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© {{year}} Globale Friedensinitiative Schweiz · Brahmananda Saraswati Foundation",
+    "trademark": "Transzendentale Meditation, TM, TM-Sidhi, Maharishi, Maharishi Yagya, Maharishi Jyotish, Maharishi Vedic und Yogic Flying sind geschützte Marken in vielen Ländern der Welt, einschliesslich der Vereinigten Staaten und der Europäischen Union."
+  }
+}

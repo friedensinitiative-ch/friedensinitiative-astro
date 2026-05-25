@@ -1,0 +1,39 @@
+---
+// src/components/home/YagyaSection.astro
+// Yagya section with stats cards (Pandits daily, Years of training).
+import { useTranslations, renderHighlight, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+<section class="bg-white">
+  <div class="max-w-content mx-auto px-4 py-16 md:py-24">
+    <h2
+      class="text-3xl md:text-4xl mb-8 max-w-prose"
+      set:html={renderHighlight(t('yagya.title'))}
+    />
+
+    <div class="space-y-5 text-lg text-brand-ink-soft max-w-prose mb-10">
+      <p>{t('yagya.paragraph1')}</p>
+      <p>{t('yagya.paragraph2')}</p>
+      <p>{t('yagya.paragraph3')}</p>
+      <p>{t('yagya.paragraph4')}</p>
+    </div>
+
+    <!-- Stats cards -->
+    <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mt-10">
+      <div class="card-soft text-center">
+        <div class="font-serif text-4xl text-brand-gold-500 mb-2">{t('yagya.stat1Number')}</div>
+        <div class="text-sm uppercase tracking-widest text-brand-ink-muted">{t('yagya.stat1Label')}</div>
+      </div>
+      <div class="card-soft text-center">
+        <div class="font-serif text-4xl text-brand-gold-500 mb-2">{t('yagya.stat2Number')}</div>
+        <div class="text-sm uppercase tracking-widest text-brand-ink-muted">{t('yagya.stat2Label')}</div>
+      </div>
+    </div>
+  </div>
+</section>
