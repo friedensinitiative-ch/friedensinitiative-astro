@@ -10,6 +10,13 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Disable Netlify's HTML/CSS/JS post-processing.
+# Astro already produces optimized output. Netlify's post-processor was
+# stripping Netlify Forms attributes (data-netlify, hidden form-name input)
+# and rewriting our relative URLs to absolute ones, breaking the form flow.
+[build.processing]
+  skip_processing = true
+
 # Security headers — sensible defaults for a static site
 [[headers]]
   for = "/*"
