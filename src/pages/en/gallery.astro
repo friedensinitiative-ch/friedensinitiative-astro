@@ -12,10 +12,16 @@ const labels = {
   nextLabel: t('gallery.nextLabel'),
   counter: t('gallery.counter'),
 };
+
+const headings = {
+  maharishi: t('gallery.sections.maharishi'),
+  pandits: t('gallery.sections.pandits'),
+  kongo: t('gallery.sections.kongo'),
+};
 ---
 <PageLayout
   {locale}
-  title={`${t('gallery.hero.title')} – ${t('hero.subtitle')}`}
+  title={`${t('gallery.hero.title')} – ${t('gallery.hero.subtitle')}`}
   description={t('gallery.hero.subtitle')}
   route="gallery"
 >
@@ -28,6 +34,6 @@ const labels = {
 
   <div class="max-w-content mx-auto px-4 py-6">
     <p class="text-base text-brand-ink-soft max-w-prose mb-8">{t('gallery.intro')}</p>
-    <PhotoGallery {labels} />
+    <PhotoGallery {labels} {headings} />
   </div>
 </PageLayout>

@@ -355,7 +355,12 @@
     "closeLabel": "Schliessen",
     "prevLabel": "Vorheriges Bild",
     "nextLabel": "Nächstes Bild",
-    "counter": "{current} von {total}"
+    "counter": "{current} von {total}",
+    "sections": {
+      "maharishi": "Maharishi & die vedische Tradition",
+      "pandits": "Maharishi Vedic Pandits",
+      "kongo": "Friedensprojekt Kongo"
+    }
   },
   "thanks": {
     "title": "Vielen Dank",

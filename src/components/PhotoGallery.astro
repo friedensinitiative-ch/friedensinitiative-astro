@@ -1,18 +1,21 @@
 ---
 // src/components/PhotoGallery.astro
 // -----------------------------------------------------------------------------
-// Responsive photo grid + lightbox.
+// Responsive photo grid + lightbox, grouped into stacked category sections.
 //
-// - Grid: 2 cols (mobile) / 3 cols (tablet) / 4 cols (desktop)
-// - Each tile loads only the 400w thumbnail (WebP, ~25-80 KB)
-// - Click opens a lightbox: full-screen, dark backdrop, 800w/1600w image with srcset
-// - Lightbox navigation: arrow keys, swipe (touch), prev/next buttons, Esc to close
-// - Captions are shown below the image in the lightbox
-// - All accessibility: keyboard nav, ARIA labels, focus management
+// - Images carry a `category` (maharishi | pandits | kongo). Each category is
+//   rendered as its own <section> with a localized heading; one shared lightbox
+//   spans all images (prev/next walks the whole set across sections).
+// - Standard images live at /images/gallery/{slug}-w{400,800,1600}.webp + .jpg.
+// - An image may instead provide a single `src` (one webp, no responsive
+//   variants) — used for the Congo photos until variants are generated (v1.4).
+// - Grid: 2 cols (mobile) / 3 (tablet) / 4 (desktop); tiles load the 400w thumb
+//   (or the single `src`). Lightbox: dark backdrop, 800w/1600w srcset (or `src`),
+//   arrow keys / swipe / buttons / Esc, ARIA labels, focus management.
 // -----------------------------------------------------------------------------
 import galleryData from '../data/gallery.json';
 
-interface Caption {
+interface Labels {
   closeLabel: string;
   prevLabel: string;
   nextLabel: string;
@@ -21,45 +24,75 @@ interface Caption {
 
 interface Props {
   /** Localized strings for ARIA / counter */
-  labels: Caption;
+  labels: Labels;
+  /** Localized section headings, keyed by category */
+  headings: { maharishi: string; pandits: string; kongo: string };
 }
 
-const { labels } = Astro.props;
-const images = galleryData as Array<{ slug: string; caption: string; aspectRatio: string }>;
+type GalleryImage = {
+  slug: string;
+  caption: string;
+  aspectRatio: string;
+  category?: string;
+  src?: string;
+};
+
+const { labels, headings } = Astro.props;
+const images = galleryData as GalleryImage[];
+
+// Keep each image's global index (for the shared lightbox) while grouping.
+const indexed = images.map((img, i) => ({ ...img, i }));
+
+const categories: { key: 'maharishi' | 'pandits' | 'kongo'; title: string }[] = [
+  { key: 'maharishi', title: headings.maharishi },
+  { key: 'pandits', title: headings.pandits },
+  { key: 'kongo', title: headings.kongo },
+];
+
+const sections = categories
+  .map((c) => ({ ...c, items: indexed.filter((img) => img.category === c.key) }))
+  .filter((s) => s.items.length > 0);
 ---
 
-<section class="my-12">
-  <ul
-    id="gallery-grid"
-    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 list-none p-0"
-  >
-    {images.map((img, idx) => (
-      <li class="m-0">
-        <button
-          type="button"
-          class="gallery-tile group block w-full overflow-hidden rounded-md bg-brand-parchment border border-brand-gold-100 hover:border-brand-gold-300 transition focus:outline-none focus:ring-2 focus:ring-brand-gold-400"
-          style="aspect-ratio: 1 / 1;"
-          data-index={idx}
-          aria-label={img.caption}
-        >
-          <picture>
-            <source
-              type="image/webp"
-              srcset={`/images/gallery/${img.slug}-w400.webp`}
-            />
-            <img
-              src={`/images/gallery/${img.slug}.jpg`}
-              alt={img.caption}
-              loading="lazy"
-              decoding="async"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-            />
-          </picture>
-        </button>
-      </li>
-    ))}
-  </ul>
-</section>
+{sections.map((section) => (
+  <section class="my-10 md:my-14">
+    <h2 class="text-2xl md:text-3xl mb-6 text-brand-gold-700">{section.title}</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 list-none p-0">
+      {section.items.map((img) => (
+        <li class="m-0">
+          <button
+            type="button"
+            class="gallery-tile group block w-full overflow-hidden rounded-md bg-brand-parchment border border-brand-gold-100 hover:border-brand-gold-300 transition focus:outline-none focus:ring-2 focus:ring-brand-gold-400"
+            style="aspect-ratio: 1 / 1;"
+            data-index={img.i}
+            aria-label={img.caption}
+          >
+            {img.src ? (
+              <img
+                src={img.src}
+                alt={img.caption}
+                loading="lazy"
+                decoding="async"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            ) : (
+              <picture>
+                <source type="image/webp" srcset={`/images/gallery/${img.slug}-w400.webp`} />
+                <img
+                  src={`/images/gallery/${img.slug}.jpg`}
+                  alt={img.caption}
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                />
+              </picture>
+            )}
+          </button>
+        </li>
+      ))}
+    </ul>
+  </section>
+))}
 
 <!-- Lightbox: hidden by default -->
 <div
@@ -143,9 +176,16 @@ const images = galleryData as Array<{ slug: string; caption: string; aspectRatio
   function showImage(index) {
     currentIndex = ((index % images.length) + images.length) % images.length;
     const img = images[currentIndex];
-    lightboxSource.srcset = `/images/gallery/${img.slug}-w800.webp 800w, /images/gallery/${img.slug}-w1600.webp 1600w`;
-    lightboxSource.sizes = '90vw';
-    lightboxImg.src = `/images/gallery/${img.slug}.jpg`;
+    if (img.src) {
+      // Single webp, no responsive variants.
+      lightboxSource.srcset = '';
+      lightboxSource.removeAttribute('sizes');
+      lightboxImg.src = img.src;
+    } else {
+      lightboxSource.srcset = `/images/gallery/${img.slug}-w800.webp 800w, /images/gallery/${img.slug}-w1600.webp 1600w`;
+      lightboxSource.sizes = '90vw';
+      lightboxImg.src = `/images/gallery/${img.slug}.jpg`;
+    }
     lightboxImg.alt = img.caption;
     lightboxCaption.textContent = img.caption;
     lightboxCounter.textContent = counterTemplate
@@ -171,7 +211,7 @@ const images = galleryData as Array<{ slug: string; caption: string; aspectRatio
   function nextImage() { showImage(currentIndex + 1); }
 
   tiles.forEach((tile) => {
-    tile.addEventListener('click', (e) => {
+    tile.addEventListener('click', () => {
       const idx = parseInt(tile.dataset.index, 10);
       openLightbox(idx, tile);
     });

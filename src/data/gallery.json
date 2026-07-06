@@ -2,211 +2,281 @@
   {
     "slug": "maharishi-portrait",
     "caption": "Maharishi Mahesh Yogi",
-    "aspectRatio": "800/546"
+    "aspectRatio": "800/546",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-meditating",
     "caption": "Maharishi Mahesh Yogi meditating",
-    "aspectRatio": "800/448"
+    "aspectRatio": "800/448",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-ganga",
     "caption": "Maharishi at the Ganges",
-    "aspectRatio": "745/492"
+    "aspectRatio": "745/492",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-lake-louise",
     "caption": "Maharishi at a course on Lake Louise, Canada",
-    "aspectRatio": "800/552"
+    "aspectRatio": "800/552",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-explaining",
     "caption": "Maharishi explaining Transcendental Meditation",
-    "aspectRatio": "800/525"
+    "aspectRatio": "800/525",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-cultivate",
     "caption": "Maharishi: \"Cultivate and give\"",
-    "aspectRatio": "800/1196"
+    "aspectRatio": "800/1196",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-mind-thirsty",
     "caption": "Maharishi: \"The mind is thirsty for great happiness\"",
-    "aspectRatio": "800/535"
+    "aspectRatio": "800/535",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-eternal-bliss",
     "caption": "Maharishi: \"State of eternal bliss consciousness\"",
-    "aspectRatio": "800/544"
+    "aspectRatio": "800/544",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-bliss-inside",
     "caption": "Maharishi: \"You are bliss inside\"",
-    "aspectRatio": "800/621"
+    "aspectRatio": "800/621",
+    "category": "maharishi"
   },
   {
     "slug": "maharishi-divine-inside",
     "caption": "Maharishi: \"You are divine inside\"",
-    "aspectRatio": "800/1046"
+    "aspectRatio": "800/1046",
+    "category": "maharishi"
   },
   {
     "slug": "brahmananda-saraswati",
     "caption": "Swami Brahmananda Saraswati, Shankaracharya of Jyotir Math, Master of Maharishi Mahesh Yogi",
-    "aspectRatio": "461/628"
+    "aspectRatio": "461/628",
+    "category": "maharishi"
   },
   {
     "slug": "vedic-sages",
     "caption": "Vedic sages receiving knowledge under the sacred tree",
-    "aspectRatio": "800/553"
+    "aspectRatio": "800/553",
+    "category": "maharishi"
   },
   {
     "slug": "pandit-aarti",
     "caption": "Aarti ceremony",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "students-aarti",
     "caption": "Pandit students performing aarti",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "pandit-karpura",
     "caption": "Karpura offering during Yagya",
-    "aspectRatio": "800/517"
+    "aspectRatio": "800/517",
+    "category": "pandits"
   },
   {
     "slug": "vedic-celebration",
     "caption": "Vedic celebration",
-    "aspectRatio": "800/450"
+    "aspectRatio": "800/450",
+    "category": "pandits"
   },
   {
     "slug": "vedic-celebration-2",
     "caption": "Vedic celebration in the assembly hall",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "pandit-chanting",
     "caption": "Vedic Pandit chanting",
-    "aspectRatio": "800/450"
+    "aspectRatio": "800/450",
+    "category": "pandits"
   },
   {
     "slug": "pandit-coherent-chanting",
     "caption": "Coherent group chanting",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "pandit-conscious-chanting",
     "caption": "Conscious chanting",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "pandit-profound-recitation",
     "caption": "Profound recitation",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "pandit-reciting",
     "caption": "Vedic Pandit reciting",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "pandit-silent-reciting",
     "caption": "Silent recitation",
-    "aspectRatio": "800/450"
+    "aspectRatio": "800/450",
+    "category": "pandits"
   },
   {
     "slug": "pandit-vedic-recitation",
     "caption": "Vedic recitation",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "pandits-vedic-performance",
     "caption": "Pandits performing Vedic ceremony",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "students-reciting",
     "caption": "Pandit students reciting",
-    "aspectRatio": "800/537"
+    "aspectRatio": "800/537",
+    "category": "pandits"
   },
   {
     "slug": "joyful-conclusion",
     "caption": "Joyful conclusion of a Vedic performance",
-    "aspectRatio": "800/651"
+    "aspectRatio": "800/651",
+    "category": "pandits"
   },
   {
     "slug": "pandit-meditating",
     "caption": "Vedic Pandit meditating",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "student-meditating",
     "caption": "Pandit student meditating",
-    "aspectRatio": "800/639"
+    "aspectRatio": "800/639",
+    "category": "pandits"
   },
   {
     "slug": "students-group-meditation",
     "caption": "Group meditation",
-    "aspectRatio": "800/1116"
+    "aspectRatio": "800/1116",
+    "category": "pandits"
   },
   {
     "slug": "school-meditation",
     "caption": "Maharishi School group meditation",
-    "aspectRatio": "800/574"
+    "aspectRatio": "800/574",
+    "category": "pandits"
   },
   {
     "slug": "young-pandit",
     "caption": "Young Maharishi Vedic Pandits",
-    "aspectRatio": "710/680"
+    "aspectRatio": "710/680",
+    "category": "pandits"
   },
   {
     "slug": "students-celebration",
     "caption": "Pandit students during a Vedic celebration",
-    "aspectRatio": "800/531"
+    "aspectRatio": "800/531",
+    "category": "pandits"
   },
   {
     "slug": "happy-students",
     "caption": "Happy Pandit students",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "students-group",
     "caption": "Pandit students together",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "students-small-group",
     "caption": "A small group of Pandit students",
-    "aspectRatio": "800/592"
+    "aspectRatio": "800/592",
+    "category": "pandits"
   },
   {
     "slug": "pandit-group-photo",
     "caption": "Group photograph of Pandits",
-    "aspectRatio": "800/531"
+    "aspectRatio": "800/531",
+    "category": "pandits"
   },
   {
     "slug": "pandit-namaste",
     "caption": "Pandits greeting in Namaste",
-    "aspectRatio": "800/572"
+    "aspectRatio": "800/572",
+    "category": "pandits"
   },
   {
     "slug": "teacher-and-student",
     "caption": "Teacher and student",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
   },
   {
     "slug": "pandit-teachers",
     "caption": "Pandit teachers",
-    "aspectRatio": "800/589"
+    "aspectRatio": "800/589",
+    "category": "pandits"
   },
   {
     "slug": "pandit-studying",
     "caption": "A young Pandit studying",
-    "aspectRatio": "800/449"
+    "aspectRatio": "800/449",
+    "category": "pandits"
   },
   {
     "slug": "pandit-reading",
     "caption": "Pandit reading sacred texts",
-    "aspectRatio": "800/533"
+    "aspectRatio": "800/533",
+    "category": "pandits"
+  },
+  {
+    "slug": "kongo-gruppenmeditation-kasindi",
+    "src": "/images/kongo/gruppenmeditation-kasindi.webp",
+    "caption": "Group meditation in Kasindi, North Kivu",
+    "aspectRatio": "4/3",
+    "category": "kongo"
+  },
+  {
+    "slug": "kongo-schulkinder-wiese",
+    "src": "/images/kongo/schulkinder-meditation-wiese.webp",
+    "caption": "Schoolchildren meditating outdoors",
+    "aspectRatio": "4/3",
+    "category": "kongo"
+  },
+  {
+    "slug": "kongo-schulkinder-stuehle",
+    "src": "/images/kongo/schulkinder-meditation-stuehle.webp",
+    "caption": "Schoolchildren meditating in the classroom",
+    "aspectRatio": "4/3",
+    "category": "kongo"
+  },
+  {
+    "slug": "kongo-tm-lehrer",
+    "src": "/images/kongo/tm-lehrer-bamande-nancy-clovis.webp",
+    "caption": "TM teachers Bamande, Nancy and Clovis",
+    "aspectRatio": "4/3",
+    "category": "kongo"
   }
 ]
