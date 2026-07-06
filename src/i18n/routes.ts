@@ -24,7 +24,9 @@ export type RouteKey =
   | 'gallery'
   | 'thanks'
   | 'imprint'
-  | 'privacy';
+  | 'privacy'
+  | 'india'
+  | 'congo';
 
 /**
  * Slug table — one entry per route key, one slug per locale.
@@ -37,6 +39,8 @@ export const routeSlugs: Record<RouteKey, Record<Locale, string>> = {
   donate:  { de: 'spenden',    en: 'donate',   fr: 'dons'        },
   contact: { de: 'kontakt',    en: 'contact',  fr: 'contact'     },
   gallery: { de: 'galerie',    en: 'gallery',  fr: 'galerie'     },
+  india:   { de: 'indien',     en: 'india',    fr: 'inde'        },
+  congo:   { de: 'kongo',      en: 'congo',    fr: 'congo'       },
   thanks:  { de: 'danke',      en: 'thank-you', fr: 'merci'      },
   imprint: { de: 'impressum',  en: 'imprint',  fr: 'mentions-legales' },
   privacy: { de: 'datenschutz', en: 'privacy', fr: 'confidentialite' },

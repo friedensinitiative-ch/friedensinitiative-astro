@@ -1,0 +1,150 @@
+---
+// src/pages/en/india.astro — Maharishi Vedic Pandits, India (locale: en).
+// Pandit content moved here from the old homepage, with Leonard Stein's
+// edits (see locale JSON). Brand-styled. Keys live under `indien.*`.
+import PageLayout from '@layouts/PageLayout.astro';
+import ResponsiveImage from '@components/ResponsiveImage.astro';
+import { useTranslations, renderHighlight } from '@i18n/index';
+import { buildPath } from '@i18n/routes';
+
+const locale = 'en' as const;
+const t = useTranslations(locale);
+const galleryHref = buildPath('gallery', locale);
+const videoId = t('indien.media.videoId');
+const playlistHref = 'https://www.youtube.com/watch?v=0VqiaQaG4uI&list=PLd2VIS0aIdOMSmmH-3Xvx3i3X3ma95SS8';
+---
+<PageLayout
+  {locale}
+  title={t('indien.meta.title')}
+  description={t('indien.meta.description')}
+  route="india"
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-brand-parchment to-white">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-24 text-center">
+      <span class="inline-block text-sm uppercase tracking-widest text-brand-gold-600 font-semibold mb-4">
+        {t('indien.hero.eyebrow')}
+      </span>
+      <h1 class="text-4xl md:text-5xl mb-6">{t('indien.hero.title')}</h1>
+      <p class="text-xl text-brand-ink-soft leading-relaxed max-w-prose mx-auto">
+        {t('indien.hero.subtitle')}
+      </p>
+    </div>
+  </section>
+
+  <!-- Training -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl mb-6" set:html={renderHighlight(t('indien.training.title'))} />
+          <div class="space-y-5 text-lg text-brand-ink-soft">
+            <p>{t('indien.training.paragraph1')}</p>
+            <p>{t('indien.training.paragraph2')}</p>
+            <p>{t('indien.training.paragraph3')}</p>
+          </div>
+        </div>
+        <ResponsiveImage
+          slug="gallery/pandit-group-photo"
+          alt={t('indien.hero.title')}
+          aspectRatio="3/2"
+          class="rounded-lg shadow-sm border border-brand-gold-100"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Yoga -->
+  <section class="bg-brand-parchment">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20">
+      <div class="max-w-prose mx-auto">
+        <h2 class="text-3xl md:text-4xl mb-6" set:html={renderHighlight(t('indien.yoga.title'))} />
+        <div class="space-y-5 text-lg text-brand-ink-soft">
+          <p>{t('indien.yoga.paragraph1')}</p>
+          <p>{t('indien.yoga.paragraph2')}</p>
+          <p>{t('indien.yoga.quoteIntro')}</p>
+        </div>
+
+        <blockquote class="my-8 border-l-4 border-brand-gold-400 pl-6 py-2 italic">
+          <p class="text-xl text-brand-ink font-serif mb-2">{t('indien.yoga.sanskritQuote')}</p>
+          <p class="text-brand-ink-soft mb-2">{t('indien.yoga.quoteTranslation')}</p>
+          <footer class="text-sm text-brand-ink-muted not-italic">{t('indien.yoga.quoteSource')}</footer>
+        </blockquote>
+
+        <p class="text-lg text-brand-ink-soft">{t('indien.yoga.closingText')}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yagya -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20">
+      <div class="max-w-prose mx-auto">
+        <h2 class="text-3xl md:text-4xl mb-6" set:html={renderHighlight(t('indien.yagya.title'))} />
+        <div class="space-y-5 text-lg text-brand-ink-soft">
+          <p>{t('indien.yagya.paragraph1')}</p>
+          <p>{t('indien.yagya.paragraph2')}</p>
+          <p>{t('indien.yagya.paragraph3')}</p>
+          <p>{t('indien.yagya.paragraph4')}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-brand-parchment border-y border-brand-gold-100">
+    <div class="max-w-content mx-auto px-4 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-3xl mx-auto">
+        <div>
+          <div class="text-5xl md:text-6xl font-serif text-brand-gold-500 mb-2">{t('indien.yagya.stat1Number')}</div>
+          <div class="text-sm uppercase tracking-widest text-brand-ink-muted">{t('indien.yagya.stat1Label')}</div>
+        </div>
+        <div>
+          <div class="text-5xl md:text-6xl font-serif text-brand-gold-500 mb-2">{t('indien.yagya.stat2Number')}</div>
+          <div class="text-sm uppercase tracking-widest text-brand-ink-muted">{t('indien.yagya.stat2Label')}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media: featured video + gallery -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20 text-center">
+      <h2 class="text-2xl md:text-3xl mb-4">{t('indien.media.title')}</h2>
+      <p class="text-lg text-brand-ink-soft leading-relaxed max-w-prose mx-auto mb-8">
+        {t('indien.media.description')}
+      </p>
+
+      <figure class="max-w-3xl mx-auto mb-8">
+        <div class="aspect-video overflow-hidden rounded-lg border border-brand-gold-100 shadow-sm">
+          <iframe
+            class="w-full h-full"
+            src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+            title={t('indien.media.videoTitle')}
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <figcaption class="mt-2 text-sm text-brand-ink-muted">{t('indien.media.videoTitle')}</figcaption>
+      </figure>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={galleryHref}
+          class="inline-flex items-center justify-center px-6 py-3 rounded-md border border-brand-gold-300 text-brand-gold-700 font-medium hover:bg-brand-gold-50 transition"
+        >
+          {t('indien.media.photoGallery')}
+        </a>
+        <a
+          href={playlistHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-brand-gold-400 text-white font-medium hover:bg-brand-gold-500 transition"
+        >
+          {t('indien.media.moreVideos')}
+        </a>
+      </div>
+    </div>
+  </section>
+</PageLayout>

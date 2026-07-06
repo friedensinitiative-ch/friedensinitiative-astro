@@ -41,11 +41,12 @@ const t = useTranslations(locale);
               </dd>
             </div>
             <div>
-              <dt class="text-brand-ink-muted uppercase tracking-wide text-xs mb-1">Phone</dt>
+              <dt class="text-brand-ink-muted uppercase tracking-wide text-xs mb-1">{t('contact.phone.label')}</dt>
               <dd>
-                <a href={`tel:${t('contact.info.phone').replace(/\s/g, '')}`} class="text-brand-gold-600 hover:text-brand-gold-700">
-                  {t('contact.info.phone')}
+                <a href={`tel:${t('contact.phone.number').replace(/\s/g, '')}`} class="text-brand-gold-600 hover:text-brand-gold-700">
+                  {t('contact.phone.number')}
                 </a>
+                <p class="text-brand-ink-muted mt-1">{t('contact.phone.note')}</p>
               </dd>
             </div>
             <div>

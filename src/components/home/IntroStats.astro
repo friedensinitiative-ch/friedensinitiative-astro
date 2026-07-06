@@ -1,0 +1,43 @@
+---
+// src/components/home/IntroStats.astro
+// Home intro paragraph + three headline stats (Pandits / Kongo / Projekte).
+// Uses the same section rhythm and brand tokens as the other home sections.
+import { useTranslations, renderHighlight, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const stats = [
+  { value: t('home.stats.panditsValue'), label: t('home.stats.panditsLabel') },
+  { value: t('home.stats.kongoValue'),   label: t('home.stats.kongoLabel') },
+  { value: t('home.stats.projectsValue'), label: t('home.stats.projectsLabel') },
+] as const;
+---
+<section class="bg-brand-parchment">
+  <div class="max-w-content mx-auto px-4 py-16 md:py-24">
+    <div class="max-w-prose mx-auto text-center">
+      <h2
+        class="text-3xl md:text-4xl mb-6"
+        set:html={renderHighlight(t('home.intro.title'))}
+      />
+      <div class="space-y-5 text-lg text-brand-ink-soft text-left md:text-center">
+        <p>{t('home.intro.paragraph1')}</p>
+        <p>{t('home.intro.paragraph2')}</p>
+      </div>
+    </div>
+
+    <!-- Headline stats -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-14 md:mt-16 text-center">
+      {stats.map(({ value, label }) => (
+        <div>
+          <div class="text-4xl md:text-5xl font-serif text-brand-gold-500 mb-2">{value}</div>
+          <div class="text-sm uppercase tracking-widest text-brand-ink-muted">{label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

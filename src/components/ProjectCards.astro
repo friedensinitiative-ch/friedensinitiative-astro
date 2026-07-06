@@ -1,0 +1,106 @@
+---
+// src/components/ProjectCards.astro
+// -----------------------------------------------------------------------------
+// Three project cards on the home page: Indien (Pandits), Kongo (TM), and
+// Schweiz (in preparation). Styled in the site's brand language; Kongo keeps a
+// restrained green accent for recognition.
+//
+//   <ProjectCards {locale} />
+// -----------------------------------------------------------------------------
+import { useTranslations, type Locale } from '@i18n/index';
+import { buildPath } from '@i18n/routes';
+import ResponsiveImage from '@components/ResponsiveImage.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const indienHref = buildPath('india', locale);
+const kongoHref = buildPath('congo', locale);
+---
+<section id="projekte" class="bg-white scroll-mt-20">
+  <div class="max-w-content mx-auto px-4 py-16 md:py-24">
+    <div class="text-center max-w-prose mx-auto mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl mb-4">{t('projects.sectionTitle')}</h2>
+      <p class="text-lg text-brand-ink-soft leading-relaxed">{t('projects.sectionIntro')}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <!-- Indien — Maharishi Vedic Pandits -->
+      <a
+        href={indienHref}
+        class="group flex flex-col rounded-lg border border-brand-gold-100 bg-white overflow-hidden shadow-sm hover:border-brand-gold-400 hover:shadow-md transition"
+      >
+        <ResponsiveImage
+          slug="gallery/pandit-chanting"
+          alt={t('projects.indien.title')}
+          aspectRatio="4/3"
+          imgClass="group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs uppercase tracking-widest text-brand-gold-600 font-semibold mb-2">
+            {t('projects.indien.label')}
+          </span>
+          <h3 class="text-xl mb-3 text-brand-ink">{t('projects.indien.title')}</h3>
+          <p class="text-brand-ink-soft leading-relaxed mb-4 flex-grow">{t('projects.indien.teaser')}</p>
+          <span class="inline-flex items-center gap-1 text-brand-gold-600 font-medium group-hover:text-brand-gold-700">
+            {t('projects.indien.cta')}
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Kongo — TM peace project (restrained green accent) -->
+      <a
+        href={kongoHref}
+        class="group flex flex-col rounded-lg border border-brand-gold-100 bg-white overflow-hidden shadow-sm hover:border-emerald-400 hover:shadow-md transition"
+      >
+        <figure class="overflow-hidden" style="aspect-ratio: 4/3;">
+          <img
+            src="/images/kongo/schulkinder-meditation-stuehle.webp"
+            alt={t('projects.kongo.title')}
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </figure>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs uppercase tracking-widest text-emerald-700 font-semibold mb-2">
+            {t('projects.kongo.label')}
+          </span>
+          <h3 class="text-xl mb-3 text-brand-ink">{t('projects.kongo.title')}</h3>
+          <p class="text-brand-ink-soft leading-relaxed mb-4 flex-grow">{t('projects.kongo.teaser')}</p>
+          <span class="inline-flex items-center gap-1 text-emerald-700 font-medium group-hover:text-emerald-800">
+            {t('projects.kongo.cta')}
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Schweiz — in preparation -->
+      <div class="flex flex-col rounded-lg border border-dashed border-brand-gold-200 bg-brand-parchment/60 overflow-hidden opacity-90">
+        <div class="flex items-center justify-center" style="aspect-ratio: 4/3;">
+          <div class="text-center px-6">
+            <svg class="w-14 h-14 mx-auto mb-3 text-brand-gold-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p class="text-sm text-brand-ink-muted font-medium">{t('projects.schweiz.label')}</p>
+          </div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="text-xs uppercase tracking-widest text-brand-ink-muted font-semibold mb-2">
+            {t('projects.schweiz.label')}
+          </span>
+          <h3 class="text-xl mb-3 text-brand-ink-soft">{t('projects.schweiz.title')}</h3>
+          <p class="text-brand-ink-muted leading-relaxed mb-4 flex-grow">{t('projects.schweiz.teaser')}</p>
+          <span class="inline-flex items-center text-brand-ink-muted font-medium italic">
+            {t('projects.schweiz.cta')}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

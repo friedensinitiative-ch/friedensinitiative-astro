@@ -6,6 +6,7 @@
 // site's visual language.
 // -----------------------------------------------------------------------------
 import { useTranslations, renderHighlight, type Locale } from '@i18n/index';
+import { buildPath } from '@i18n/routes';
 
 interface Props {
   locale: Locale;
@@ -44,12 +45,12 @@ const t = useTranslations(locale);
   <!-- Hero content -->
   <div class="relative z-10 max-w-content mx-auto px-4 py-20 md:py-28 text-center">
     <p class="text-sm uppercase tracking-[0.3em] text-brand-gold-500 mb-6">
-      {t('hero.subtitle')}
+      {t('home.hero.eyebrow')}
     </p>
 
     <h1
       class="text-4xl md:text-5xl lg:text-6xl mb-8 leading-tight"
-      set:html={renderHighlight(t('hero.title'))}
+      set:html={renderHighlight(t('home.hero.title'))}
     />
 
     <!-- Ornamental divider: gold line · diamond · gold line -->
@@ -60,14 +61,23 @@ const t = useTranslations(locale);
     </div>
 
     <p class="text-lg md:text-xl text-brand-ink-soft max-w-prose mx-auto leading-relaxed">
-      {t('hero.description')}
+      {t('home.hero.subtitle')}
     </p>
 
-    <a
-      href="#training"
-      class="inline-flex items-center gap-2 mt-12 text-xs uppercase tracking-[0.25em] text-brand-ink-muted hover:text-brand-gold-500 transition"
-    >
-      <span>↓</span> {t('hero.scrollDown')}
-    </a>
+    <!-- Primary + secondary calls to action -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
+      <a
+        href="#projekte"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-brand-gold-400 text-white font-medium hover:bg-brand-gold-500 transition"
+      >
+        {t('home.hero.ctaPrimary')}
+      </a>
+      <a
+        href={buildPath('about', locale)}
+        class="inline-flex items-center justify-center px-6 py-3 rounded-md border border-brand-gold-300 text-brand-ink-soft hover:text-brand-gold-600 hover:border-brand-gold-400 transition"
+      >
+        {t('home.hero.ctaSecondary')}
+      </a>
+    </div>
   </div>
 </section>

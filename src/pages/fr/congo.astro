@@ -1,0 +1,216 @@
+---
+// src/pages/fr/congo.astro — Congo TM peace project (locale: fr).
+// Brand-styled; Congo photos are single webp files (no responsive variants),
+// so they use brand-framed <img>. Restrained emerald accent for recognition.
+import PageLayout from '@layouts/PageLayout.astro';
+import { useTranslations } from '@i18n/index';
+import { buildPath } from '@i18n/routes';
+
+const locale = 'fr' as const;
+const t = useTranslations(locale);
+const donateHref = buildPath('donate', locale);
+
+const stats = [
+  { value: t('kongo.stats.learnersValue'), label: t('kongo.stats.learnersLabel') },
+  { value: t('kongo.stats.monthlyValue'),  label: t('kongo.stats.monthlyLabel') },
+  { value: t('kongo.stats.teachersValue'), label: t('kongo.stats.teachersLabel') },
+  { value: t('kongo.stats.yearsValue'),    label: t('kongo.stats.yearsLabel') },
+];
+
+const support = [
+  { title: t('kongo.support.item1Title'), text: t('kongo.support.item1Text') },
+  { title: t('kongo.support.item2Title'), text: t('kongo.support.item2Text') },
+  { title: t('kongo.support.item3Title'), text: t('kongo.support.item3Text') },
+];
+
+const goals = [
+  { amount: t('kongo.goals.goal1Amount'), title: t('kongo.goals.goal1Title'), text: t('kongo.goals.goal1Text') },
+  { amount: t('kongo.goals.goal2Amount'), title: t('kongo.goals.goal2Title'), text: t('kongo.goals.goal2Text') },
+  { amount: t('kongo.goals.goal3Amount'), title: t('kongo.goals.goal3Title'), text: t('kongo.goals.goal3Text') },
+];
+---
+<PageLayout
+  {locale}
+  title={t('kongo.meta.title')}
+  description={t('kongo.meta.description')}
+  route="congo"
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-brand-parchment to-white">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-24 text-center">
+      <span class="inline-block text-sm uppercase tracking-widest text-emerald-700 font-semibold mb-4">
+        {t('kongo.hero.eyebrow')}
+      </span>
+      <h1 class="text-4xl md:text-5xl mb-6">{t('kongo.hero.title')}</h1>
+      <p class="text-xl text-brand-ink-soft leading-relaxed max-w-prose mx-auto">
+        {t('kongo.hero.subtitle')}
+      </p>
+    </div>
+  </section>
+
+  <!-- Origin story -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div>
+          <h2 class="text-2xl md:text-3xl mb-5 text-brand-gold-700">{t('kongo.story.title')}</h2>
+          <div class="space-y-5 text-lg text-brand-ink-soft">
+            <p>{t('kongo.story.paragraph1')}</p>
+            <p>{t('kongo.story.paragraph2')}</p>
+          </div>
+        </div>
+        <figure>
+          <img
+            src="/images/kongo/gruppenmeditation-kasindi.webp"
+            alt={t('kongo.story.imageAlt')}
+            loading="lazy"
+            decoding="async"
+            class="w-full rounded-lg border border-brand-gold-100 shadow-sm"
+          />
+          <figcaption class="mt-2 text-sm text-brand-ink-muted text-center">{t('kongo.story.imageCaption')}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- The three teachers -->
+  <section class="bg-brand-parchment">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <figure class="order-2 md:order-1">
+          <img
+            src="/images/kongo/tm-lehrer-bamande-nancy-clovis.webp"
+            alt={t('kongo.teachers.imageAlt')}
+            loading="lazy"
+            decoding="async"
+            class="w-full rounded-lg border border-brand-gold-100 shadow-sm"
+          />
+          <figcaption class="mt-2 text-sm text-brand-ink-muted text-center">{t('kongo.teachers.imageCaption')}</figcaption>
+        </figure>
+        <div class="order-1 md:order-2">
+          <h2 class="text-2xl md:text-3xl mb-5 text-brand-gold-700">{t('kongo.teachers.title')}</h2>
+          <div class="space-y-5 text-lg text-brand-ink-soft">
+            <p>{t('kongo.teachers.paragraph1')}</p>
+            <p>{t('kongo.teachers.paragraph2')}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-white border-y border-brand-gold-100">
+    <div class="max-w-content mx-auto px-4 py-14">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {stats.map(({ value, label }) => (
+          <div>
+            <div class="text-4xl md:text-5xl font-serif text-emerald-700 mb-2">{value}</div>
+            <div class="text-sm uppercase tracking-widest text-brand-ink-muted">{label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Healing impact -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div class="space-y-5 text-lg text-brand-ink-soft">
+          <h2 class="text-2xl md:text-3xl mb-1 text-brand-gold-700">{t('kongo.impact.title')}</h2>
+          <p>{t('kongo.impact.paragraph1')}</p>
+          <p>{t('kongo.impact.paragraph2')}</p>
+          <p>{t('kongo.impact.paragraph3')}</p>
+        </div>
+        <div class="space-y-6">
+          <figure>
+            <img
+              src="/images/kongo/schulkinder-meditation-wiese.webp"
+              alt={t('kongo.impact.image1Alt')}
+              loading="lazy"
+              decoding="async"
+              class="w-full rounded-lg border border-brand-gold-100 shadow-sm"
+            />
+            <figcaption class="mt-2 text-sm text-brand-ink-muted text-center">{t('kongo.impact.image1Caption')}</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/images/kongo/schulkinder-meditation-stuehle.webp"
+              alt={t('kongo.impact.image2Alt')}
+              loading="lazy"
+              decoding="async"
+              class="w-full rounded-lg border border-brand-gold-100 shadow-sm"
+            />
+            <figcaption class="mt-2 text-sm text-brand-ink-muted text-center">{t('kongo.impact.image2Caption')}</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Holistic support -->
+  <section class="bg-brand-parchment">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20">
+      <div class="text-center max-w-prose mx-auto mb-12">
+        <h2 class="text-2xl md:text-3xl mb-4">{t('kongo.support.title')}</h2>
+        <p class="text-lg text-brand-ink-soft leading-relaxed">{t('kongo.support.intro')}</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {support.map(({ title, text }) => (
+          <div class="card-soft">
+            <h3 class="text-lg mb-3 text-brand-gold-700">{title}</h3>
+            <p class="text-brand-ink-soft leading-relaxed">{text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Funding goals -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20">
+      <div class="text-center max-w-prose mx-auto mb-12">
+        <h2 class="text-2xl md:text-3xl mb-4">{t('kongo.goals.title')}</h2>
+        <p class="text-lg text-brand-ink-soft leading-relaxed">{t('kongo.goals.intro')}</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {goals.map(({ amount, title, text }) => (
+          <div class="flex flex-col rounded-lg border border-brand-gold-100 shadow-sm p-6">
+            <div class="text-3xl font-serif text-emerald-700 mb-2">{amount}</div>
+            <h3 class="text-lg mb-3 text-brand-ink">{title}</h3>
+            <p class="text-brand-ink-soft leading-relaxed flex-grow">{text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparency -->
+  <section class="bg-brand-parchment">
+    <div class="max-w-content mx-auto px-4 py-16 md:py-20 max-w-3xl">
+      <h2 class="text-2xl md:text-3xl mb-5 text-center">{t('kongo.transparency.title')}</h2>
+      <div class="space-y-5 text-lg text-brand-ink-soft mb-8">
+        <p>{t('kongo.transparency.paragraph1')}</p>
+        <p>{t('kongo.transparency.paragraph2')}</p>
+      </div>
+      <div class="bg-white border-l-4 border-emerald-600 rounded-r-lg p-6 shadow-sm">
+        <p class="text-lg font-semibold text-brand-ink mb-1">{t('kongo.transparency.hundredTitle')}</p>
+        <p class="text-brand-ink-soft leading-relaxed">{t('kongo.transparency.hundredText')}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-b from-white to-brand-parchment">
+    <div class="max-w-content mx-auto px-4 py-16 text-center max-w-3xl">
+      <h2 class="text-2xl md:text-3xl mb-4">{t('kongo.cta.title')}</h2>
+      <p class="text-lg text-brand-ink-soft leading-relaxed mb-8">{t('kongo.cta.text')}</p>
+      <a
+        href={donateHref}
+        class="inline-flex items-center justify-center px-8 py-3 rounded-md bg-brand-gold-400 text-white font-medium hover:bg-brand-gold-500 transition"
+      >
+        {t('kongo.cta.button')}
+      </a>
+    </div>
+  </section>
+</PageLayout>

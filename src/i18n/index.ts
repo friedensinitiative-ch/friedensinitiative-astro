@@ -82,8 +82,10 @@ export function useTranslations(locale: Locale) {
  * Returns an HTML string (use set:html in templates).
  */
 export function renderHighlight(text: string): string {
+  // Supports {{highlight}}…{{/highlight}} as well as numbered variants
+  // {{highlight1}}…{{/highlight1}} used where a heading marks several words.
   return text.replace(
-    /\{\{highlight\}\}(.*?)\{\{\/highlight\}\}/g,
+    /\{\{highlight\d*\}\}(.*?)\{\{\/highlight\d*\}\}/g,
     '<span class="text-brand-gold-400">$1</span>'
   );
 }

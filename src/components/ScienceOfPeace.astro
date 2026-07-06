@@ -1,0 +1,55 @@
+---
+// src/components/ScienceOfPeace.astro
+// -----------------------------------------------------------------------------
+// "Science of Peace" section: the empirical bridge. Features the Washington
+// D.C. 1993 study (Hagelin et al.) and links to GUSP. Brand-styled.
+//
+//   <ScienceOfPeace {locale} />
+// -----------------------------------------------------------------------------
+import { useTranslations, type Locale } from '@i18n/index';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+<section class="bg-brand-parchment">
+  <div class="max-w-content mx-auto px-4 py-16 md:py-24">
+    <div class="text-center max-w-prose mx-auto mb-12">
+      <span class="text-sm uppercase tracking-widest text-brand-gold-600 font-semibold">
+        {t('scienceOfPeace.label')}
+      </span>
+      <h2 class="text-3xl md:text-4xl mt-3 mb-6">{t('scienceOfPeace.title')}</h2>
+      <p class="text-lg text-brand-ink-soft leading-relaxed">{t('scienceOfPeace.intro')}</p>
+    </div>
+
+    <div class="card-gold max-w-3xl mx-auto">
+      <div class="flex items-start gap-4 mb-4">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-gold-50 flex items-center justify-center">
+          <svg class="w-6 h-6 text-brand-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl text-brand-ink pt-2">{t('scienceOfPeace.studyTitle')}</h3>
+      </div>
+      <p class="text-brand-ink-soft leading-relaxed mb-4">{t('scienceOfPeace.studyBody')}</p>
+      <p class="text-sm text-brand-ink-muted italic border-l-2 border-brand-gold-300 pl-4">
+        {t('scienceOfPeace.studyCitation')}
+      </p>
+    </div>
+
+    <p class="mt-8 text-center text-brand-ink-soft leading-relaxed max-w-prose mx-auto">
+      {t('scienceOfPeace.guspText')}{' '}
+      <a
+        href="https://www.gusp.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-brand-gold-600 hover:text-brand-gold-700 underline underline-offset-2"
+      >
+        {t('scienceOfPeace.guspLinkLabel')}
+      </a>.
+    </p>
+  </div>
+</section>

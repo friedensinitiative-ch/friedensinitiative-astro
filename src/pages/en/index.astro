@@ -1,11 +1,10 @@
 ---
-// Auto-generated home page for locale: en
+// Home page for locale: en — overview of the peace projects.
 import PageLayout from '@layouts/PageLayout.astro';
 import Hero from '@components/Hero.astro';
-import TrainingSection from '@components/home/TrainingSection.astro';
-import YogaSection from '@components/home/YogaSection.astro';
-import YagyaSection from '@components/home/YagyaSection.astro';
-import MediaSection from '@components/home/MediaSection.astro';
+import IntroStats from '@components/home/IntroStats.astro';
+import ProjectCards from '@components/ProjectCards.astro';
+import ScienceOfPeace from '@components/ScienceOfPeace.astro';
 import { useTranslations } from '@i18n/index';
 
 const locale = 'en' as const;
@@ -13,13 +12,12 @@ const t = useTranslations(locale);
 ---
 <PageLayout
   {locale}
-  title={`${t('hero.title').replace(/\{\{highlight\}\}|\{\{\/highlight\}\}/g, '')} – ${t('hero.subtitle')}`}
-  description={t('hero.description')}
+  title={`${t('home.hero.eyebrow')} – ${t('home.hero.title').replace(/\{\{highlight\}\}|\{\{\/highlight\}\}/g, '')}`}
+  description={t('home.hero.subtitle')}
   route="home"
 >
   <Hero {locale} />
-  <TrainingSection {locale} />
-  <YogaSection {locale} />
-  <YagyaSection {locale} />
-  <MediaSection {locale} />
+  <IntroStats {locale} />
+  <ProjectCards {locale} />
+  <ScienceOfPeace {locale} />
 </PageLayout>

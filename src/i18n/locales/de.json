@@ -4,68 +4,209 @@
     "about": "Über uns",
     "donate": "Spenden",
     "contact": "Kontakt",
-    "gallery": "Galerie"
+    "gallery": "Galerie",
+    "indien": "Indien",
+    "kongo": "Kongo"
   },
-  "hero": {
-    "subtitle": "Frieden schaffende Gruppe",
-    "title": "Maharishi {{highlight}}Vedic Pandits{{/highlight}}",
-    "description": "Frieden für die Welt durch die zeitlosen vedischen Traditionen Indiens",
-    "scrollDown": "Entdecken"
+  "home": {
+    "hero": {
+      "eyebrow": "Globale Friedensinitiative Schweiz",
+      "title": "Frieden beginnt im Bewusstsein",
+      "subtitle": "Wir unterstützen Projekte, die Frieden von der tiefsten Ebene des Lebens aus erzeugen.",
+      "ctaPrimary": "Unsere Projekte entdecken",
+      "ctaSecondary": "Mehr erfahren"
+    },
+    "intro": {
+      "title": "Frieden durch innere Stille",
+      "paragraph1": "Wir alle wünschen uns Frieden — inneren Frieden und Frieden in der Welt. Die zeitlose Weisheit Indiens hat uns wissenschaftlich erforschte Techniken für inneren Frieden gebracht, wie etwa die Transzendentale Meditation. Sie hat uns aber auch Technologien gebracht, die einen starken Einfluss von Frieden, Harmonie und Wohlstand in der Gesellschaft erzeugen.",
+      "paragraph2": "Kriege, Diplomatie und Verträge haben es nicht geschafft, Frieden zwischen den Nationen zu schaffen: Wir tragen einen tieferen Ansatz mit, den wir Sie herzlich einladen zu entdecken und zu unterstützen."
+    },
+    "stats": {
+      "panditsValue": "1'331",
+      "panditsLabel": "Pandits in Indien",
+      "kongoValue": "30'000+",
+      "kongoLabel": "TM-Lernende im Kongo",
+      "projectsValue": "3",
+      "projectsLabel": "aktive Projekte"
+    }
   },
-  "training": {
-    "title": "Systematische Ausbildung der {{highlight}}Maharishi Vedic Pandits{{/highlight}}",
-    "paragraph1": "Von jungen Jahren an durchlaufen Studenten aus traditionellen vedischen Familien Indiens eine systematische Ausbildung, um Friedensprofis zu werden – Maharishi Vedic Pandits. Vom Alter von 10 bis 20 Jahren folgen sie einem speziellen Studienprogramm, das von Maharishi entworfen wurde.",
-    "paragraph2": "Es umfasst das Erlernen der Transzendentalen Meditation und des TM-Sidhi-Programms sowie des Yogic Flying, das Studium von Sanskrit und die Erlangung von Fähigkeiten in der Durchführung von Yagyas, den traditionellen vedischen Zeremonien, die Glück und Frieden bringen.",
-    "paragraph3": "Ihr tägliches Studium wird mit Credits für Bachelor-, Master- und Ph.D.-Programme angerechnet, die von der Maharishi Mahesh Yogi Vedic Vishwavidyalaya verliehen werden, einer staatlichen Universität, die 1995 von der Regierung von Madhya Pradesh gegründet wurde."
+  "projects": {
+    "sectionTitle": "Unsere Projekte",
+    "sectionIntro": "Unsere Friedensinitiative unterstützt Bewusstsein-basierte Projekte, die Frieden auf der grundlegendsten Ebene erzeugen. Hier sind die Initiativen, die wir derzeit fördern.",
+    "indien": {
+      "label": "Indien",
+      "title": "Maharishi Vedic Pandits",
+      "teaser": "Über tausend traditionell ausgebildete Pandits führen täglich vedische Friedensrituale durch — am geografischen Zentrum Indiens.",
+      "cta": "Mehr erfahren"
+    },
+    "kongo": {
+      "label": "Kongo",
+      "title": "Transzendentale Meditation im Osten des Kongo",
+      "teaser": "In Nordkivu unterrichten drei TM-Lehrer Transzendentale Meditation — kostenlos, in Schulen, Waisenhäusern und Gemeinschaften. Über 30'000 Menschen haben so einen Weg aus dem Trauma gefunden.",
+      "cta": "Mehr erfahren"
+    },
+    "schweiz": {
+      "label": "Schweiz",
+      "title": "Friedensprojekt Schweiz",
+      "teaser": "Wir planen ein neues Bewusstsein-basiertes Friedensprojekt im Herzen Europas. Details folgen.",
+      "cta": "In Vorbereitung"
+    }
   },
-  "yoga": {
-    "title": "Experten in Yoga – {{highlight1}}Transzendentale Meditation{{/highlight1}} und {{highlight2}}Yogic Flying{{/highlight2}}",
-    "paragraph1": "Mehrere Stunden täglich üben die Maharishi Vedic Pandits im Brahmasthan das Wesen des Yoga – das Transzendentale Meditation und TM-Sidhi-Programm. Das TM-Sidhi-Programm einschliesslich Yogic Flying wurde von Maharishi aus den Yoga-Sutren von Patanjali abgeleitet – dem zentralen Text der Yoga-Philosophie.",
-    "paragraph2": "Dieses Programm entwickelt die Fähigkeit, aus stilleren und kohärenteren Bewusstseinsebenen zu handeln. Je mehr die Pandits in die Fähigkeit wachsen, aus subtileren Bewusstseinsebenen zu handeln, desto effektiver werden sie bei ihrer täglichen vedischen Praxis für den Weltfrieden.",
-    "quoteIntro": "Der wichtigste vedische Text des Yoga – die Yoga-Sutren – beschreibt, wie Frieden durch die Erfahrung des Transzendierens geschaffen werden kann:",
-    "sanskritQuote": "Tat sannidhau vairatyagah",
-    "quoteTranslation": "«In der Nähe des Yoga (der Erfahrung des transzendentalen Bewusstseins, des vereinheitlichten Feldes) werden feindliche, konfliktträchtige Tendenzen beseitigt.»",
-    "quoteSource": "– Yoga-Sutra 2.35",
-    "closingText": "Wenn durch fortgeschrittene Meditation das transzendentale Bewusstsein von einer ausreichend grossen Gruppe belebt wird, erstreckt sich die «Nähe des Yoga» – die Region, die vom friedlichen Einfluss profitiert – auf die ganze Welt. Dies ist die Strategie der Globalen Friedensinitiative."
+  "scienceOfPeace": {
+    "label": "Die Wissenschaft des Friedens",
+    "title": "Empirisch gemessener Friedenseffekt",
+    "intro": "Was die vedische Tradition als Sutra formuliert, lässt sich heute messen. Wenn transzendentales Bewusstsein durch grosse Gruppen in der gemeinsamen Praxis fortgeschrittener Meditationstechniken erfahren und belebt wird, breitet sich eine messbare friedensfördernde Wirkung aus.",
+    "studyTitle": "Washington D.C., Sommer 1993",
+    "studyBody": "Eine viel zitierte Demonstration: Während eines achtwöchigen Experiments versammelten sich rund 4'000 Meditierende in Washington D.C. zur gemeinsamen Praxis fortgeschrittener Meditationstechniken. Die Studie dokumentierte einen statistisch signifikanten Rückgang der Gewaltkriminalität in der Stadt um 23 Prozent — mit einer maximalen Wahrscheinlichkeit von weniger als 2 Promille, dass dies durch Zufall erklärbar wäre.",
+    "studyCitation": "Hagelin, J. S. et al. (1999): Effects of group practice of the Transcendental Meditation program on preventing violent crime in Washington, D.C. — Social Indicators Research 47, 153–201.",
+    "guspText": "Diese Forschung wird heute international von der",
+    "guspLinkLabel": "Global Union of Scientists for Peace (GUSP)"
   },
-  "yagya": {
-    "title": "Experten in {{highlight}}Yagya{{/highlight}} – umfassende Ausbildung in vedischen Zeremonien",
-    "paragraph1": "In zahlreichen kleinen Dörfern in Indien schuf Maharishi ein Netzwerk von Unterricht für Studenten, die Maharishi Vedic Pandits werden wollten. In jedem Dorf beginnen Lehrer, bekannt als Guru Jis, mit der Ausbildung von Pandit-Studenten im Alter von 10 Jahren.",
-    "paragraph2": "Mit 14 Jahren haben sie die Möglichkeit, einer von vielen regionalen Einrichtungen in ganz Indien beizutreten und Unterricht unter der Aufsicht erfahrener Acharyas (Lehrer) zu erhalten. Die Studenten folgen einem systematischen und detaillierten Ausbildungsprogramm, das von Maharishi entworfen wurde und Videobänder und computergestütztes Lernen umfasst.",
-    "paragraph3": "Wenn sie mit etwa 20 Jahren abschliessen, sind sie erfahren in der Durchführung von Yagyas. Yagya ist eine zeitlose Technologie aus der vedischen Tradition. Yagyas werden von Pandits durchgeführt, um die Naturgesetze zu beleben, die das Universum auf spezifische Weise verwalten.",
-    "paragraph4": "Zum Beispiel kommen jeden Tag im Brahmasthan von Indien Tausende Pandits zusammen, um Atirudrabhishek durchzuführen, die mächtige Yagya für den Weltfrieden. Die UNESCO hat die vedische Rezitation offiziell als «immaterielles Kulturerbe der Menschheit» bezeichnet.",
-    "stat1Number": "1331",
-    "stat1Label": "Pandits täglich",
-    "stat2Number": "10–20",
-    "stat2Label": "Jahre Ausbildung"
+  "indien": {
+    "meta": {
+      "title": "Maharishi Vedic Pandits in Indien — Globale Friedensinitiative Schweiz",
+      "description": "Über tausend Maharishi Vedic Pandits führen täglich vedische Friedensrituale für die ganze Welt durch. Erfahren Sie mehr über das Trainingsnetzwerk und die wissenschaftliche Grundlage."
+    },
+    "hero": {
+      "eyebrow": "Unser Projekt in Indien",
+      "title": "Maharishi Vedic Pandits",
+      "subtitle": "Frieden für die Welt durch die zeitlosen vedischen Traditionen Indiens."
+    },
+    "training": {
+      "title": "Systematische Ausbildung der {{highlight}}Maharishi Vedic Pandits{{/highlight}}",
+      "paragraph1": "Von jungen Jahren an durchlaufen Studenten aus traditionellen vedischen Familien Indiens eine systematische Ausbildung, um Friedensprofis zu werden – Maharishi Vedic Pandits. Vom Alter von 10 bis 20 Jahren folgen sie einem speziellen Studienprogramm, das von Maharishi entworfen wurde.",
+      "paragraph2": "Es umfasst das Erlernen der Transzendentalen Meditation und des TM-Sidhi-Programms, das Studium von Sanskrit und die Erlangung von Fähigkeiten in der Durchführung von Yagyas, den traditionellen vedischen Zeremonien, die Glück und Frieden bringen.",
+      "paragraph3": "Ihr tägliches Studium wird mit Credits für Bachelor-, Master- und Ph.D.-Programme angerechnet, die von der Maharishi Mahesh Yogi Vedic Vishwavidyalaya verliehen werden, einer staatlichen Universität, die 1995 von der Regierung von Madhya Pradesh gegründet wurde."
+    },
+    "yoga": {
+      "title": "Experten im Yoga – {{highlight1}}Transzendentale Meditation{{/highlight1}} und das {{highlight2}}TM-Sidhi-Programm{{/highlight2}}",
+      "paragraph1": "Mehrere Stunden täglich üben die Maharishi Vedic Pandits im Brahmasthan das Wesen des Yoga – das Transzendentale Meditation und TM-Sidhi-Programm. Das TM-Sidhi-Programm wurde von Maharishi aus den Yoga-Sutren von Patanjali abgeleitet – dem zentralen Text der Yoga-Philosophie.",
+      "paragraph2": "Dieses Programm entwickelt die Fähigkeit, aus stilleren und kohärenteren Bewusstseinsebenen zu handeln. Je mehr die Pandits in die Fähigkeit wachsen, aus subtileren Bewusstseinsebenen zu handeln, desto effektiver werden sie bei ihrer täglichen vedischen Praxis für den Weltfrieden.",
+      "quoteIntro": "Der wichtigste vedische Text des Yoga – die Yoga-Sutren – beschreibt, wie Frieden durch die Erfahrung des Transzendierens geschaffen werden kann:",
+      "sanskritQuote": "Tat sannidhau vairatyagah",
+      "quoteTranslation": "«In der Nähe des Yoga (der Erfahrung des transzendentalen Bewusstseins, des vereinheitlichten Feldes) werden feindliche, konfliktträchtige Tendenzen beseitigt.»",
+      "quoteSource": "– Yoga-Sutra 2.35",
+      "closingText": "Zahlreiche wissenschaftliche Studien haben gezeigt: Wenn eine ausreichend grosse Gruppe gemeinsam diese Techniken praktiziert, lässt sich in der umgebenden Gesellschaft ein messbarer Rückgang von Konflikten und Gewalt beobachten. Diesen empirisch dokumentierten Zusammenhang zwischen kollektiver Bewusstseinspraxis und gesellschaftlichem Frieden macht sich die Globale Friedensinitiative zunutze."
+    },
+    "yagya": {
+      "title": "Experten in {{highlight}}Yagya{{/highlight}} – umfassende Ausbildung in vedischen Zeremonien",
+      "paragraph1": "In zahlreichen kleinen Dörfern in Indien schuf Maharishi ein Netzwerk von Unterricht für Studenten, die Maharishi Vedic Pandits werden wollten. In jedem Dorf beginnen Lehrer, bekannt als Guru Jis, mit der Ausbildung von Pandit-Studenten im Alter von 10 Jahren.",
+      "paragraph2": "Mit 14 Jahren haben sie die Möglichkeit, einer von vielen regionalen Einrichtungen in ganz Indien beizutreten und Unterricht unter der Aufsicht erfahrener Acharyas (Lehrer) zu erhalten. Die Studenten folgen einem systematischen und detaillierten Ausbildungsprogramm, das von Maharishi entworfen wurde und Videobänder und computergestütztes Lernen umfasst.",
+      "paragraph3": "Wenn sie mit etwa 20 Jahren abschliessen, sind sie erfahren in der Durchführung von Yagyas. Yagya ist eine zeitlose Technologie aus der vedischen Tradition. Yagyas werden von Pandits durchgeführt, um die Naturgesetze zu beleben, die das Universum auf spezifische Weise verwalten.",
+      "paragraph4": "Zum Beispiel kommen jeden Tag im Brahmasthan von Indien Tausende Pandits zusammen, um Atirudrabhishek durchzuführen, die mächtige Yagya für den Weltfrieden. Die UNESCO hat die vedische Rezitation offiziell als «immaterielles Kulturerbe der Menschheit» bezeichnet.",
+      "stat1Number": "1331",
+      "stat1Label": "Pandits täglich",
+      "stat2Number": "10–20",
+      "stat2Label": "Jahre Ausbildung"
+    },
+    "media": {
+      "title": "Klänge und Bilder",
+      "description": "Um einen Eindruck von den Maharishi Vedic Pandits in Aktion zu bekommen, hier eine Bilderschau von Pandits, die Yagyas durchführen.",
+      "videoTitle": "Maharishi Vedic Pandits in Aktion",
+      "videoId": "ZQOxpwHk0fQ",
+      "featuredVideo": "Empfohlenes Video",
+      "moreVideos": "Mehr Videos",
+      "photoGallery": "Fotogalerie"
+    }
   },
-  "media": {
-    "title": "Klänge und Bilder",
-    "description": "Um einen Eindruck von den Maharishi Vedic Pandits in Aktion zu bekommen, hier eine Bilderschau von Pandits, die Yagyas durchführen.",
-    "videoTitle": "Maharishi Vedic Pandits in Aktion",
-    "videoId": "ZQOxpwHk0fQ",
-    "featuredVideo": "Empfohlenes Video",
-    "moreVideos": "Mehr Videos",
-    "photoGallery": "Fotogalerie"
+  "kongo": {
+    "meta": {
+      "title": "Transzendentale Meditation im Kongo — Globale Friedensinitiative Schweiz",
+      "description": "Über 30'000 Menschen im Osten der DR Kongo haben kostenlos Transzendentale Meditation gelernt. Drei TM-Lehrer helfen traumatisierten Gemeinschaften, zurück ins Leben zu finden."
+    },
+    "hero": {
+      "eyebrow": "Unser Projekt im Kongo",
+      "title": "Transzendentale Meditation im Kongo",
+      "subtitle": "Wie über 30'000 Menschen im Osten der Demokratischen Republik Kongo durch Meditation aus dem Trauma zurück ins Leben finden."
+    },
+    "story": {
+      "title": "Eine Begegnung, die alles veränderte",
+      "paragraph1": "Das Projekt begann in der Grenzstadt Kasindi in Nordkivu, am Rand des Virunga-Nationalparks. Am Anfang stand die Begegnung zwischen dem TM-Lehrer Bamande Tsongo, Leiter einer bewusstseinsbasierten Schule im ugandischen Kasese, und dem lokalen Kirchenführer Bischof Asifiwe Salama. Der Bischof hatte die Vision, seiner von Krieg und Trauma gezeichneten Bevölkerung inneren Frieden zu bringen — und lernte als Erster die Transzendentale Meditation.",
+      "paragraph2": "Die Erfahrung tiefer innerer Ruhe überzeugte ihn so sehr, dass er die Technik sofort in seine Kirche und seine Schulen brachte. Aus einer ersten Gruppe von 300 Kindern und ihren Lehrpersonen wuchs die Nachfrage rasant — heute haben über 30'000 Menschen die Technik erlernt, vollständig kostenlos.",
+      "imageAlt": "Gruppenmeditation im TM-Center in Kasindi",
+      "imageCaption": "Gruppenmeditation im TM-Center in Kasindi"
+    },
+    "teachers": {
+      "title": "Drei Lehrer, eine Mission",
+      "paragraph1": "Bamande Tsongo wird heute von zwei TM-Lehrern kongolesischer Herkunft unterstützt: «Nancy» Dede Manoka und Clovis Kidiapongo. Gemeinsam unterrichten die drei jeden Monat rund 500 Menschen — in Schulen, Waisenhäusern und Gemeindeorganisationen der Region, in Swahili und lokalen Sprachen.",
+      "paragraph2": "Sie sind das Herz des Projekts: Sie reisen zu den Gemeinschaften, unterrichten, begleiten die regelmässige Praxis und bauen lokale Strukturen auf, damit das Projekt langfristig auf eigenen Beinen steht.",
+      "imageAlt": "Die TM-Lehrer Bamande, Nancy und Clovis vor einer Schule",
+      "imageCaption": "Die TM-Lehrer Bamande, Nancy und Clovis vor einer Schule, die TM eingeführt hat"
+    },
+    "stats": {
+      "learnersValue": "30'000+",
+      "learnersLabel": "TM-Lernende",
+      "monthlyValue": "~500",
+      "monthlyLabel": "Neue pro Monat",
+      "teachersValue": "3",
+      "teachersLabel": "TM-Lehrer",
+      "yearsValue": "5+",
+      "yearsLabel": "Jahre aktiv"
+    },
+    "impact": {
+      "title": "Heilung von innen: Trauma überwinden",
+      "paragraph1": "Der Osten des Kongo ist geprägt von Gewalt, Vertreibung und einer grossen Zahl intern Vertriebener. Viele Menschen, die in unsere Zentren kommen, tragen Erfahrungen von Folter und dem gewaltsamen Verlust von Angehörigen mit sich.",
+      "paragraph2": "Durch die regelmässige Praxis der Transzendentalen Meditation erfahren schwer traumatisierte Menschen spürbare Linderung der lähmenden Symptome posttraumatischer Belastung. Viele berichten, dass sie zum ersten Mal seit Jahren wieder tief schlafen können. Mit der inneren Heilung kehren Motivation, Energie und Kreativität zurück — und damit die Fähigkeit, sich eine Zukunft vorzustellen.",
+      "paragraph3": "Das Programm erreicht inzwischen auch Militärveteranen mit schweren psychischen Belastungen sowie stark benachteiligte indigene Pygmäen-Gemeinschaften — und hilft ihnen, Würde und Verbundenheit zurückzugewinnen.",
+      "image1Alt": "Schulkinder meditieren im Freien",
+      "image1Caption": "Schulkinder meditieren gemeinsam im Freien",
+      "image2Alt": "Schulkinder meditieren auf Stühlen",
+      "image2Caption": "Schulkinder auf Stühlen, welche die Stiftung bereitgestellt hat"
+    },
+    "support": {
+      "title": "Mehr als Meditation",
+      "intro": "Unser Engagement geht über das Unterrichten hinaus: Wir unterstützen die Gemeinschaften auf ihrem Weg in die Selbständigkeit.",
+      "item1Title": "Ausbildung & Landwirtschaft",
+      "item1Text": "Saatgut, Wellblech für Dächer und Schulungen in Seifenherstellung für intern Vertriebene nahe dem Virunga-Nationalpark — damit Familien Land bewirtschaften und ein eigenes Einkommen erwirtschaften können.",
+      "item2Title": "Infrastruktur",
+      "item2Text": "Die ersten Toiletten für die erste teilnehmende Schule, bequeme Stühle für die Meditation — und die vollständige Finanzierung von Lohn, Reisen, Unterkunft und Verpflegung der drei TM-Lehrer.",
+      "item3Title": "TM-Center",
+      "item3Text": "Ein gemietetes TM-Center, ausgestattet mit Solarpanels, Bildschirm und bequemen Stühlen, dient als Ort für Gruppenmeditation und Ausbildung."
+    },
+    "goals": {
+      "title": "Drei konkrete Vorhaben",
+      "intro": "Um diese Arbeit zu sichern und auszubauen, suchen wir gezielt Mittel für drei Projekte:",
+      "goal1Amount": "$50'000",
+      "goal1Title": "Eine Schule, die sich selbst trägt",
+      "goal1Text": "Das Grundstück ist bereits gekauft. Mit dem Bau einer eigenen Schule entsteht eine Einrichtung, die über moderate Schulgebühren die Löhne der Lehrkräfte deckt und die Ausweitung in weitere Städte finanziert.",
+      "goal2Amount": "$4'000",
+      "goal2Title": "Ein Zuhause für Bischof Asifiwe",
+      "goal2Text": "Der Bischof ist der lokale Botschafter des Projekts. Ein eigenes Haus befreit ihn von $1'440 Jahresmiete und sichert seine langfristige Stabilität.",
+      "goal3Amount": "$4'000",
+      "goal3Title": "Transport für die Ernte",
+      "goal3Text": "In Kamango hat der Bischof Land urbar gemacht und baut Nahrungsmittel an. Ein dreirädriges Transportfahrzeug bringt die Ernte zum Markt — und schafft eine nachhaltige Einkommensquelle für seine Gemeinschaft."
+    },
+    "transparency": {
+      "title": "Wie Ihre Spende ankommt",
+      "paragraph1": "Das Kongo-Projekt wird von drei Schweizer Organisationen gemeinsam getragen: der Globalen Friedensinitiative Schweiz, der David Lynch Foundation Schweiz und der Stiftung für das Zeitalter der Erleuchtung. Die gesammelten Mittel werden zentral verwaltet und direkt an die TM-Lehrer und Projekte im Ostkongo gesendet.",
+      "paragraph2": "Vor Ort haben wir die Gründung einer Maharishi Association im Kongo angestossen, damit künftig auch direkt im Land Mittel empfangen und verwaltet werden können.",
+      "hundredTitle": "100% Ihrer Spende erreicht das Projekt.",
+      "hundredText": "Alle Beteiligten in der Schweiz arbeiten ehrenamtlich — es fallen keine Verwaltungs- oder Personalkosten an. Ihre Spende finanziert direkt die TM-Lehrer, ihre Reisen, Materialien und die Infrastruktur vor Ort."
+    },
+    "cta": {
+      "title": "Dieses Projekt unterstützen",
+      "text": "Mit Ihrer Spende an die Friedensinitiative tragen Sie direkt dazu bei, dass Bamande, Nancy und Clovis jeden Monat hunderte weitere Menschen unterrichten können.",
+      "button": "Jetzt spenden"
+    }
   },
   "about": {
     "hero": {
       "title": "Über die Friedensinitiative",
       "subtitle": "Maharishi Mahesh Yogi und sein Vermächtnis für den Weltfrieden"
     },
-    "intro": "Maharishi Mahesh Yogi (1918–2008) war der Begründer der Transzendentalen Meditationstechnik und des Global Country of World Peace. Er widmete sein Leben der Vermittlung der zeitlosen Weisheit der vedischen Tradition an die moderne Welt.",
+    "intro": "Maharishi Mahesh Yogi (1918–2008) war der Begründer der Transzendentalen Meditation. Er widmete sein Leben dem Bringen der zeitlosen Weisheit der vedischen Tradition in die moderne Welt — in der Sprache der Wissenschaft und zu konkretem Nutzen aller.",
     "sections": {
       "earlyLife": {
         "title": "Frühes Leben und Ausbildung",
-        "text": "Als Mahesh Prasad Varma in Jabalpur, Indien geboren, studierte Maharishi Physik an der Allahabad University, bevor er seinen Meister Swami Brahmananda Saraswati traf. Dreizehn Jahre lang diente er als persönlicher Sekretär und Schüler seines Meisters und nahm die alte vedische Weisheit in sich auf."
+        "text": "Maharishi studierte Physik an der Allahabad University, bevor er seinem Meister Swami Brahmananda Saraswati begegnete. Dreizehn Jahre lang diente er ihm als persönlicher Sekretär und Schüler und nahm die alte vedische Weisheit in sich auf."
       },
       "teaching": {
         "title": "Lehrmission",
-        "text": "1955 begann Maharishi, Transzendentale Meditation in ganz Indien zu unterrichten. 1959 machte er seinen ersten Besuch im Westen und begann eine weltweite Mission, die schliesslich diese einfache, natürliche Technik Millionen von Menschen in über 100 Ländern bringen würde."
+        "text": "1955 begann Maharishi, die Transzendentale Meditation in ganz Indien zu lehren. 1959 reiste er erstmals in den Westen und begann eine weltweite Mission, die diese einfache, natürliche Technik schliesslich zu Millionen Menschen in über 100 Ländern bringen sollte."
       },
       "vedicScience": {
         "title": "Vedische Wissenschaft",
-        "text": "Maharishi belebte das vollständige Wissen der vedischen Tradition wieder, einschliesslich Ayurveda, Vedischer Architektur (Sthapatya Veda), Vedischer Musik (Gandharva Veda) und der Technologien von Yagya und Jyotish. Er gründete Universitäten und Institutionen weltweit, um diese alte Weisheit zu bewahren und zu lehren."
+        "text": "Maharishi belebte vedisches Wissen in seiner Vollständigkeit wieder, einschliesslich der Ayurveda-Medizin, der vedischen Architektur (Sthapatya Veda), der vedischen Musik (Gandharva Veda) sowie der Technologien des Yoga, Yagya und Jyotish. Er gründete weltweit Universitäten und Institutionen, um diese alte Weisheit zu bewahren und zu lehren."
       },
       "peaceInitiative": {
         "title": "Die Globale Friedensinitiative Schweiz",
@@ -88,7 +229,38 @@
       "vedicScience": "1960er+"
     },
     "quote": "Das Ziel der Transzendentalen Meditation ist der Zustand der Erleuchtung. Wir erfahren diese innere Ruhe, diesen stillen Zustand geringster Anregung, selbst wenn wir dynamisch beschäftigt sind.",
-    "quoteAttribution": "— Maharishi Mahesh Yogi"
+    "quoteAttribution": "— Maharishi Mahesh Yogi",
+    "committee": {
+      "title": "Vereinsvorstand",
+      "intro": "Der gegenwärtige Vorstand setzt sich wie folgt zusammen:",
+      "members": [
+        {
+          "name": "Felix Kaegi",
+          "role": "Präsident",
+          "location": "Luzern"
+        },
+        {
+          "name": "Maria Odermatt",
+          "role": "Vorstand",
+          "location": "Nidwalden"
+        },
+        {
+          "name": "Doris Perauer",
+          "role": "Vorstand",
+          "location": "St. Gallen"
+        },
+        {
+          "name": "Claude Newell",
+          "role": "Vorstand",
+          "location": "Genf"
+        },
+        {
+          "name": "Leonard Stein",
+          "role": "Vorstand",
+          "location": "Genf"
+        }
+      ]
+    }
   },
   "donate": {
     "hero": {
@@ -161,7 +333,12 @@
       "line1": "Montag – Freitag: 9:00 – 17:00 Uhr",
       "line2": "Samstag – Sonntag: geschlossen"
     },
-    "sendMessageTitle": "Nachricht senden"
+    "sendMessageTitle": "Nachricht senden",
+    "phone": {
+      "label": "Telefon",
+      "number": "+41 78 445 60 76",
+      "note": "Bei Fragen erreichen Sie uns auch telefonisch."
+    }
   },
   "footer": {
     "imprint": "Impressum",

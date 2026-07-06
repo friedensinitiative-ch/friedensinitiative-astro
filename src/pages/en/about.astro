@@ -2,9 +2,11 @@
 import PageLayout from '@layouts/PageLayout.astro';
 import ResponsiveImage from '@components/ResponsiveImage.astro';
 import { useTranslations } from '@i18n/index';
+import localeData from '../../i18n/locales/en.json';
 
 const locale = 'en' as const;
 const t = useTranslations(locale);
+const committee = localeData.about.committee;
 
 // Sections of Maharishi's life, with associated year markers.
 // peaceInitiative has no year — it's a present-day continuation.
@@ -93,6 +95,21 @@ const sections = [
           ↓ {t('about.swiss.docsStatutes')}
         </a>
       </div>
+    </section>
+
+    <!-- Committee -->
+    <section class="mt-16 pt-12 border-t border-brand-gold-200/50">
+      <h2 class="text-2xl md:text-3xl mb-2">{t('about.committee.title')}</h2>
+      <p class="text-brand-ink-soft mb-8 max-w-prose">{t('about.committee.intro')}</p>
+      <ul class="grid sm:grid-cols-2 gap-4 max-w-3xl">
+        {committee.members.map((m) => (
+          <li class="card-soft">
+            <p class="text-lg text-brand-ink">{m.name}</p>
+            <p class="text-sm text-brand-gold-600">{m.role}</p>
+            <p class="text-sm text-brand-ink-muted">{m.location}</p>
+          </li>
+        ))}
+      </ul>
     </section>
   </div>
 </PageLayout>
