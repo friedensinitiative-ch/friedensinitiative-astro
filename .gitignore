@@ -32,3 +32,6 @@ v*-patch/
 /*.jpg
 /*.png
 
+# Translation review exports (work artifacts for board review, not source)
+korrektur-fr-leonard.csv
+
