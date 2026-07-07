@@ -5,6 +5,14 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      screens: {
+        // Small-phone breakpoints for the nav wordmark. Below these the nav
+        // hides the wordmark so the language switcher + donate CTA fit without
+        // overflow. FR needs a higher threshold because its CTA ("Faire un
+        // don") is much wider than DE ("Spenden") / EN ("Donate").
+        xs: '384px',
+        xsfr: '425px',
+      },
       colors: {
         // Brand palette — anchored on the gold accent that runs through
         // the existing site (Donate page, headings, CTAs).
