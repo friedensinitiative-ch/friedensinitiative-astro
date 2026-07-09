@@ -10,7 +10,7 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Initiative Mondiale de Paix Suisse",
+      "eyebrow": "Initiative mondiale de paix Suisse",
       "title": "La paix commence dans la conscience",
       "subtitle": "Nous soutenons des projets qui génèrent la paix depuis le niveau le plus fondamental de la vie.",
       "ctaPrimary": "Découvrir nos projets",
@@ -64,7 +64,7 @@
   },
   "indien": {
     "meta": {
-      "title": "Pandits Védiques de Maharishi en Inde — Initiative Mondiale de Paix Suisse",
+      "title": "Pandits védiques Maharishi en Inde — Initiative mondiale de paix Suisse",
       "description": "Plus de mille Pandits védiques réalisent quotidiennement des rituels védiques de paix pour le monde entier. Découvrez le réseau de formation et la base scientifique de leur impact."
     },
     "hero": {
@@ -79,7 +79,7 @@
       "paragraph3": "Leurs études quotidiennes valent des crédits pour les programmes de Licence, Master et Doctorat décernés par la Maharishi Mahesh Yogi Vedic Vishwavidyalaya, une université statutaire établie par le gouvernement de l'État du Madhya Pradesh en 1995."
     },
     "yoga": {
-      "title": "Experts en yoga – {{highlight1}}Méditation Transcendantale{{/highlight1}} et le {{highlight2}}programme TM-Sidhi{{/highlight2}}",
+      "title": "Experts en yoga – {{highlight1}}Méditation Transcendantale{{/highlight1}} et le {{highlight2}}programme MT-Sidhi{{/highlight2}}",
       "paragraph1": "Pendant plusieurs heures chaque jour, les Pandits védiques Maharishi au Brahmasthan pratiquent l'essence du Yoga – le programme de Méditation Transcendantale et MT-Sidhi. Le programme MT-Sidhi a été dérivé par Maharishi des Aphorismes du Yoga de Patanjali – le texte central de la philosophie du Yoga.",
       "paragraph2": "Ce programme développe la capacité d'agir à partir de niveaux de conscience plus silencieux et cohérents. À mesure que les Pandits développent leur capacité d'agir à partir de niveaux de conscience plus subtils, ils deviennent très efficaces dans leurs performances védiques quotidiennes pour la paix mondiale.",
       "quoteIntro": "Le principal texte védique du Yoga – les Aphorismes du Yoga – décrit comment la paix peut être créée à travers l'expérience de la transcendance :",
@@ -111,7 +111,7 @@
   },
   "kongo": {
     "meta": {
-      "title": "Méditation Transcendantale au Congo — Initiative Mondiale de Paix Suisse",
+      "title": "Méditation Transcendantale au Congo — Initiative mondiale de paix Suisse",
       "description": "Plus de 30 000 personnes dans l'est de la RD Congo ont appris gratuitement la Méditation Transcendantale grâce à notre soutien. Trois enseignants de MT aident des communautés traumatisées à retrouver le chemin de la vie."
     },
     "hero": {
@@ -185,7 +185,7 @@
     },
     "cta": {
       "title": "Soutenir ce projet",
-      "text": "Par votre don à l'Initiative de Paix, vous permettez directement à Bamande, Nancy et Clovis d'instruire chaque mois des centaines de personnes supplémentaires.",
+      "text": "Par votre don à l'Initiative de paix, vous permettez directement à Bamande, Nancy et Clovis d'instruire chaque mois des centaines de personnes supplémentaires.",
       "button": "Faire un don"
     }
   },
@@ -292,9 +292,9 @@
       "intro": "Le paiement est traité via Donorbox."
     },
     "footer": {
-      "volunteer": "Le comité de l'Initiative pour la Paix s'engage bénévolement.",
+      "volunteer": "Le comité de l'Initiative pour la paix s'engage bénévolement.",
       "contact": "spenden@friedensinitiative.ch",
-      "tax": "Les dons à l'Initiative Mondiale de Paix Suisse sont déductibles fiscalement dans la mesure permise par la loi. Une attestation est disponible sur demande."
+      "tax": "Les dons à l'Initiative mondiale de paix Suisse sont déductibles fiscalement dans la mesure permise par la loi. Une attestation est disponible sur demande."
     }
   },
   "contact": {
@@ -343,7 +343,7 @@
   "footer": {
     "imprint": "Mentions légales",
     "privacy": "Confidentialité",
-    "copyright": "Tous les contenus © {{year}} Initiative Mondiale de Paix Suisse, association à but non lucratif, IDE: CHE-142.469.811. Tous droits réservés.",
+    "copyright": "Tous les contenus © {{year}} Initiative mondiale de paix Suisse, association à but non lucratif, IDE: CHE-142.469.811. Tous droits réservés.",
     "trademark": "Méditation Transcendantale, TM, TM-Sidhi, Maharishi, Maharishi Yagya, Maharishi Jyotish, Maharishi Vedic et Yogic Flying sont des marques protégées dans de nombreux pays du monde, y compris les États-Unis et l'Union Européenne."
   },
   "gallery": {
