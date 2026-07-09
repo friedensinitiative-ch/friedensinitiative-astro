@@ -35,19 +35,19 @@
     "sectionIntro": "Notre initiative de paix soutient des projets fondés sur la conscience qui génèrent la paix au niveau le plus fondamental. Voici les initiatives que nous soutenons actuellement.",
     "indien": {
       "label": "Inde",
-      "title": "Pandits Védiques de Maharishi",
-      "teaser": "Plus de mille Pandits formés selon la tradition réalisent quotidiennement des rituels védiques de paix au centre géographique de l'Inde.",
+      "title": "Pandits védiques Maharishi",
+      "teaser": "Plus de mille Pandits (experts védiques) formés selon la tradition réalisent quotidiennement des rituels védiques de paix au centre géographique de l'Inde.",
       "cta": "En savoir plus"
     },
     "kongo": {
       "label": "Congo",
       "title": "Méditation Transcendantale dans l'Est du Congo",
-      "teaser": "Au Nord-Kivu, trois enseignants de MT enseignent la Méditation Transcendantale — gratuitement, dans des écoles, orphelinats et communautés. Plus de 30 000 personnes ont ainsi trouvé une issue au traumatisme.",
+      "teaser": "Au Nord-Kivu, trois enseignants de MT enseignent gratuitement la Méditation Transcendantale dans des écoles, orphelinats et communautés. Plus de 30 000 personnes ont ainsi trouvé une issue au traumatisme.",
       "cta": "En savoir plus"
     },
     "schweiz": {
       "label": "Suisse",
-      "title": "Projet de paix Suisse",
+      "title": "Projet de paix en Suisse",
       "teaser": "Nous préparons un nouveau projet de paix fondé sur la conscience au cœur de l'Europe. Détails à venir.",
       "cta": "En préparation"
     }
@@ -55,9 +55,9 @@
   "scienceOfPeace": {
     "label": "La science de la paix",
     "title": "Un effet de paix mesuré empiriquement",
-    "intro": "Ce que la tradition védique formule dans un soutra peut aujourd'hui être mesuré. Lorsque la conscience transcendantale est éveillée par de grands groupes pratiquant ensemble des techniques de méditation avancées, une influence pacifique mesurable se répand.",
+    "intro": "Ce que la tradition védique formule dans un soutra peut aujourd'hui être mesuré. Lorsque la conscience transcendantale est éveillée par de grands groupes pratiquant ensemble des techniques de méditation avancées, une influence pacifiante mesurable se répand.",
     "studyTitle": "Washington D.C., été 1993",
-    "studyBody": "Dans une démonstration largement citée, environ 4 000 méditants se sont réunis à Washington D.C. pour une expérience de huit semaines de pratique de groupe en techniques de méditation avancées. L'étude a documenté une réduction statistiquement significative de 23 pour cent de la criminalité violente dans la ville — avec une probabilité maximale inférieure à 2 sur 1 000 que cela puisse s'expliquer par le hasard.",
+    "studyBody": "Dans une démonstration largement citée, environ 4 000 méditants se sont réunis à Washington D.C. pour une expérience de huit semaines de pratique en groupe de techniques de méditation avancées. L'étude a documenté une réduction statistiquement significative de 23 pour cent de la criminalité violente dans la ville — avec une probabilité maximale inférieure à 2 sur 1000 que cela puisse s'expliquer par le hasard.",
     "studyCitation": "Hagelin, J. S. et al. (1999) : Effects of group practice of the Transcendental Meditation program on preventing violent crime in Washington, D.C. — Social Indicators Research 47, 153–201.",
     "guspText": "Cette recherche est soutenue au niveau international par la",
     "guspLinkLabel": "Global Union of Scientists for Peace (GUSP)"
@@ -65,35 +65,35 @@
   "indien": {
     "meta": {
       "title": "Pandits Védiques de Maharishi en Inde — Initiative Mondiale de Paix Suisse",
-      "description": "Plus de mille Pandits Védiques de Maharishi réalisent quotidiennement des rituels védiques de paix pour le monde entier. Découvrez le réseau de formation et la base scientifique."
+      "description": "Plus de mille Pandits védiques réalisent quotidiennement des rituels védiques de paix pour le monde entier. Découvrez le réseau de formation et la base scientifique de leur impact."
     },
     "hero": {
       "eyebrow": "Notre projet en Inde",
-      "title": "Pandits Védiques de Maharishi",
-      "subtitle": "La paix pour le monde à travers les traditions védiques intemporelles de l'Inde."
+      "title": "Pandits védiques Maharishi",
+      "subtitle": "La paix dans le monde à travers les traditions védiques intemporelles de l'Inde."
     },
     "training": {
-      "title": "Formation systématique des {{highlight}}Pandits Védiques Maharishi{{/highlight}}",
-      "paragraph1": "Dès leur plus jeune âge, les étudiants des familles védiques traditionnelles de l'Inde suivent une formation systématique pour devenir des professionnels de la paix – les Pandits Védiques Maharishi. De l'âge de 10 à 20 ans, ils suivent un programme d'études spécial conçu par Maharishi.",
-      "paragraph2": "Il comprend l'apprentissage de la Méditation Transcendantale et du programme TM-Sidhi, l'étude du sanskrit et l'acquisition de compétences pour effectuer des Yagyas, les cérémonies védiques traditionnelles qui apportent bonheur et paix.",
+      "title": "Formation systématique des {{highlight}}Pandits védiques Maharishi{{/highlight}}",
+      "paragraph1": "Dès leur plus jeune âge, les étudiants des familles védiques traditionnelles de l'Inde suivent une formation systématique pour devenir des professionnels de la paix – les Pandits Védiques Maharishi. De l'âge de 10 à 20 ans, ils suivent un programme d'études spécial conçu par Maharishi Mahesh Yogi, fondateur de la Méditation Transcendantale.",
+      "paragraph2": "Il comprend l'apprentissage de la Méditation Transcendantale et du programme MT-Sidhi, l'étude du sanskrit et l'acquisition de compétences pour effectuer des Yagyas, les cérémonies védiques traditionnelles qui apportent bonheur et paix.",
       "paragraph3": "Leurs études quotidiennes valent des crédits pour les programmes de Licence, Master et Doctorat décernés par la Maharishi Mahesh Yogi Vedic Vishwavidyalaya, une université statutaire établie par le gouvernement de l'État du Madhya Pradesh en 1995."
     },
     "yoga": {
       "title": "Experts en yoga – {{highlight1}}Méditation Transcendantale{{/highlight1}} et le {{highlight2}}programme TM-Sidhi{{/highlight2}}",
-      "paragraph1": "Pendant plusieurs heures chaque jour, les Pandits Védiques Maharishi au Brahmasthan pratiquent l'essence du Yoga – le programme de Méditation Transcendantale et TM-Sidhi. Le programme TM-Sidhi a été dérivé par Maharishi des Sutras de Yoga de Patanjali – le texte central de la philosophie du Yoga.",
+      "paragraph1": "Pendant plusieurs heures chaque jour, les Pandits védiques Maharishi au Brahmasthan pratiquent l'essence du Yoga – le programme de Méditation Transcendantale et MT-Sidhi. Le programme MT-Sidhi a été dérivé par Maharishi des Aphorismes du Yoga de Patanjali – le texte central de la philosophie du Yoga.",
       "paragraph2": "Ce programme développe la capacité d'agir à partir de niveaux de conscience plus silencieux et cohérents. À mesure que les Pandits développent leur capacité d'agir à partir de niveaux de conscience plus subtils, ils deviennent très efficaces dans leurs performances védiques quotidiennes pour la paix mondiale.",
-      "quoteIntro": "Le principal texte védique du Yoga – les Sutras de Yoga – décrit comment la paix peut être créée à travers l'expérience de la transcendance :",
+      "quoteIntro": "Le principal texte védique du Yoga – les Aphorismes du Yoga – décrit comment la paix peut être créée à travers l'expérience de la transcendance :",
       "sanskritQuote": "Tat sannidhau vairatyagah",
-      "quoteTranslation": "« Dans le voisinage du Yoga (l'expérience de la Conscience Transcendantale, le Champ Unifié) les tendances hostiles et conflictuelles sont éliminées. »",
-      "quoteSource": "– Sutra de Yoga 2.35",
-      "closingText": "De nombreuses études scientifiques ont montré que lorsqu'un groupe suffisamment grand pratique ensemble ces techniques, on observe une réduction mesurable des conflits et de la violence dans la société environnante. C'est ce lien empiriquement documenté entre la pratique collective de la conscience et la paix sociale que l'Initiative Mondiale de Paix met à profit."
+      "quoteTranslation": "« Dans le voisinage du Yoga (l'expérience de la Conscience transcendantale, le Champ unifié) les tendances hostiles et conflictuelles sont éliminées. »",
+      "quoteSource": "– Aphorismes du Yoga 2.35",
+      "closingText": "De nombreuses études scientifiques ont montré que lorsqu'un groupe suffisamment grand pratique ensemble ces techniques, on observe une réduction mesurable des conflits et de la violence dans la société environnante. C'est ce lien empiriquement documenté entre la pratique collective de la conscience et la paix sociale que l'Initiative mondiale de paix met à profit."
     },
     "yagya": {
-      "title": "Experts en {{highlight}}yagya{{/highlight}} – formation extensive dans les performances védiques",
-      "paragraph1": "Dans de nombreux petits villages à travers l'Inde, Maharishi a créé un réseau d'enseignement pour les étudiants souhaitant devenir des Pandits Védiques Maharishi. Dans chaque village, des enseignants connus sous le nom de Guru Ji commencent à former les étudiants pandits dès l'âge de 10 ans.",
-      "paragraph2": "À 14 ans, ils ont l'opportunité de rejoindre l'une des nombreuses installations régionales à travers l'Inde et de recevoir un enseignement sous la supervision d'acharyas accomplis (enseignants). Les étudiants suivent un programme de formation systématique et détaillé conçu par Maharishi.",
-      "paragraph3": "Lorsqu'ils obtiennent leur diplôme vers l'âge de 20 ans, ils sont accomplis dans l'exécution des Yagyas. Le Yagya est une technologie intemporelle de la tradition védique. Les Yagyas sont effectués par les Pandits pour vivifier les lois de la nature qui administrent l'univers.",
-      "paragraph4": "Par exemple, chaque jour au Brahmasthan de l'Inde, des milliers de Pandits se réunissent pour effectuer l'Atirudrabhishek, le puissant Yagya pour la paix mondiale. L'UNESCO a officiellement décrit la récitation védique comme un « patrimoine immatériel de l'humanité ».",
+      "title": "Experts en {{highlight}}yagya{{/highlight}} – formation approfondie dans les performances védiques",
+      "paragraph1": "Dans de nombreux petits villages à travers l'Inde, Maharishi a créé un réseau d'enseignement pour les étudiants souhaitant devenir des Pandits védiques Maharishi. Dans chaque village, des enseignants appelés Guru Ji commencent à former les étudiants Pandits dès l'âge de 10 ans.",
+      "paragraph2": "À 14 ans, ils ont l'opportunité de rejoindre l'un des nombreux établissements régionaux à travers l'Inde et de recevoir un enseignement sous la supervision d'acharyas accomplis (enseignants). Les étudiants suivent un programme de formation systématique et détaillé conçu par Maharishi.",
+      "paragraph3": "Lorsqu'ils obtiennent leur diplôme vers l'âge de 20 ans, ils sont accomplis dans l'exécution des Yagyas, technologies intemporelles de la tradition védique. Les Yagyas sont effectués par les Pandits pour animer les lois de la nature fondamentales qui gouvernent l'univers.",
+      "paragraph4": "Par exemple, chaque jour au Brahmasthan de l'Inde, des milliers de Pandits se réunissent pour effectuer l'Atirudrabhishek, le puissant Yagya pour la paix mondiale. L'UNESCO a officiellement déclaré la récitation védique « patrimoine immatériel de l'humanité ».",
       "stat1Number": "1 331",
       "stat1Label": "Pandits quotidiens",
       "stat2Number": "10–20",
@@ -101,8 +101,8 @@
     },
     "media": {
       "title": "Sons et Visions",
-      "description": "Pour avoir une impression des Pandits Védiques Maharishi en action, voici un diaporama de Pandits effectuant des Yagyas.",
-      "videoTitle": "Pandits Védiques Maharishi en action",
+      "description": "Pour avoir une impression des Pandits védiques Maharishi en action, voici un diaporama de Pandits effectuant des Yagyas.",
+      "videoTitle": "Pandits védiques Maharishi en action",
       "videoId": "ZQOxpwHk0fQ",
       "featuredVideo": "Vidéo en vedette",
       "moreVideos": "Plus de vidéos",
@@ -112,17 +112,17 @@
   "kongo": {
     "meta": {
       "title": "Méditation Transcendantale au Congo — Initiative Mondiale de Paix Suisse",
-      "description": "Plus de 30 000 personnes dans l'est de la RD Congo ont appris gratuitement la Méditation Transcendantale. Trois enseignants de MT aident des communautés traumatisées à retrouver le chemin de la vie."
+      "description": "Plus de 30 000 personnes dans l'est de la RD Congo ont appris gratuitement la Méditation Transcendantale grâce à notre soutien. Trois enseignants de MT aident des communautés traumatisées à retrouver le chemin de la vie."
     },
     "hero": {
       "eyebrow": "Notre projet au Congo",
       "title": "Méditation Transcendantale au Congo",
-      "subtitle": "Comment plus de 30 000 personnes dans l'est de la République démocratique du Congo sortent du traumatisme et retrouvent la vie grâce à la méditation."
+      "subtitle": "Comment plus de 30 000 personnes dans l'est de la République démocratique du Congo surmontent les traumatismes et retrouvent goût à la vie grâce à la méditation."
     },
     "story": {
       "title": "Une rencontre qui a tout changé",
       "paragraph1": "Le projet a débuté dans la ville frontalière de Kasindi, au Nord-Kivu, en bordure du parc national des Virunga. Tout a commencé par la rencontre entre l'enseignant de MT Bamande Tsongo, directeur d'une école basée sur la conscience à Kasese, en Ouganda, et le dirigeant religieux local, l'évêque Asifiwe Salama. L'évêque avait la vision d'apporter la paix intérieure à son peuple, marqué par la guerre et les traumatismes — et fut le premier à apprendre la Méditation Transcendantale.",
-      "paragraph2": "L'expérience d'un calme intérieur profond le convainquit si pleinement qu'il introduisit immédiatement la technique dans son église et ses écoles. D'un premier groupe de 300 enfants et de leurs enseignants, la demande a grandi rapidement — aujourd'hui, plus de 30 000 personnes ont appris la technique, entièrement gratuitement.",
+      "paragraph2": "L'expérience d'un calme intérieur profond le convainquit si pleinement qu'il introduisit immédiatement la technique dans son église et ses écoles. D'un premier groupe de 300 enfants et de leurs enseignants, la demande a grandi rapidement — aujourd'hui, plus de 30 000 personnes ont appris la technique, entièrement gratuitement grâce au soutien de notre association.",
       "imageAlt": "Méditation de groupe au centre de MT de Kasindi",
       "imageCaption": "Méditation de groupe au centre de MT de Kasindi"
     },
@@ -137,15 +137,15 @@
       "learnersValue": "30 000+",
       "learnersLabel": "Personnes formées",
       "monthlyValue": "~500",
-      "monthlyLabel": "Nouvelles par mois",
+      "monthlyLabel": "nouvelles personnes instruites chaque mois",
       "teachersValue": "3",
       "teachersLabel": "Enseignants de MT",
       "yearsValue": "5+",
       "yearsLabel": "Années d'activité"
     },
     "impact": {
-      "title": "Guérir de l'intérieur : surmonter le traumatisme",
-      "paragraph1": "L'est du Congo est marqué par la violence, les déplacements et une importante population de personnes déplacées internes. Beaucoup de ceux qui viennent dans nos centres portent en eux des expériences de torture et la perte violente de proches.",
+      "title": "Guérir de l'intérieur : surmonter les traumatismes",
+      "paragraph1": "L'est du Congo est marqué par la violence, l'instabilité et une importante population de personnes déplacées internes. Beaucoup de ceux qui viennent dans nos centres portent en eux des expériences de torture et la perte violente de proches.",
       "paragraph2": "Grâce à la pratique régulière de la Méditation Transcendantale, des personnes gravement traumatisées ressentent un soulagement tangible des symptômes paralysants du stress post-traumatique. Beaucoup rapportent dormir profondément pour la première fois depuis des années. À mesure que la guérison s'opère de l'intérieur, la motivation, l'énergie et la créativité reviennent — et avec elles, la capacité d'envisager un avenir.",
       "paragraph3": "Le programme touche désormais aussi des vétérans militaires souffrant de graves crises psychiques, ainsi que des communautés pygmées autochtones profondément défavorisées — les aidant à retrouver dignité et sentiment d'appartenance.",
       "image1Alt": "Écoliers méditant en plein air",
@@ -166,19 +166,19 @@
     "goals": {
       "title": "Trois initiatives concrètes",
       "intro": "Pour pérenniser et développer ce travail, nous recherchons des fonds pour trois projets précis :",
-      "goal1Amount": "50 000 $",
+      "goal1Amount": "50 000 USD",
       "goal1Title": "Une école qui s'autofinance",
       "goal1Text": "Le terrain a déjà été acheté. La construction de notre propre école créera une institution qui couvrira les salaires des enseignants grâce à des frais modestes et financera l'expansion vers d'autres villes.",
-      "goal2Amount": "4 000 $",
+      "goal2Amount": "4 000 USD",
       "goal2Title": "Un foyer pour l'évêque Asifiwe",
-      "goal2Text": "L'évêque est l'ambassadeur local du projet. Une maison à lui le libère de 1 440 $ de loyer annuel et assure sa stabilité à long terme.",
-      "goal3Amount": "4 000 $",
+      "goal2Text": "L'évêque est l'ambassadeur local du projet. Une maison à lui le libère de 1 440 USD de loyer annuel et assure sa stabilité à long terme.",
+      "goal3Amount": "4 000 USD",
       "goal3Title": "Un transport pour les récoltes",
       "goal3Text": "À Kamango, l'évêque a défriché des terres et cultive des denrées alimentaires. Un véhicule de transport à trois roues amènera les récoltes au marché — créant une source de revenus durable pour sa communauté."
     },
     "transparency": {
       "title": "Comment votre don arrive à destination",
-      "paragraph1": "Le projet Congo est porté conjointement par trois organisations suisses : l'Initiative Mondiale de Paix Suisse, la David Lynch Foundation Suisse et la Fondation pour l'Ère de l'Illumination. Les fonds récoltés sont gérés de manière centralisée et envoyés directement aux enseignants de MT et aux projets dans l'est du Congo.",
+      "paragraph1": "Le projet Congo est porté conjointement par trois organisations suisses : l'Initiative mondiale de paix Suisse, la Fondation David Lynch Suisse et la Fondation pour l'âge de l'illumination. Les fonds récoltés sont gérés de manière centralisée et envoyés directement aux enseignants de MT et aux projets dans l'est du Congo.",
       "paragraph2": "Sur place, nous avons initié la création d'une Maharishi Association au Congo, afin qu'à l'avenir, des fonds puissent également être reçus et gérés directement dans le pays.",
       "hundredTitle": "100% de votre don parvient au projet.",
       "hundredText": "Toutes les personnes impliquées en Suisse travaillent bénévolement — il n'y a aucun frais administratif ni de personnel. Votre don finance directement les enseignants de MT, leurs déplacements, le matériel et les infrastructures sur place."
@@ -191,7 +191,7 @@
   },
   "about": {
     "hero": {
-      "title": "À propos de l'Initiative pour la Paix",
+      "title": "À propos de l'Initiative pour la paix",
       "subtitle": "Maharishi Mahesh Yogi et son héritage pour la paix mondiale"
     },
     "intro": "Maharishi Mahesh Yogi (1918–2008) était le fondateur de la technique de Méditation Transcendantale. Il a consacré sa vie à apporter la sagesse intemporelle de la tradition védique au monde moderne — dans le langage de la science et pour des bénéfices concrets pour tous.",
@@ -202,21 +202,21 @@
       },
       "teaching": {
         "title": "Mission d'enseignement",
-        "text": "En 1955, Maharishi a commencé à enseigner la Méditation Transcendantale à travers l'Inde. En 1959, il a effectué sa première visite en Occident, commençant une mission mondiale qui apporterait finalement cette technique simple et naturelle à des millions de personnes dans plus de 100 pays."
+        "text": "En 1955, Maharishi a commencé à enseigner la Méditation Transcendantale à travers l'Inde. En 1959, il a effectué sa première visite en Occident, commençant une mission mondiale qui a apporté cette technique simple et naturelle à des millions de personnes dans plus de 100 pays."
       },
       "vedicScience": {
         "title": "Science védique",
-        "text": "Maharishi a revivifié la connaissance védique dans sa complétude, incluant la médecine ayurvédique, l'architecture védique (Sthapatya Veda), la musique védique (Gandharva Veda), et les technologies du Yoga, du Yagya et du Jyotish. Il a établi des universités et des institutions à travers le monde pour préserver et enseigner cette sagesse ancienne."
+        "text": "Maharishi a revivifié la connaissance védique dans sa pleine valeur, incluant la médecine ayurvédique, l'architecture védique (Sthapatya Veda), la musique védique (Gandharva Veda), et les technologies du Yoga, du Yagya et du Jyotish. Il a établi des universités et des institutions à travers le monde pour préserver et enseigner cette sagesse ancienne."
       },
       "peaceInitiative": {
-        "title": "L'Initiative Mondiale de Paix Suisse",
-        "text": "L'Initiative Mondiale de Paix Suisse soutient les Pandits Védiques Maharishi en Inde qui méditent et effectuent des Yagyas quotidiennement pour la paix mondiale. Nous sommes une organisation à but non lucratif ; le comité s'engage bénévolement."
+        "title": "L'Initiative mondiale de paix Suisse",
+        "text": "L'Initiative mondiale de paix Suisse soutient les Pandits védiques Maharishi en Inde qui méditent et effectuent des Yagyas quotidiennement pour la paix mondiale. Nous sommes une organisation à but non lucratif ; le comité s'engage bénévolement."
       }
     },
     "swiss": {
       "title": "L'Initiative suisse",
       "subtitle": "Notre organisation porteuse",
-      "founding": "Initiative mondiale de Paix – Suisse a été fondée le 12 juillet 2012 à Seelisberg et a son siège à Bâle.",
+      "founding": "Initiative mondiale de paix – Suisse a été fondée le 12 juillet 2012 à Seelisberg et a son siège à Bâle.",
       "legal": "L'association est constituée au sens des art. 60 ss du Code civil suisse.",
       "tax": "Le 15 janvier 2013, l'administration fiscale du canton de Bâle-Ville a accordé à l'association l'exonération fiscale, tant pour les impôts cantonaux que pour l'impôt fédéral direct.",
       "uid": "Numéro d'identification des entreprises (IDE) : CHE-142.469.811",
@@ -228,7 +228,7 @@
       "teaching": "1955",
       "vedicScience": "1960+"
     },
-    "quote": "Le but de la méditation transcendantale est l'état d'illumination. Nous expérimentons ce calme intérieur, cet état tranquille de moindre excitation, même quand nous sommes dynamiquement occupés.",
+    "quote": "Le but de la Méditation Transcendantale est l'état d'illumination. Nous expérimentons ce calme intérieur, cet état tranquille de moindre excitation, même quand nous sommes dynamiquement occupés.",
     "quoteAttribution": "— Maharishi Mahesh Yogi",
     "committee": {
       "title": "Comité de l'association",
@@ -264,10 +264,10 @@
   },
   "donate": {
     "hero": {
-      "title": "Soutenez les Pandits Védiques",
+      "title": "Soutenez les Pandits védiques",
       "subtitle": "Votre contribution aide à créer la paix dans le monde"
     },
-    "intro": "Merci de votre intérêt à soutenir notre Initiative pour la Paix. Chaque contribution compte — du don ponctuel au parrainage mensuel.",
+    "intro": "Merci de votre intérêt à soutenir notre initiative pour la paix. Chaque contribution compte — du don ponctuel au parrainage mensuel.",
     "bank": {
       "title": "Don par virement bancaire — sans frais",
       "intro": "Pour éviter les frais bancaires, faites un don directement par virement bancaire sur le compte PostFinance suivant :",
@@ -302,7 +302,7 @@
       "title": "Contactez-nous",
       "subtitle": "Nous serions ravis de vous entendre"
     },
-    "intro": "Avez-vous des questions sur le programme des Pandits Védiques Maharishi ? Souhaitez-vous en savoir plus sur la manière dont vous pouvez soutenir la paix mondiale ? Prenez contact avec nous.",
+    "intro": "Avez-vous des questions sur le programme des Pandits védiques Maharishi ? Souhaitez-vous en savoir plus sur la manière dont vous pouvez soutenir la paix mondiale ? Prenez contact avec nous.",
     "form": {
       "name": "Votre nom",
       "email": "Adresse e-mail",
@@ -324,7 +324,7 @@
     "info": {
       "title": "Informations de contact",
       "email": "info@friedensinitiative.ch",
-      "address": "Initiative Mondiale de Paix Suisse, 4000 Basel",
+      "address": "Initiative mondiale de paix Suisse, 4000 Bâle",
       "phone": "+41 44 260 44 72"
     },
     "responseTime": "Nous répondons généralement dans les 24–48 heures les jours ouvrables.",
@@ -349,9 +349,9 @@
   "gallery": {
     "hero": {
       "title": "Galerie photos",
-      "subtitle": "Maharishi, les Pandits Védiques et la tradition védique"
+      "subtitle": "Maharishi, les Pandits védiques et la tradition védique"
     },
-    "intro": "Une collection de photographies de nos projets de paix — de Maharishi et la tradition védique aux Pandits Védiques Maharishi en Inde, jusqu’au projet de paix au Congo.",
+    "intro": "Une collection de photographies de nos projets de paix — de Maharishi Mahesh Yogi, fondateur de la Méditation Transcendantale, et la tradition védique aux Pandits Védiques Maharishi en Inde, jusqu’au projet de paix au Congo.",
     "closeLabel": "Fermer",
     "prevLabel": "Image précédente",
     "nextLabel": "Image suivante",
